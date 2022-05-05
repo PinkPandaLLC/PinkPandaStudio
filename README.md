@@ -2,7 +2,7 @@
 
 www.pinkpanda.studio
 
-![PinkPanda Logo]()
+![PinkPanda Logo](https://github.com/PinkPandaLLC/Master/blob/main/MEDIA/img_logo.svg)
 
 
 ## **Good Reads:**
@@ -21,12 +21,9 @@ Folder: javascript
  
 Pages:
 
-- index.html
-- studio.html
-    - gallery.html
-    - websites.html
-    - videogallery.html
-- services.html
-- aboutus.html
-- contactus.html
-- styles.css
+- index
+- studio
+- services
+- about
+- contact
+- template
