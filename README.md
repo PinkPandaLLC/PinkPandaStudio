@@ -12,14 +12,16 @@ www.pinkpanda.studio
   - https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories
 
 ## **Layout:**
+Folder: BOOTSTRAP
+  - Bootstrap files
 
-Folder: images
+Folder: MEDIA
   - all applicable images and videos
 
-Folder: javascript
+Folder: JS
   - app.js
  
-Pages:
+Folder: HTML
 
 - index
 - studio
@@ -27,3 +29,13 @@ Pages:
 - about
 - contact
 - template
+
+Folder: SASS
+- index
+- studio
+- services
+- about
+- contact
+- styles.css
+- styles.scss
+- styles map
