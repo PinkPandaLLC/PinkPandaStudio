@@ -1,0 +1,101 @@
+
+/*************/
+/* HomePage */
+/*************/
+.hmherovid{
+    background-color: rgba(0, 0, 0, 0.356);
+}
+
+video#bgvideo {
+    margin-top: -2%;
+    position: sticky;
+    min-width: 100%;
+    min-height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.hmcontent{
+    z-index: 2;
+    color: map-get($colors, color-white);
+    @include flex-rowc;
+    transform: translateY(-850px);    
+}
+
+.hmherobtn {
+    @include flex-rowc;
+    z-index: 2;
+    transform: translateY(-500px);
+}
+
+.hmbtn {
+    border: 1px solid map-get($colors, color-primary);
+    background-color: map-get($colors, color-tertiary);
+    color: map-get($colors, color-primary);
+    padding: 18px 140px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 15px;
+}
+
+.hmbtn:hover {
+    border: 4px insetmap-get($colors, color-tertiary);
+    background-color: map-get($colors, color-primary);
+    color: map-get($colors, color-tertiary);
+    display: inline-block;
+    box-shadow: 0 0.5em 0.5em -0.4em map-get($colors, color-primary);
+    transform: translateY(.25em) scale(115%);
+   
+}
+
+/* Card */
+.hmcardheader {
+    @include leftBorder;
+    margin-top: -10%; 
+}
+.hmcardstack{
+    @include flex-rowa;
+}
+.hmcard {
+    margin: 2%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 5px; /* 5px rounded corners */
+    text-align: center; 
+    display: block; 
+    background: linear-gradient(to top, #ec1f9373 50%, white 50%);
+    background-size: 100% 200%;
+    color: black;
+    transition: all 1100ms ease-out;
+    background-position:top left;
+  }
+  .hmcard:hover {
+    color: #ffffff;
+    background-position:bottom left;
+    cursor:pointer;
+  }
+
+  .hmcard img {
+    border-radius: 5px 5px 0 0;
+    width: 250px;
+    height: auto;
+  }
+  .showcard{
+    margin: 5%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 5px; /* 5px rounded corners */
+    display: flex;
+    flex-direction: row;
+  }
+  .showcard img {
+    border-radius: 5px 5px 0 0;
+    width: 350px;
+    height: auto;
+  }
+
+.servicesThumbnail{
+    @include flex-rowc;
+    padding: 5%;
+}
+.servcard{
+    @include flex-rowc;
+}

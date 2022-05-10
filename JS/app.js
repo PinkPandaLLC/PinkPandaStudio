@@ -81,60 +81,60 @@ $("button").click(function(){
 
 
 
-//  //Typewriter Animation
-//  //
-//  //
-//  (function ($) {
-//    function typeString($target, str, cursor, delay, cb) {
-//      $target.html(function (_, html) {
-//        return html + str[cursor];
-//      });
+ //Typewriter Animation
+ //
+ //
+ (function ($) {
+   function typeString($target, str, cursor, delay, cb) {
+     $target.html(function (_, html) {
+       return html + str[cursor];
+     });
      
-//      if (cursor < str.length - 1) {
-//        setTimeout(function () {
-//          typeString($target, str, cursor + 1, delay, cb);
-//        }, delay);
-//      }
-//      else {
-//        cb();
-//      }
-//    }
-//    $.fn.extend({
-//      teletype: function (opts) {
-//        var settings = $.extend({}, $.teletype.defaults, opts);
+     if (cursor < str.length - 1) {
+       setTimeout(function () {
+         typeString($target, str, cursor + 1, delay, cb);
+       }, delay);
+     }
+     else {
+       cb();
+     }
+   }
+   $.fn.extend({
+     teletype: function (opts) {
+       var settings = $.extend({}, $.teletype.defaults, opts);
        
-//        return $(this).each(function () {
-//          (function loop($tar, idx) {
-//            // type
-//            typeString($tar, settings.text[idx], 0, settings.delay, function () {
+       return $(this).each(function () {
+         (function loop($tar, idx) {
+           // type
+           typeString($tar, settings.text[idx], 0, settings.delay, function () {
              
-//            });
+           });
          
-//          }($(this), 0));
-//        });
-//      }
-//    });
+         }($(this), 0));
+       });
+     }
+   });
  
-//    // plugin defaults  
-//    $.extend({
-//      teletype: {
-//        defaults: {
-//          delay: 100,
-//          pause: 5000,
-//          text: []
-//        }
-//      }
-//    });
-//  }(jQuery));
+   // plugin defaults  
+   $.extend({
+     teletype: {
+       defaults: {
+         delay: 100,
+         pause: 5000,
+         text: []
+       }
+     }
+   });
+ }(jQuery));
  
-//  $('#target').teletype({
-//    text: [
-//      'Professional Website Development'
-//    ]
-//  });
+ $('#target').teletype({
+   text: [
+     'Professional Web Development'
+   ]
+ });
  
-//  $('#cursor').teletype({
-//    text: ['_', ' '],
-//    delay: 0,
-//    pause: 500
-//  });
+ $('#cursor').teletype({
+   text: ['_', ' '],
+   delay: 0,
+   pause: 500}
+   );

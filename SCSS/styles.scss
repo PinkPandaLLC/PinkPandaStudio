@@ -71,9 +71,44 @@ p{
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
+@mixin flex-rowa {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+@mixin flex-rowb {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+@mixin flex-rows {
+    display: flex;
+    flex-direction: row;
+    justify-content:start;
+    flex-wrap: wrap;
+}
 
-// @include flex-rowc;
+@mixin leftBorder {
+    border-left: 4px solid map-get($colors, color-primary); 
+    padding-left: 1%;
+   
+}
 
+// syntax - @include flex-rowc;
+
+/*************/
+/* Keyframes */
+/*************/
+@keyframes scalein {
+    0% {
+        transform:scale(2)
+    }
+    100% {
+        transform: scale(1);
+    }
+}
 
 // ******
 // Maps
