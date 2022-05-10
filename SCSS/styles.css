@@ -5044,7 +5044,7 @@ fieldset:disabled .btn {
 
 .navbar-light .navbar-toggler {
   color: rgba(0, 0, 0, 0.55);
-  border-color: rgba(0, 0, 0, 0.1);
+  border-color: transparent;
 }
 
 .navbar-light .navbar-toggler-icon {
@@ -7221,14 +7221,14 @@ fieldset:disabled .btn {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 1rem 1rem;
+  padding: 5% 10%;
 }
 
 .offcanvas-header .btn-close {
-  padding: 0.5rem 0.5rem;
-  margin-top: -0.5rem;
-  margin-right: -0.5rem;
-  margin-bottom: -0.5rem;
+  padding: 2.5% 5%;
+  margin-top: -2.5%;
+  margin-right: -5%;
+  margin-bottom: -2.5%;
 }
 
 .offcanvas-title {
@@ -7240,14 +7240,14 @@ fieldset:disabled .btn {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  padding: 1rem 1rem;
+  padding: 5% 10%;
   overflow-y: auto;
 }
 
 .offcanvas-start {
   top: 0;
   left: 0;
-  width: 400px;
+  width: 280px;
   border-right: 1px solid rgba(0, 0, 0, 0.2);
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
@@ -7256,7 +7256,7 @@ fieldset:disabled .btn {
 .offcanvas-end {
   top: 0;
   right: 0;
-  width: 400px;
+  width: 280px;
   border-left: 1px solid rgba(0, 0, 0, 0.2);
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
@@ -11960,6 +11960,10 @@ fieldset:disabled .btn {
   }
 }
 
+body {
+  margin-top: 85px;
+}
+
 h1, .h1 {
   font-family: oswald;
   font-size: 80px;
@@ -11995,8 +11999,127 @@ p {
   font-size: 25px;
 }
 
-textarea {
-  height: 90px;
+.navbar {
+  height: 80px;
+  z-index: 5000;
+}
+
+.navbar-brand {
+  width: 180px;
+  height: auto;
+  margin-left: 2%;
+}
+
+.navbar-nav {
+  margin-left: auto;
+  font-family: oswald;
+}
+
+#navexpand {
+  margin-left: auto;
+}
+
+#pageselect {
+  color: #EC1F94;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: linear-gradient(60deg, #FF9ED5 0%, #FFE9F5 100%);
+  color: #EC1F94;
+  z-index: 500;
+}
+
+.waves {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  margin-bottom: -7px;
+  /*Fix for safari gap*/
+  min-height: 70px;
+  max-height: 90px;
+}
+
+.content {
+  position: relative;
+  height: 60vh;
+  text-align: center;
+  background-color: #FFFFFF;
+}
+
+.parallax > use {
+  -webkit-animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+          animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+
+.parallax > use:nth-child(1) {
+  -webkit-animation-delay: -2s;
+          animation-delay: -2s;
+  -webkit-animation-duration: 7s;
+          animation-duration: 7s;
+}
+
+.parallax > use:nth-child(2) {
+  -webkit-animation-delay: -3s;
+          animation-delay: -3s;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+}
+
+.parallax > use:nth-child(3) {
+  -webkit-animation-delay: -4s;
+          animation-delay: -4s;
+  -webkit-animation-duration: 13s;
+          animation-duration: 13s;
+}
+
+.parallax > use:nth-child(4) {
+  -webkit-animation-delay: -5s;
+          animation-delay: -5s;
+  -webkit-animation-duration: 20s;
+          animation-duration: 20s;
+}
+
+@-webkit-keyframes move-forever {
+  0% {
+    -webkit-transform: translate3d(-90px, 0, 0);
+            transform: translate3d(-90px, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(85px, 0, 0);
+            transform: translate3d(85px, 0, 0);
+  }
+}
+
+@keyframes move-forever {
+  0% {
+    -webkit-transform: translate3d(-90px, 0, 0);
+            transform: translate3d(-90px, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(85px, 0, 0);
+            transform: translate3d(85px, 0, 0);
+  }
+}
+
+.socialnav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 300%;
+  -webkit-transform: scale(60%);
+          transform: scale(60%);
 }
 
 form div {

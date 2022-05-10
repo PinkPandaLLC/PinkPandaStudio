@@ -112,7 +112,104 @@
 				<!--Waves end-->
 			</div>
 	</header>
-
+		<!-- Modal Contact Form -->
+		<!-- Button that uses BS to create a modal form for contact -->
+		<section>
+			<div class="contactbutton position-fixed top-50 end-0 ">
+				<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
+					id="toggleContactButton">
+					Contact Us!
+				</button>
+			</div>
+		</section>
+		<!-- Code for contact us modal -->
+		<section class="container">
+			<!-- Modal -->
+			<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal-dialog modal-lg modal-dialog-centered">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="exampleModalLabel">Contact Us!</h5>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						</div>
+						<div class="modal-body">
+							<form class="row" id="contactUsForm">
+		
+								<!-- Names -->
+		
+								<div>
+									<div class="form-floating col-md-4">
+										<input type="text" class="form-control" id="floatingInputFname"
+											placeholder="First Name">
+										<label for="floatingInputFname">First Name</label>
+									</div>
+									<div class="form-floating col-md-4">
+										<input type="text" class="form-control" id="floatingInputLname" placeholder="Last Name">
+										<label for="floatingInputLname">Last Name</label>
+									</div>
+								</div>
+		
+								<!-- Contact Info -->
+		
+								<div>
+									<div class="form-floating col-md-4">
+										<input type="email" class="form-control" id="floatingInputEmail" placeholder="Email">
+										<label for="floatingInputEmail">Email</label>
+									</div>
+									<div class="form-floating col-md-4">
+										<input type="tel" class="form-control" id="floatingInputPhone" placeholder="Phone">
+										<label for="floatingInputPhone">Phone</label>
+									</div>
+								</div>
+		
+								<!-- Business Information -->
+		
+								<div>
+									<div class="form-floating col-md-4">
+										<input type="text" class="form-control" id="floatingInputBusName"
+											placeholder="Business Name">
+										<label for="floatingInputBusName">Business Name</label>
+									</div>
+									<div class="form-floating col-md-4">
+										<input type="url" class="form-control" id="floatingInputBusURL"
+											placeholder="Business URL">
+										<label for="floatingInputBusURL">Business URL</label>
+									</div>
+								</div>
+		
+								<!-- Comments -->
+		
+								<div>
+									<div class="form-floating">
+										<textarea class="form-control" placeholder="." id="floatingTextarea"></textarea>
+										<label for="floatingTextarea">Message</label>
+									</div>
+								</div>
+		
+								<!-- Captcha location 1.2 -->
+								<!-- <div> -->
+								<!-- Captcha code here 1.2 -->
+								<!-- </div> -->
+		
+								<div>
+									<div class="col-12">
+										<button type="submit" class="btn btn-primary">Submit</button>
+									</div>
+								</div>
+		
+							</form>
+						</div>
+						<!-- <div class="modal-footer">
+		                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+		                        <button type="button" class="btn btn-primary">Save changes</button>
+		                    </div> -->
+					</div>
+				</div>
+			</div>
+		
+		
+		</section>\
+		
 	<section>
 		
 	</section>
