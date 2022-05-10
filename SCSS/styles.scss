@@ -1,3 +1,20 @@
+// Declaring variables
+
+//Colors
+
+$primary: #FFE9F5;
+
+$input-btn-font-family: oswald;
+// $input-btn-font-size: 20px;
+
+
+
+// Import statement
+@import "../NODE_MODULES/bootstrap/scss/bootstrap";
+
+
+
+
 // ******
 // Fonts
 
@@ -48,9 +65,6 @@ p{
     flex-direction: row;
     justify-content: center;
 }
-
-// @include flex-rowc;
-
 
 // ******
 // Maps
