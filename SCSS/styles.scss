@@ -79,6 +79,21 @@ p {
     flex-wrap: wrap;
 }
 
+@mixin leftBorder {
+
+    border-left: 4px solid map-get($colors, color-primary);
+
+    padding-left: 1%;
+
+}
+
+@mixin flex-rowsb{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
 // @include flex-rowc;
 
 
