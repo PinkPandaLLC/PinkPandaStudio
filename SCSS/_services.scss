@@ -1,0 +1,45 @@
+.sr_hero{
+    @include flex-rowc;
+    background-color: rgba(0, 0, 0, 0.356);
+    position: relative;
+}
+.sr_heroContent{
+    position: absolute;
+    z-index: 2;
+}
+.sr_heroTitle{
+    @include leftBorder;
+    color: map-get($colors , color-primary );
+    margin-top: 5%;
+}
+.heroImgOverlay{
+    width: fit-content;
+    height: 65%;
+    border: 6px inset white;
+}
+.sr_heroCaption{
+    color: map-get($colors , color-white );
+    text-align: center;
+    margin-top: 5%;
+}
+.sr_heroImgContainer{
+    // display: flex;
+    // flex-direction: row;
+    // justify-content: flex-start;
+    // flex-wrap: wrap;
+    margin-top: 7%;
+
+}
+.sr_learnMore{
+    border: 4px orange solid;
+    top: 50%;
+    left: 0%
+}
+.sr_heroBg{
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    z-index: -1;
+    position: sticky;
+    margin: 0;
+}

@@ -1,9 +1,13 @@
 // 1. Include any default variable overrides here
+//Nav - Header
 $offcanvas-padding-y:               5%;
 $offcanvas-padding-x:               10%;
 $offcanvas-horizontal-width:        280px;
 $navbar-light-toggler-border-color: transparent;
 
+// J
+$primary: #FFE9F5;
+$input-btn-font-family: oswald;
 
 // 2. Import Bootstrap
 @import "../NODE_MODULES/bootstrap/scss/bootstrap";
@@ -64,6 +68,7 @@ p{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
 }
 @mixin flex-roweven {
     display: flex;
