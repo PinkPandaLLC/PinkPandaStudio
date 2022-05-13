@@ -2,7 +2,7 @@
 
 www.pinkpanda.studio
 
-![PinkPanda Logo]()
+![PinkPanda Logo](https://github.com/PinkPandaLLC/PinkPandaStudio/blob/Kevin/MEDIA/img_logo.svg)
 
 
 ## **Good Reads:**
