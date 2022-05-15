@@ -12122,6 +12122,62 @@ p {
           transform: scale(60%);
 }
 
+.ab_contentHeader {
+  border-left: 4px solid #EC1F94;
+  padding-left: 1%;
+  color: #EC1F94;
+}
+
+.ab_cardTitle {
+  border-left: 4px solid #EC1F94;
+  padding-left: 1%;
+}
+
+.ab_cardContents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.ab_cardImages {
+  -o-object-fit: contain;
+     object-fit: contain;
+  max-height: 400px;
+}
+
+.ab_cardContents p {
+  padding: 2%;
+}
+
+.ab_info {
+  padding: 2%;
+  margin: auto;
+}
+
+.ab_infoContent {
+  padding: 3%;
+}
+
+.ab_infoText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 form div {
   display: -webkit-box;
   display: -ms-flexbox;
