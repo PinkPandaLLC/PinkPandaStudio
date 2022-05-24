@@ -1,0 +1,27 @@
+.ab_contentHeader {
+  @include leftBorder;
+  color: map-get($colors, color-primary);
+}
+.ab_cardTitle {
+  @include leftBorder;
+}
+.ab_cardContents {
+  @include flex-rowc;
+}
+.ab_cardImages {
+  object-fit: contain;
+  max-height: 400px;
+}
+.ab_cardContents p {
+  padding: 2%;
+}
+.ab_info {
+  padding: 2%;
+  margin: auto;
+}
+.ab_infoContent {
+  padding: 3%;
+}
+.ab_infoText {
+  @include flex-rowc;
+}

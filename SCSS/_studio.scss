@@ -1,0 +1,44 @@
+// 
+// 
+
+.st_hero{
+    background-color: #00000042;
+    position: relative;
+    width: 102%;
+
+}
+
+.st_hero_content{
+    @include flex-rowc;
+    z-index: 5;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-100%)
+}
+
+.st_header{
+    @include leftBorder;
+    @include flex-rowb;
+    // border: orange 4px solid:
+    transform: translateY(-150px);
+    color: map-get( $colors , color-primary);
+
+}
+
+.st_headerText{
+    @include flex-roweven;
+    // border: orange 4px solid;
+    text-align: center;
+    transform: translateX(100px)
+}
+
+.st_heroIMG{
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+
+    z-index: -1;
+    position: sticky;
+
+}

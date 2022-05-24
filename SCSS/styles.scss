@@ -5,6 +5,8 @@ $offcanvas-padding-x:               10%;
 $offcanvas-horizontal-width:        280px;
 $navbar-light-toggler-border-color: transparent;
 
+//services edits
+$accordion-button-color: #FF9ED5;
 // J
 $primary: #FFE9F5;
 $input-btn-font-family: oswald;
@@ -91,7 +93,7 @@ p{
 @mixin flex-rows {
     display: flex;
     flex-direction: row;
-    justify-content:start;
+    justify-content: flex-start;
     flex-wrap: wrap;
 }
 
@@ -219,7 +221,7 @@ $colors:(
     //Off Canvas social media icons
     .socialnav {
         @include flex-roweven();
-        margin-top: 300%;
+        margin-top: 200%;
         transform: scale(60%);
     }
 

@@ -5,14 +5,14 @@
 $("button").click(function(){
   let btnId = $(this).attr("id");
   console.log(btnId);
-     if (btnId === 'hmbtn1'){
+     if (btnId === 'hm_studiobtn'){
      location.href = 'studio.html';
      }
-     else if(btnId === 'hmbtn2'){
-     location.href = 'contact.html';
+     else if(btnId === 'hm_learnBtn'){
+     location.href = 'services.html';
      }
-     else if(btnId === 'btn3'){
-     location.href = 'index.html';
+     else if(btnId === 'hm_aboutBtn'){
+     location.href = 'about.html';
      }
  });
  
@@ -63,9 +63,9 @@ $("button").click(function(){
     document.body.scrollTop > 20 ||
     document.documentElement.scrollTop > 20
     ) {
-    mybutton.style.display = "block";
+    topButton.style.display = "block";
     } else {
-    mybutton.style.display = "none";
+    topButton.style.display = "none";
     }
     }
     // When the user clicks on the button, scroll to the top of the document
@@ -138,3 +138,45 @@ $("button").click(function(){
    delay: 0,
    pause: 500}
    );
+
+//    //services scroll spy
+//    let offset = 80;
+
+// $('.sr_clickHeader').click(function(event) {
+//     event.preventDefault();
+//     let service = $(this).attr('href')
+//     .scrollIntoView();
+//     scrollBy(0, -offset);
+// });
+
+//********
+//Home Page Card Fill Automation
+//********
+
+
+
+
+$(".hm_card").click(function(){
+  let cardFill = $(this).attr("id"); 
+  console.log(cardFill);
+  let cardToggle = $(this).attr('showCardToggle');
+  let cardClass = $(this).attr('class');
+
+
+    if ( cardFill === 'hmcard1'){
+      if ( cardToggle === true) and ( cardClass === 'fillWeb');{
+        $('.tempCard').addClass('showCardToggle');  
+        $('.fillWeb').toggleClass('showCardToggle', addOrRemove);
+        $('.fillWeb').show(1000);
+        $('.fillServices, .fillCustom').addClass('showCardToggle');
+      }
+    }
+    else if ( cardFill === 'hmcard2'){
+      if ( cardToggle === true) and ( cardClass === 'fillServices');{
+        $('.tempCard').addClass('showCardToggle');  
+        $('.fillServices').toggleClass('showCardToggle', addOrRemove);
+        $('.fillServices').show(1000);
+        $('.fillWeb, .fillCustom').addClass('showCardToggle');
+    }
+  }
+});
