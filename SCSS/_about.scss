@@ -24,4 +24,5 @@
 }
 .ab_infoText {
   @include flex-rowc;
+  align-items: center;
 }
