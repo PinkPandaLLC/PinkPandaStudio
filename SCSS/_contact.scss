@@ -1,0 +1,98 @@
+//
+//
+//
+//
+//
+//
+form div {
+  @include flex-rowc;
+  padding: 0.5% 1.1%;
+}
+
+.cu_hero {
+  background-color: #00000018;
+  // has to stay relative for hero img to work
+  position: relative;
+  width: 102%;
+}
+
+.cu_heroIMG {
+  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  z-index: -1;
+  position: sticky;
+}
+
+// .cu_heroImg img {
+//   margin-left: 0;
+//   object-fit: cover;
+//   width: 100%;
+//   height: 100%;
+//   // z-index: -1;
+// }
+
+.cu_title {
+  font-weight: bold;
+  color: map-get($colors, color-primary);
+  @include leftBorder;
+}
+
+.cu_statement h5 {
+  font-weight: lighter;
+}
+.cu_studioText {
+  margin: auto;
+  padding: 4% 10%;
+}
+.cu_studioText h4,
+h5 {
+  padding: 1% 0%;
+}
+.cu_infoCard {
+  @include flex-rowc;
+}
+#cu_infoCardimg {
+  min-width: 100%;
+  min-height: 100%;
+  width: 100%;
+  height: 100%;
+}
+.cu_infoCardContents {
+  @include flex-rowc;
+  align-items: center;
+}
+.cu_infoCardContents h5 {
+  @include leftBorder;
+}
+.cu_phases {
+  &_List {
+    &_item {
+      padding: 10px 20px;
+      margin-left: 50px;
+    }
+  }
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.cu_form {
+  padding: 2% 2%;
+}
+.box {
+  background-color: rgba(0, 0, 0, 0.363);
+}
+.cu_formLabel {
+  margin-left: 5%;
+}
+.cu_form {
+  margin: 5% 0%;
+}
+.cu_headers {
+  margin-left: 5%;
+}
+.cu_submitBtn {
+  margin-top: 2%;
+}

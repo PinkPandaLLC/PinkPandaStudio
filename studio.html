@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title -->
+    <title>PinkPandaStudio</title>
+    <!-- Links -->
+    <link rel="stylesheet" href="SCSS/styles.css" />
+  </head>
+  <!-- Body -->
+
+  <body>
+    <!-- Header -->
+    <header>
+      <!-- Navbar -->
+      <nav class="navbar navbar-light bg-transparent fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#"
+            ><img src="MEDIA/img_logo.svg" alt=""
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <div
+                class="offcanvas-title navbar-brand"
+                id="offcanvasNavbarLabel"
+              >
+                <img src="MEDIA/img_logo.svg" alt="" />
+              </div>
+              <button
+                type="button"
+                class="btn-close text-reset"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a
+                    class="nav-item nav-link active"
+                    aria-current="page"
+                    href="index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-item nav-link"
+                    id="pageselect"
+                    href="studio.html"
+                    >Studio</a
+                  >
+                </li>
+                <!-- ************************************************************************* -->
+                <!-- DROPDOWN MENU FOR STUDIO AFTER PORTFOLIO MORE PAGES ARE COMPLETED -->
+
+                <!-- <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Studio
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                                <li><a class="dropdown-item" href="#">Studio</a></li>
+                                <li><a class="dropdown-item" href="#">Portfolio</a></li>
+                                <li><a class="dropdown-item" href="#">Templates</a></li>
+                                <li><a class="dropdown-item" href="#">Gallery</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Pink Panda World</a></li>
+                                </ul>
+                            </li> -->
+                <!-- ************************************************************************* -->
+                <li class="nav-item">
+                  <a class="nav-item nav-link" href="services.html">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-item nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-item nav-link" href="contact.html">Contact</a>
+                </li>
+              </ul>
+              <div class="container position-relative">
+                <div class="row socialnav">
+                  <div class="col-4">
+                    <img src="media/img_icon_fb64.png" alt="" />
+                  </div>
+                  <div class="col-4">
+                    <img src="media/img_icon_instagram64.png" alt="" />
+                  </div>
+                  <div class="col-4">
+                    <img src="media/img_icon_github.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <!-- ************************************************************************* -->
+              <!-- Optional Search Form -->
+              <!-- <form class="d-flex">
+					        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+					        <button class="btn btn-outline-success" type="submit">Search</button>
+				  	    </form> -->
+              <!-- ************************************************************************* -->
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="header">
+        <!--Waves Container-->
+        <div>
+          <svg
+            class="waves"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 24 150 28"
+            preserveAspectRatio="none"
+            shape-rendering="auto"
+          >
+            <defs>
+              <path
+                id="gentle-wave"
+                d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+              />
+            </defs>
+            <g class="parallax">
+              <use
+                xlink:href="#gentle-wave"
+                x="48"
+                y="0"
+                fill="rgba(255,255,255,0.7"
+              />
+              <use
+                xlink:href="#gentle-wave"
+                x="48"
+                y="3"
+                fill="rgba(255,255,255,0.5)"
+              />
+              <use
+                xlink:href="#gentle-wave"
+                x="48"
+                y="5"
+                fill="rgba(255,255,255,0.3)"
+              />
+              <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+            </g>
+          </svg>
+        </div>
+        <!--Waves end-->
+      </div>
+    </header>
+
+    <!-- Hero Image -->
+
+    <section>
+      <div class="st_hero">
+        <div class="container st_heroContent row">
+          <div class="st_header col-md-6 row">
+            <h1 class="col-md-12">Studio</h1>
+            <h2 class="col-md-12">Pink Panda Presents...</h2>
+          </div>
+
+          <div class="st_headerText col-md-6 row">
+            <h3 class="col-md-12">Your Minds</h3>
+            <h3 class="col-md-12">Our Designs</h3>
+            <h3 class="col-md-12">Inspired Web Engineering</h3>
+          </div>
+        </div>
+
+        <div class="st_heroIMG">
+          <img src="media/img_studio_colorPencil.gif" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Showcase Carousels & Title -->
+    <section class="container">
+      <div class="row">
+        <div class="st_carouselTitle">
+          <h1>Showcase</h1>
+        </div>
+      </div>
+
+      <!-- Nested Carousels -->
+      <div>
+        <!-- Tabs For Different Carousels -->
+        <!-- Duplicate LI's  -->
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link active st_showcaseTabs"
+              id="portfolio-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-portfolio"
+              type="button"
+              role="tab"
+              aria-controls="pills-portfolio"
+              aria-selected="true"
+            >
+              Portfolio
+            </button>
+          </li>
+
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link st_showcaseTabs"
+              id="templates-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-templates"
+              type="button"
+              role="tab"
+              aria-controls="pills-templates"
+              aria-selected="false"
+            >
+              Templates
+            </button>
+          </li>
+
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link st_showcaseTabs"
+              id="gallery-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-gallery"
+              type="button"
+              role="tab"
+              aria-controls="pills-gallery"
+              aria-selected="false"
+            >
+              Gallery
+            </button>
+          </li>
+        </ul>
+
+        <!-- Carousels -->
+        <div class="tab-content" id="pills-tabContent">
+          <!-- First Tab **Portfolio -->
+          <div
+            class="tab-pane fade show active"
+            id="pills-portfolio"
+            role="tabpanel"
+            aria-labelledby="pills-portfolio-tab"
+          >
+            <div>
+              <!-- First Tab Contents -->
+              <div
+                id="st_portfolioCarousel"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <!-- Portfolio Tab 1 Indicators -->
+                <div class="carousel-indicators st_carouselIndicators">
+                  <button
+                    type="button"
+                    data-bs-target="#st_portfolioCarousel"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+
+                  <button
+                    type="button"
+                    data-bs-target="#st_portfolioCarousel"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+
+                  <button
+                    type="button"
+                    data-bs-target="#st_portfolioCarousel"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                </div>
+
+                <!-- Portfolio Tab 1 Contents -->
+                <div class="carousel-inner st_portfolio">
+                  <!-- Tab 1 Item 1  -->
+                  <div class="carousel-item active st_portfolioContents">
+                    <img
+                      src="MEDIA/wireframes/apple-showcase-wireframe-black.svg"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5 class="st_portfolioLabel">First slide label</h5>
+                      <p class="st_portfolioFlavor">
+                        Some representative placeholder content for the first
+                        slide.
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- Tab 1 Item 2  -->
+                  <div class="carousel-item st_portfolioContents">
+                    <img
+                      src="MEDIA/wireframes/apple-showcase-wireframe-black.svg"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5 class="st_portfolioLabel">Second slide label</h5>
+                      <p class="st_portfolioFlavor">
+                        Some representative placeholder content for the second
+                        slide.
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- Tab 1 Item 3 -->
+                  <div class="carousel-item st_portfolioContents">
+                    <img
+                      src="MEDIA/wireframes/apple-showcase-wireframe-black.svg"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5 class="st_portfolioLabel">Third slide label</h5>
+                      <p class="st_portfolioFlavor">
+                        Some representative placeholder content for the third
+                        slide.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Portfolio Tab 1 Icon Buttons -->
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#st_portfolioCarousel"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#st_portfolioCarousel"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+
+              <!-- Linking to next page tbd -->
+              <!-- <div class="col-md-12">
+                <div class="row">
+                  <div class="col-sm-12 buttonRow">
+                    <button class="studiobtn" id="studiobtn1">
+                      View More?
+                    </button>
+                  </div>
+                </div>
+              </div> -->
+            </div>
+          </div>
+
+          <!-- Second Tab **Templates -->
+          <div
+            class="tab-pane fade"
+            id="pills-templates"
+            role="tabpanel"
+            aria-labelledby="pills-templates-tab"
+          >
+            <!-- Second Tab Contents -->
+            <div
+              id="st_templatesCarousel"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <!-- Templates Tab 2 Indicators -->
+              <div class="carousel-indicators st_carouselIndicators">
+                <button
+                  type="button"
+                  data-bs-target="#st_templatesCarousel"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+
+                <button
+                  type="button"
+                  data-bs-target="#st_templatesCarousel"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+
+                <button
+                  type="button"
+                  data-bs-target="#st_templatesCarousel"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+
+              <!-- Templates Tab 2 Contents -->
+              <div class="carousel-inner st_portfolioContents">
+                <!-- Tab 2 Item 1 -->
+                <div class="carousel-item active">
+                  <img
+                    src="MEDIA/wireframes/apple-showcase-wireframe-black.svg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5 class="st_portfolioLabel">First slide label</h5>
+                    <p class="st_portfolioFlavor">
+                      Some representative placeholder content for the first
+                      slide.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Tab 3 Item 2 -->
+                <div class="carousel-item st_portfolioContents">
+                  <img
+                    src="MEDIA/wireframes/apple-showcase-wireframe-black.svg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5 class="st_portfolioLabel">Second slide label</h5>
+                    <p class="st_portfolioFlavor">
+                      Some representative placeholder content for the second
+                      slide.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Tab 3 Item 3 -->
+                <div class="carousel-item st_portfolioContents">
+                  <img
+                    src="MEDIA/wireframes/apple-showcase-wireframe-black.svg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5 class="st_portfolioLabel">Third slide label</h5>
+                    <p class="st_portfolioFlavor">
+                      Some representative placeholder content for the third
+                      slide.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Templates Tab 2 Icon Buttons -->
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#st_templatesCarousel"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#st_templatesCarousel"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+
+            <!-- <div class="col-md-12">
+              <div class="row">
+                <div class="col-sm-12 buttonRow">
+                  <button class="studiobtn" id="studiobtn1">View More?</button>
+                </div>
+              </div>
+            </div> -->
+          </div>
+
+          <!-- Third Tab **Gallery -->
+          <div
+            class="tab-pane fade"
+            id="pills-gallery"
+            role="tabpanel"
+            aria-labelledby="pills-gallery-tab"
+          >
+            <!-- Third Tab Contents -->
+            <div
+              id="st_galleryCarousel"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <!-- Third Tab Indicators -->
+              <div class="carousel-indicators st_carouselIndicators">
+                <button
+                  type="button"
+                  data-bs-target="#st_galleryCarousel"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+
+                <button
+                  type="button"
+                  data-bs-target="#st_galleryCarousel"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+
+                <button
+                  type="button"
+                  data-bs-target="#st_galleryCarousel"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+
+              <!-- Gallery Tab 3 Contents -->
+              <div class="carousel-inner st_portfolio">
+                <!-- Tab 3 Item 1 -->
+                <div class="carousel-item active st_portfolioContents">
+                  <img
+                    src="MEDIA/wireframes/apple-showcase-wireframe-black.svg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5 class="st_portfolioLabel">First slide label</h5>
+                    <p class="st_portfolioFlavor">
+                      Some representative placeholder content for the first
+                      slide.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Tab 3 Item 2 -->
+                <div class="carousel-item st_portfolioContents">
+                  <img
+                    src="MEDIA/wireframes/apple-showcase-wireframe-black.svg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5 class="st_portfolioLabel">Second slide label</h5>
+                    <p class="st_portfolioFlavor">
+                      Some representative placeholder content for the second
+                      slide.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Tab 3 Item 3 -->
+                <div class="carousel-item st_portfolioContents">
+                  <img
+                    src="MEDIA/wireframes/apple-showcase-wireframe-black.svg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5 class="st_portfolioLabel">Third slide label</h5>
+                    <p class="st_portfolioFlavor">
+                      Some representative placeholder content for the third
+                      slide.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#st_galleryCarousel"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#st_galleryCarousel"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+
+            <!-- <div class="col-md-12">
+              <div class="row">
+                <div class="col-sm-12 buttonRow">
+                  <button class="studiobtn" id="studiobtn1">View More?</button>
+                </div>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal Contact Form -->
+    <!-- Button that uses BS to create a modal form for contact -->
+    <section>
+      <div class="contactbutton position-fixed top-50 end-0">
+        <button
+          type="button"
+          class="btn btn-primary"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+          id="toggleContactButton"
+        >
+          Contact Us!
+        </button>
+      </div>
+    </section>
+
+    <!-- Code for contact us modal -->
+    <section class="container">
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Contact Us!</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <img src="MEDIA/img_logo.svg" alt="" />
+              <form class="row" id="contactUsForm">
+                <!-- Names -->
+
+                <div>
+                  <div class="form-floating col-md-4">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="floatingInputFname"
+                      placeholder="First Name"
+                    />
+                    <label for="floatingInputFname">First Name</label>
+                  </div>
+                  <div class="form-floating col-md-4">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="floatingInputLname"
+                      placeholder="Last Name"
+                    />
+                    <label for="floatingInputLname">Last Name</label>
+                  </div>
+                </div>
+
+                <!-- Contact Info -->
+
+                <div>
+                  <div class="form-floating col-md-4">
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="floatingInputEmail"
+                      placeholder="Email"
+                    />
+                    <label for="floatingInputEmail">Email</label>
+                  </div>
+                  <div class="form-floating col-md-4">
+                    <input
+                      type="tel"
+                      class="form-control"
+                      id="floatingInputPhone"
+                      placeholder="Phone"
+                    />
+                    <label for="floatingInputPhone">Phone</label>
+                  </div>
+                </div>
+
+                <!-- Business Information -->
+
+                <div>
+                  <div class="form-floating col-md-4">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="floatingInputBusName"
+                      placeholder="Business Name"
+                    />
+                    <label for="floatingInputBusName">Business Name</label>
+                  </div>
+                  <div class="form-floating col-md-4">
+                    <input
+                      type="url"
+                      class="form-control"
+                      id="floatingInputBusURL"
+                      placeholder="Business URL"
+                    />
+                    <label for="floatingInputBusURL">Business URL</label>
+                  </div>
+                </div>
+
+                <!-- Comments -->
+
+                <div>
+                  <div class="form-floating">
+                    <textarea
+                      class="form-control"
+                      placeholder="."
+                      id="floatingTextarea"
+                    ></textarea>
+                    <label for="floatingTextarea">Message</label>
+                  </div>
+                </div>
+
+                <!-- Captcha location 1.2 -->
+                <!-- <div> -->
+                <!-- Captcha code here 1.2 -->
+                <!-- </div> -->
+
+                <div>
+                  <div class="col-12">
+                    <button type="submit" class="btn btn-primary">
+                      Submit
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <!-- <div class="modal-footer">
+		                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+		                        <button type="button" class="btn btn-primary">Save changes</button>
+		                    </div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer
+      class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top container"
+    >
+      <div class="col-lg-4 d-flex align-items-center">
+        <span class="text-muted"
+          >Pink Panda Ltd Liability Co.<br />
+          © 2021 Company</span
+        >
+      </div>
+      <button
+        type="button"
+        class="btn btn-floating btn-lg"
+        id="btn-back-to-top"
+      >
+        <img src="media/img_icon_upArrow.png" alt="" />
+      </button>
+    </footer>
+
+    <!-- Java script / Jquery -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="JS/app.js"></script>
+    <script src="NODE_MODULES\bootstrap\dist\js\bootstrap.min.js"></script>
+    <script src="NODE_MODULES\@popperjs\core\dist\umd\popper.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </body>
+</html>

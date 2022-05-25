@@ -1,0 +1,95 @@
+// Darkend overlay for Studio Hero
+.st_hero {
+  background-color: #00000042;
+  // has to stay relative for hero img to work
+  position: relative;
+  width: 102%;
+}
+
+// Text Contents for the Studio Hero
+.st_heroContent {
+  @include flex-rowc;
+  z-index: 2;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -100%);
+}
+
+// used to be st_header
+// Studio Hero Title
+.st_header {
+  @include leftBorder;
+  @include flex-rowb;
+  // border: orange 4px solid:
+  transform: translateY(-150px);
+  color: map-get($colors, color-primary);
+}
+
+// used to be st_headerText
+// Studio Header Text
+.st_headerText {
+  @include flex-roweven;
+  // border: orange 4px solid;
+  text-align: center;
+  transform: translateX(100px);
+}
+
+// Studio Hero Image
+.st_heroIMG {
+  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  z-index: -1;
+  position: sticky;
+}
+
+.st_carouselTitle {
+  margin: 5% 0% 1.5%;
+  padding: 0.5% 0% 0.2%;
+  @include leftBorder;
+  height: min-content;
+}
+.st_carouselTitle h1 {
+  font-weight: bold;
+}
+
+.st_portfolioContents img {
+  object-fit: contain;
+  padding: 0.5% 10%;
+  max-height: 650px;
+  max-width: 900px;
+  justify-items: center;
+  margin: 0 auto 280px;
+}
+
+.st_portfolioContents {
+  align-content: center;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+
+.st_portfolio {
+  align-content: center;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+
+.st_portfolioLabel {
+  color: map-get($colors, color-black);
+}
+
+.st_portfolioFlavor {
+  color: map-get($colors, color-black);
+  font-weight: lighter;
+}
+
+.st_carouselIndicators button.active {
+  background-color: map-get($colors, color-primary);
+  // box-shadow: 1px 6px 10px #00000016;
+}
+.st_showcaseTabs {
+  @include leftBorder-grey;
+}

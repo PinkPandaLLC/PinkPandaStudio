@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title -->
+    <title>PinkPandaStudio/Home</title>
+    <!-- Links -->
+    <link rel="stylesheet" href="SCSS/styles.css">
+</head>
+
+<!-- Body -->
+<body>
+    <!-- Header -->
+    <header>	
+		<!-- Navbar -->
+		<nav class="navbar navbar-light bg-transparent fixed-top">
+
+			<div class="container">
+			  <a class="navbar-brand" href="#"><img src="MEDIA/img_logo.svg" alt=""></a>
+			      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+					<span class="navbar-toggler-icon"></span>
+			      </button>
+			  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+				<div class="offcanvas-header">
+				  	<div class="offcanvas-title navbar-brand" id="offcanvasNavbarLabel">
+						<img src="MEDIA/img_logo.svg" alt="">
+					</div>
+				  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+				</div>
+
+				<div class="offcanvas-body">
+				  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+
+					<li class="nav-item">
+						<a class="nav-item nav-link active" id="pageselect" aria-current="page" href="index.html">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-item nav-link" href="studio.html">Studio</a>
+					</li>
+                    <!-- ************************************************************************* -->
+                    <!-- DROPDOWN MENU FOR STUDIO AFTER PORTFOLIO MORE PAGES ARE COMPLETED -->
+
+                            <!-- <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Studio
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                                <li><a class="dropdown-item" href="#">Studio</a></li>
+                                <li><a class="dropdown-item" href="#">Portfolio</a></li>
+                                <li><a class="dropdown-item" href="#">Templates</a></li>
+                                <li><a class="dropdown-item" href="#">Gallery</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Pink Panda World</a></li>
+                                </ul>
+                            </li> -->
+                    <!-- ************************************************************************* -->
+					  <li class="nav-item">
+						<a class="nav-item nav-link" href="services.html">Services</a>
+					</li>
+					  <li class="nav-item">
+						<a class="nav-item nav-link" href="about.html">About</a>
+					</li>
+					  <li class="nav-item">
+						<a class="nav-item nav-link" href="contact.html">Contact</a>
+					</li>
+				  	</ul>
+					  <div class="container position-relative">
+						  <div class= "row socialnav">
+						  <div class="col-4">
+							<img src="media/img_icon_fb64.png" alt="">	
+						  </div>
+						  <div class="col-4">
+							<img src="media/img_icon_instagram64.png" alt="">	
+						  </div>
+						  <div class="col-4">
+							<img src="media/img_icon_github.png" alt="">
+						  </div>
+						</div>
+					</div>
+					<!-- ************************************************************************* -->
+				    <!-- Optional Search Form -->
+					<!-- <form class="d-flex">
+					        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+					        <button class="btn btn-outline-success" type="submit">Search</button>
+				  	    </form> -->
+                    <!-- ************************************************************************* -->
+				</div>
+			  </div>
+			</div>
+		  </nav>
+
+		  <div class="header">
+				<!--Waves Container-->
+				<div>
+					<svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+						viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+						<defs>
+							<path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+						</defs>
+						<g class="parallax">
+							<use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+							<use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+							<use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+							<use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+						</g>
+					</svg>
+				</div>
+				<!--Waves end-->
+			</div>
+	</header>
+    <!-- Main -->
+    <main>
+        <!--Hero-->
+		<section>
+            <div class="hm_hero ">
+            <div class="hm_herovideo">
+                <video playsinline autoplay loop muted id="herovideo" width="100%" height="920px">
+                    <source src="MEDIA/vid_home_balloons.mp4" type="video/mp4">
+                </video>
+            </div>	
+                <div class="hm_content container row">
+                    <div class="hm_header col-lg-12">
+                        <h1>Pink Panda Ltd Liability Co</h1>
+                        <h2 id="target"></h2>
+                    </div>
+
+                    <div class="hm_herobtn col-lg-12">
+                        <button type="button" class="hm_btn" id="hm_studiobtn"> <h5>Studio</h5> </button>
+                    </div>
+               
+            </div>	
+    </section>
+    <!--Section-->
+    <section class="container">
+        <div class="hm_cardHeader">
+            <h2>Services</h2>
+        </div>
+        <!-- Show Card -->
+        <div class="hm_readCard">
+            Temp Card Info
+            <div class="tempCard">
+            <div class="col-lg-12 showCard">
+                <div class="row showCardinner">
+                    <div class="col-lg-4 showImg">
+                        <img src="MEDIA/img_home_doMore.svg" alt="...">
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="cardBody">
+                                <div class="showTitle">
+                                    <h5>Responsive Web Development</h5>
+                                </div>
+                                <div class="showText">
+                                    <p> 
+                                        Full stack developers with the passion to design a modern unique front end experience. <br>
+                                        Equipped with the technical expertise to perfect and manage your backend programming. <br>
+                                        Whatever the need we can provide a professional all encompassing experience for you or your business.
+                                    </p>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Web Card Info -->
+            <div class="fillWeb showCardToggle">
+            <div class="col-lg-12 showCard">
+                <div class="row showCardinner">
+                    <div class="col-lg-4 showImg">
+                        <img src="MEDIA/img_home_doMore.svg" alt="...">
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="cardBody">
+                                <div class="showTitle">
+                                    <h5>Responsive Web Development</h5>
+                                </div>
+                                <div class="showText">
+                                    <p> 
+                                        Full stack developers with the passion to design a modern unique front end experience. <br>
+                                        Equipped with the technical expertise to perfect and manage your backend programming. <br>
+                                        Whatever the need we can provide a professional all encompassing experience for you or your business.
+                                    </p>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Services Card Info -->
+            <div class="fillServices showCardToggle">
+                <div class="col-lg-12 showCard">
+                    <div class="row showCardinner">
+                        <div class="col-lg-4 showImg">
+                            <img src="MEDIA/img_home_heartBinary.svg" alt="...">
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="cardBody">
+                                <div class="showTitle">
+                                    <h5>Server Management</h5>
+                                </div>
+                                <div class="showText">
+                                    <p> 
+                                        We take away the daunting task of the unknown with our unique CMS approach. We wont leave 
+                                        you stranded after deployment but provide detailed training of how to manage it yourself. 
+                                        Not a techie person? Ask us about managing it for you!   <br>
+                                        Server management can be so much more, with tasks such as backups, database 
+                                        set up and management, updates and preventative maintenance we can take the weight of your 
+                                        shoulders and allow you to focus on what matters. 
+                                    </p>
+                                </div>
+                            </div>                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Custom Card Info -->
+            <div class="fillCustom showCardToggle">
+                <div class="col-lg-12 showCard">
+                    <div class="row showCardinner">
+                        <div class="col-lg-4 showImg">
+                            <img src="MEDIA/img_home_branding.svg" alt="...">
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="cardBody">
+                                <div class="showTitle">
+                                    <h5>Custom Branding</h5>
+                                </div>
+                                <div class="showText">
+                                    <p> 
+                                        Your website is the Showcase of your business and center of your visual marketing 
+                                        Driven and passionate let our design team and end to end web developers take you from 
+                                        start to finish! <br>
+                                        Logos, Infographics, Brochures, Social Media content and more to help bring your vision to life
+                                    </p>
+                                </div>
+                            </div>                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>    
+        <!-- Keywords -->
+        <div class="hm_blurb">
+            <h6>Full Stack Developers - Project Management - Graphic Design - Brand Development - ECommerce</h6>
+        </div>
+        <!-- Card Stack -->
+        <div class="row hm_cardStack">
+            <div class="col hm_card hmcard1" id="hmcard1">
+                <div>
+                    <img src="MEDIA/img_home_doMore.svg" alt="">
+                </div>
+                <div class="container">
+                    <h6>Web Development</h6>
+                </div>
+            </div>
+            <div class="col hm_card hmcard2" id="hmcard2">
+                <div>
+                    <img src="MEDIA/img_home_heartBinary.svg" id="hmcard2" alt="">
+                </div>
+                <div class="container fillCard2">
+                    <h6>Server Management</h6>
+                </div>
+            </div>
+            <div class="col hm_card hmcard3" id="hmcard3">
+                <div>
+                    <img src="MEDIA/img_home_branding.svg" id="hmcard3" alt="">
+                </div>
+                <div class="container">
+                    <h6>Custom Branding</h6>
+                </div>
+            </div>
+            <div class="col hm_card" id="hmcard4">
+                <div>
+                    <img src="MEDIA/img_home_seo.svg" id="hmcard4" alt="">
+                </div>
+                <div class="container">
+                    <h6>SEO and Analytics</h6>
+                </div>
+                <!-- <div class="container">
+                    <p> 
+                        Is your business projecting the right online presence? Talk to one of our Panda Team specialists 
+                        for a website analysis and see what we can do for you!<br>
+                        Our team can help ensure you get in front of the right client with keyword rich SEO.<br>
+                        Maximizing traffic generation to ensure your website is showcased in an ever evolving world
+                    </p>
+                </div> -->
+            </div>
+        </div>
+        <div class="hm_learnMore row">
+            <div class=" col-md-4">
+                <button type="button" class="learnMoreBtn" id="hm_learnBtn"> <h6>Learn More</h6> </button>
+            </div>
+        </div>
+        <div class="hm_rocketDivider row">
+            <img src="media/img_home_dividerRocket.svg" alt="">
+        </div>
+    </section>
+    <!--Section-->
+    <section class="container">
+        <div class="hm_showcaseHeader">
+            <h2>Showcase</h2>
+        </div>
+        <div class="hm_carousel container">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="MEDIA/wireframes/apple-showcase-wireframe-black.svg" class="d-block w-80" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="MEDIA/wireframes/imgPlaceholder.svg" class="d-block w-80" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="MEDIA/wireframes/imgPlaceholder.svg" class="d-block w-80" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+    </section>
+    <!-- Section -->
+    <section class="container">
+        <div class="hm_pinkpandaWorld">
+            <h2>Pink Panda World</h2>
+        </div>
+        <div class="fourSquare row g-0">
+
+            <div class="col-lg-6 squareInfo">
+
+                <div class="fourSquareTitle">
+
+                    <div class="fourSquareHeader row gy-5">
+                        <div class="col-lg-12"><h4>About Us</h4></div>
+
+                        <div class="col-lg-12 fsBtn">
+                            <button type="button" class="hm_btn" id="hm_aboutBtn"> <h6>About</h6> </button>
+                        </div>
+
+                    </div>
+
+                    <div class="fourSquareImg">
+                        <img src="MEDIA/img_home_passionLedUs.svg" alt="">
+                    </div>
+                </div> 
+            </div>
+
+            <div class="col-lg-6 squareDude">
+                <div class="fourSquareImg">
+                    <img src="MEDIA/img_home_spaceMoon.svg" alt="">
+                </div>
+            </div>
+
+            <div class="col-lg-6 squareDude">
+                <div class="fourSquareImg">
+                    <img src="MEDIA/img_home_spaceLaptop.svg" alt="">
+                </div>
+            </div>
+
+            <div class="col-lg-6 squareInfo">
+
+                <div class="fourSquareTitle">
+                    <div class="fourSquareHeader row gy-5">
+                        <div class="col-lg-12"><h4>Pink Panda World</h4></div>
+
+                        <div class="col-lg-12 fsBtn">
+                            <button type="button" class="hm_btn"> <h6>PPW</h6> </button>
+                        </div>
+                    </div>
+                    
+                    <div class="fourSquareImg">
+                        <img src="MEDIA/img_home_ppw.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Code for contact us modal -->
+    <section class="container">
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Contact Us!</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <img src="MEDIA/img_logo.svg" alt="" />
+                <form class="row" id="contactUsForm">
+                  <!-- Names -->
+  
+                  <div>
+                    <div class="form-floating col-md-4">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="floatingInputFname"
+                        placeholder="First Name"
+                      />
+                      <label for="floatingInputFname">First Name</label>
+                    </div>
+                    <div class="form-floating col-md-4">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="floatingInputLname"
+                        placeholder="Last Name"
+                      />
+                      <label for="floatingInputLname">Last Name</label>
+                    </div>
+                  </div>
+  
+                  <!-- Contact Info -->
+  
+                  <div>
+                    <div class="form-floating col-md-4">
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="floatingInputEmail"
+                        placeholder="Email"
+                      />
+                      <label for="floatingInputEmail">Email</label>
+                    </div>
+                    <div class="form-floating col-md-4">
+                      <input
+                        type="tel"
+                        class="form-control"
+                        id="floatingInputPhone"
+                        placeholder="Phone"
+                      />
+                      <label for="floatingInputPhone">Phone</label>
+                    </div>
+                  </div>
+  
+                  <!-- Business Information -->
+  
+                  <div>
+                    <div class="form-floating col-md-4">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="floatingInputBusName"
+                        placeholder="Business Name"
+                      />
+                      <label for="floatingInputBusName">Business Name</label>
+                    </div>
+                    <div class="form-floating col-md-4">
+                      <input
+                        type="url"
+                        class="form-control"
+                        id="floatingInputBusURL"
+                        placeholder="Business URL"
+                      />
+                      <label for="floatingInputBusURL">Business URL</label>
+                    </div>
+                  </div>
+  
+                  <!-- Comments -->
+  
+                  <div>
+                    <div class="form-floating">
+                      <textarea
+                        class="form-control"
+                        placeholder="."
+                        id="floatingTextarea"
+                      ></textarea>
+                      <label for="floatingTextarea">Message</label>
+                    </div>
+                  </div>
+  
+                  <!-- Captcha location 1.2 -->
+                  <!-- <div> -->
+                  <!-- Captcha code here 1.2 -->
+                  <!-- </div> -->
+  
+                  <div>
+                    <div class="col-12">
+                      <button type="submit" class="btn btn-primary">
+                        Submit
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <!-- <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                  <button type="button" class="btn btn-primary">Save changes</button>
+                              </div> -->
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+	<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top container">
+		<div class="col-lg-4 d-flex align-items-center">
+			<span class="text-muted">Pink Panda Ltd Liability Co.<br> © 2021 Company</span>
+		</div>
+		<button type="button" class="btn btn-floating btn-lg" id="btn-back-to-top">
+			<img src="media/img_icon_upArrow.png" alt="">
+		</button>
+	
+	</footer>
+
+    <!-- Java script / Jquery -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="JS/app.js"></script>
+	<script src="NODE_MODULES\bootstrap\dist\js\bootstrap.min.js"></script>
+	<script src="NODE_MODULES\@popperjs\core\dist\umd\popper.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</body>
+</html>
