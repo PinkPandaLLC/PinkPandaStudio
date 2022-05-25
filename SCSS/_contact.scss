@@ -41,30 +41,37 @@ form div {
 .cu_statement h5 {
   font-weight: lighter;
 }
+
 .cu_studioText {
   margin: auto;
   padding: 4% 10%;
 }
+
 .cu_studioText h4,
 h5 {
   padding: 1% 0%;
 }
+
 .cu_infoCard {
   @include flex-rowc;
 }
+
 #cu_infoCardimg {
   min-width: 100%;
   min-height: 100%;
   width: 100%;
   height: 100%;
 }
+
 .cu_infoCardContents {
   @include flex-rowc;
   align-items: center;
 }
+
 .cu_infoCardContents h5 {
   @include leftBorder;
 }
+
 .cu_phases {
   &_List {
     &_item {
@@ -73,26 +80,67 @@ h5 {
     }
   }
 }
+
 ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
+
 .cu_form {
   padding: 2% 2%;
+  border: 1px solid map-get($colors, color-primary);
+  // border-radius: 20% 40%;
+  margin: 5% 0%;
 }
+
 .box {
   background-color: rgba(0, 0, 0, 0.363);
 }
+
 .cu_formLabel {
   margin-left: 5%;
 }
-.cu_form {
-  margin: 5% 0%;
-}
+
 .cu_headers {
   margin-left: 5%;
 }
+
 .cu_submitBtn {
   margin-top: 2%;
+  border: 1px solid map-get($colors, color-primary);
+  background-color: map-get($colors, color-tertiary);
+  color: map-get($colors, color-primary);
+  padding: 18px 140px;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.cu_submitBtn:hover {
+  border: 4px insetmap-get($colors, color-tertiary);
+  background-color: map-get($colors, color-primary);
+  color: map-get($colors, color-tertiary);
+  box-shadow: 0 0.5em 0.5em -0.4em map-get($colors, color-primary);
+}
+
+.md_submitBtn {
+  margin-top: 2%;
+  border: 1px solid map-get($colors, color-primary);
+  background-color: map-get($colors, color-tertiary);
+  color: map-get($colors, color-primary);
+  padding: 18px 140px;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.md_submitBtn:hover {
+  border: 4px insetmap-get($colors, color-tertiary);
+  background-color: map-get($colors, color-primary);
+  color: map-get($colors, color-tertiary);
+  box-shadow: 0 0.5em 0.5em -0.4em map-get($colors, color-primary);
+}
+
+.cu_messageArea {
+  width: 80%;
+  height: 80%;
 }
