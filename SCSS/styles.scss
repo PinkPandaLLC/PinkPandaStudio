@@ -7,6 +7,25 @@ $navbar-light-toggler-border-color: transparent;
 
 //services edits
 $accordion-button-color: #FF9ED5;
+
+// Studio
+$primary: #ffe9f5;
+$input-btn-font-family: oswald;
+$carousel-control-color: #dcb8cd;
+$carousel-control-width: 30%;
+$carousel-indicator-active-bg: #ebebeb;
+$carousel-indicator-spacer: 10px;
+
+// Studio Tabs
+$nav-link-padding-y: 1rem;
+$nav-link-padding-x: 3rem;
+$nav-link-color: #707070;
+$nav-link-hover-color: #000;
+$nav-pills-link-active-color: #ff9ed5;
+$nav-pills-link-active-bg: #fff;
+
+// Contact us
+$input-padding-x: 10%;
 // J
 $primary: #FFE9F5;
 $input-btn-font-family: oswald;
@@ -102,6 +121,11 @@ p{
     padding-left: 1%;
    
 }
+@mixin leftBorder-grey {
+    border-left: 4px solid map-get($colors, color-grey);
+  
+    padding-left: 1%;
+  }
 
 // syntax - @include flex-rowc;
 
@@ -216,7 +240,15 @@ $colors:(
         transform: translate3d(85px,0,0);
     }
     }
-
+    // Modal Contact Button
+    .contactButton {
+        padding: 0.5% 1.2%;
+        position: sticky;
+        top: 10;
+        right: 0;
+        z-index: 1000;
+        transform: rotate(90deg);
+    }
     
     //Off Canvas social media icons
     .socialnav {

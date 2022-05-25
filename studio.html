@@ -56,14 +56,18 @@
                 <li class="nav-item">
                   <a
                     class="nav-item nav-link active"
-                    id="pageselect"
                     aria-current="page"
                     href="index.html"
                     >Home</a
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-item nav-link" href="studio.html">Studio</a>
+                  <a
+                    class="nav-item nav-link"
+                    id="pageselect"
+                    href="studio.html"
+                    >Studio</a
+                  >
                 </li>
                 <!-- ************************************************************************* -->
                 <!-- DROPDOWN MENU FOR STUDIO AFTER PORTFOLIO MORE PAGES ARE COMPLETED -->
@@ -162,6 +166,477 @@
         <!--Waves end-->
       </div>
     </header>
+
+    <!-- Hero Image -->
+
+    <section>
+      <div class="st_hero">
+        <div class="container st_heroContent row">
+          <div class="st_header col-md-6 row">
+            <h1 class="col-md-12">Studio</h1>
+            <h2 class="col-md-12">Pink Panda Presents...</h2>
+          </div>
+
+          <div class="st_headerText col-md-6 row">
+            <h3 class="col-md-12">Your Minds</h3>
+            <h3 class="col-md-12">Our Designs</h3>
+            <h3 class="col-md-12">Inspired Web Engineering</h3>
+          </div>
+        </div>
+
+        <div class="st_heroIMG">
+          <img src="media/img_studio_colorPencil.gif" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Showcase Carousels & Title -->
+    <section class="container">
+      <div class="row">
+        <div class="st_carouselTitle">
+          <h1>Showcase</h1>
+        </div>
+      </div>
+
+      <!-- Nested Carousels -->
+      <div>
+        <!-- Tabs For Different Carousels -->
+        <!-- Duplicate LI's  -->
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link active st_showcaseTabs"
+              id="portfolio-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-portfolio"
+              type="button"
+              role="tab"
+              aria-controls="pills-portfolio"
+              aria-selected="true"
+            >
+              Portfolio
+            </button>
+          </li>
+
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link st_showcaseTabs"
+              id="templates-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-templates"
+              type="button"
+              role="tab"
+              aria-controls="pills-templates"
+              aria-selected="false"
+            >
+              Templates
+            </button>
+          </li>
+
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link st_showcaseTabs"
+              id="gallery-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-gallery"
+              type="button"
+              role="tab"
+              aria-controls="pills-gallery"
+              aria-selected="false"
+            >
+              Gallery
+            </button>
+          </li>
+        </ul>
+
+        <!-- Carousels -->
+        <div class="tab-content" id="pills-tabContent">
+          <!-- First Tab **Portfolio -->
+          <div
+            class="tab-pane fade show active"
+            id="pills-portfolio"
+            role="tabpanel"
+            aria-labelledby="pills-portfolio-tab"
+          >
+            <div>
+              <!-- First Tab Contents -->
+              <div
+                id="st_portfolioCarousel"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <!-- Portfolio Tab 1 Indicators -->
+                <div class="carousel-indicators st_carouselIndicators">
+                  <button
+                    type="button"
+                    data-bs-target="#st_portfolioCarousel"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+
+                  <button
+                    type="button"
+                    data-bs-target="#st_portfolioCarousel"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+
+                  <button
+                    type="button"
+                    data-bs-target="#st_portfolioCarousel"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                </div>
+
+                <!-- Portfolio Tab 1 Contents -->
+                <div class="carousel-inner st_portfolio">
+                  <!-- Tab 1 Item 1  -->
+                  <div class="carousel-item active st_portfolioContents">
+                    <img
+                      src="MEDIA/wireframes/apple-showcase-wireframe-black.svg"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5 class="st_portfolioLabel">First slide label</h5>
+                      <p class="st_portfolioFlavor">
+                        Some representative placeholder content for the first
+                        slide.
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- Tab 1 Item 2  -->
+                  <div class="carousel-item st_portfolioContents">
+                    <img
+                      src="MEDIA/wireframes/apple-showcase-wireframe-black.svg"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5 class="st_portfolioLabel">Second slide label</h5>
+                      <p class="st_portfolioFlavor">
+                        Some representative placeholder content for the second
+                        slide.
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- Tab 1 Item 3 -->
+                  <div class="carousel-item st_portfolioContents">
+                    <img
+                      src="MEDIA/wireframes/apple-showcase-wireframe-black.svg"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5 class="st_portfolioLabel">Third slide label</h5>
+                      <p class="st_portfolioFlavor">
+                        Some representative placeholder content for the third
+                        slide.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Portfolio Tab 1 Icon Buttons -->
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#st_portfolioCarousel"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#st_portfolioCarousel"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+
+              <!-- Linking to next page tbd -->
+              <!-- <div class="col-md-12">
+                <div class="row">
+                  <div class="col-sm-12 buttonRow">
+                    <button class="studiobtn" id="studiobtn1">
+                      View More?
+                    </button>
+                  </div>
+                </div>
+              </div> -->
+            </div>
+          </div>
+
+          <!-- Second Tab **Templates -->
+          <div
+            class="tab-pane fade"
+            id="pills-templates"
+            role="tabpanel"
+            aria-labelledby="pills-templates-tab"
+          >
+            <!-- Second Tab Contents -->
+            <div
+              id="st_templatesCarousel"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <!-- Templates Tab 2 Indicators -->
+              <div class="carousel-indicators st_carouselIndicators">
+                <button
+                  type="button"
+                  data-bs-target="#st_templatesCarousel"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+
+                <button
+                  type="button"
+                  data-bs-target="#st_templatesCarousel"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+
+                <button
+                  type="button"
+                  data-bs-target="#st_templatesCarousel"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+
+              <!-- Templates Tab 2 Contents -->
+              <div class="carousel-inner st_portfolioContents">
+                <!-- Tab 2 Item 1 -->
+                <div class="carousel-item active">
+                  <img
+                    src="MEDIA/wireframes/apple-showcase-wireframe-black.svg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5 class="st_portfolioLabel">First slide label</h5>
+                    <p class="st_portfolioFlavor">
+                      Some representative placeholder content for the first
+                      slide.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Tab 3 Item 2 -->
+                <div class="carousel-item st_portfolioContents">
+                  <img
+                    src="MEDIA/wireframes/apple-showcase-wireframe-black.svg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5 class="st_portfolioLabel">Second slide label</h5>
+                    <p class="st_portfolioFlavor">
+                      Some representative placeholder content for the second
+                      slide.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Tab 3 Item 3 -->
+                <div class="carousel-item st_portfolioContents">
+                  <img
+                    src="MEDIA/wireframes/apple-showcase-wireframe-black.svg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5 class="st_portfolioLabel">Third slide label</h5>
+                    <p class="st_portfolioFlavor">
+                      Some representative placeholder content for the third
+                      slide.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Templates Tab 2 Icon Buttons -->
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#st_templatesCarousel"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#st_templatesCarousel"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+
+            <!-- <div class="col-md-12">
+              <div class="row">
+                <div class="col-sm-12 buttonRow">
+                  <button class="studiobtn" id="studiobtn1">View More?</button>
+                </div>
+              </div>
+            </div> -->
+          </div>
+
+          <!-- Third Tab **Gallery -->
+          <div
+            class="tab-pane fade"
+            id="pills-gallery"
+            role="tabpanel"
+            aria-labelledby="pills-gallery-tab"
+          >
+            <!-- Third Tab Contents -->
+            <div
+              id="st_galleryCarousel"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <!-- Third Tab Indicators -->
+              <div class="carousel-indicators st_carouselIndicators">
+                <button
+                  type="button"
+                  data-bs-target="#st_galleryCarousel"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+
+                <button
+                  type="button"
+                  data-bs-target="#st_galleryCarousel"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+
+                <button
+                  type="button"
+                  data-bs-target="#st_galleryCarousel"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+
+              <!-- Gallery Tab 3 Contents -->
+              <div class="carousel-inner st_portfolio">
+                <!-- Tab 3 Item 1 -->
+                <div class="carousel-item active st_portfolioContents">
+                  <img
+                    src="MEDIA/wireframes/apple-showcase-wireframe-black.svg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5 class="st_portfolioLabel">First slide label</h5>
+                    <p class="st_portfolioFlavor">
+                      Some representative placeholder content for the first
+                      slide.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Tab 3 Item 2 -->
+                <div class="carousel-item st_portfolioContents">
+                  <img
+                    src="MEDIA/wireframes/apple-showcase-wireframe-black.svg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5 class="st_portfolioLabel">Second slide label</h5>
+                    <p class="st_portfolioFlavor">
+                      Some representative placeholder content for the second
+                      slide.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Tab 3 Item 3 -->
+                <div class="carousel-item st_portfolioContents">
+                  <img
+                    src="MEDIA/wireframes/apple-showcase-wireframe-black.svg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5 class="st_portfolioLabel">Third slide label</h5>
+                    <p class="st_portfolioFlavor">
+                      Some representative placeholder content for the third
+                      slide.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#st_galleryCarousel"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#st_galleryCarousel"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+
+            <!-- <div class="col-md-12">
+              <div class="row">
+                <div class="col-sm-12 buttonRow">
+                  <button class="studiobtn" id="studiobtn1">View More?</button>
+                </div>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Modal Contact Form -->
     <!-- Button that uses BS to create a modal form for contact -->
@@ -303,476 +778,6 @@
 		                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
 		                        <button type="button" class="btn btn-primary">Save changes</button>
 		                    </div> -->
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Hero Image -->
-
-    <section>
-      <div class="st_hero">
-        <div class="container st_hero_content row">
-          <div class="st_header col-md-6 row">
-            <h1 class="col-md-12">Studio</h1>
-            <h2 class="col-md-12">Pink Panda Presents...</h2>
-          </div>
-
-          <div class="st_headerText col-md-6 row">
-            <h3 class="col-md-12">Your Minds</h3>
-            <h3 class="col-md-12">Our Designs</h3>
-            <h3 class="col-md-12">Inspired Web Engineering</h3>
-          </div>
-        </div>
-
-        <div class="st_heroIMG">
-          <img src="media/img_studio_colorPencil.gif" alt="" />
-        </div>
-      </div>
-    </section>
-
-    <!-- Showcase Carousels  -->
-    <section class="container">
-      <div>
-        <div class="st_carousel_title">
-          <h1>Showcase</h1>
-        </div>
-      </div>
-
-      <!-- Nested Carousels -->
-      <div>
-        <!-- Tabs For Items -->
-        <!-- Duplicate LI's  -->
-        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-          <li class="nav-item" role="presentation">
-            <button
-              class="nav-link active"
-              id="portfolio-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#pills-home"
-              type="button"
-              role="tab"
-              aria-controls="pills-home"
-              aria-selected="true"
-            >
-              Portfolio
-            </button>
-          </li>
-
-          <li class="nav-item" role="presentation">
-            <button
-              class="nav-link"
-              id="templates-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#pills-profile"
-              type="button"
-              role="tab"
-              aria-controls="pills-profile"
-              aria-selected="false"
-            >
-              Templates
-            </button>
-          </li>
-
-          <li class="nav-item" role="presentation">
-            <button
-              class="nav-link"
-              id="gallery-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#pills-contact"
-              type="button"
-              role="tab"
-              aria-controls="pills-contact"
-              aria-selected="false"
-            >
-              Gallery
-            </button>
-          </li>
-        </ul>
-
-        <div class="tab-content" id="pills-tabContent">
-          <!-- First Tab **Portfolio -->
-          <div
-            class="tab-pane fade show active"
-            id="pills-home"
-            role="tabpanel"
-            aria-labelledby="pills-home-tab"
-          >
-            <div>
-              <!-- First Tab Contents -->
-              <div
-                id="st_portfolioCarousel"
-                class="carousel slide"
-                data-bs-ride="carousel"
-              >
-                <!-- Portfolio Tab 1 Indicators -->
-                <div class="carousel-indicators">
-                  <button
-                    type="button"
-                    data-bs-target="#st_portfolioCarousel"
-                    data-bs-slide-to="0"
-                    class="active"
-                    aria-current="true"
-                    aria-label="Slide 1"
-                  ></button>
-
-                  <button
-                    type="button"
-                    data-bs-target="#st_portfolioCarousel"
-                    data-bs-slide-to="1"
-                    aria-label="Slide 2"
-                  ></button>
-
-                  <button
-                    type="button"
-                    data-bs-target="#st_portfolioCarousel"
-                    data-bs-slide-to="2"
-                    aria-label="Slide 3"
-                  ></button>
-                </div>
-
-                <!-- Portfolio Tab 1 Contents -->
-                <div class="carousel-inner">
-                  <!-- Item 1 Tab 1 -->
-                  <div class="carousel-item active">
-                    <img
-                      src="MEDIA/wireframes/apple-showcase-wireframe-black.svg"
-                      class="d-block w-100"
-                      alt="..."
-                    />
-
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>First slide label</h5>
-                      <p>
-                        Some representative placeholder content for the first
-                        slide.
-                      </p>
-                    </div>
-                  </div>
-
-                  <!-- Item 2 Tab 1 -->
-                  <div class="carousel-item">
-                    <img
-                      src="MEDIA/wireframes/apple-showcase-wireframe-black.svg"
-                      class="d-block w-100"
-                      alt="..."
-                    />
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>Second slide label</h5>
-                      <p>
-                        Some representative placeholder content for the second
-                        slide.
-                      </p>
-                    </div>
-                  </div>
-
-                  <!-- Item 3 Tab 1 -->
-                  <div class="carousel-item">
-                    <img
-                      src="MEDIA/wireframes/apple-showcase-wireframe-black.svg"
-                      class="d-block w-100"
-                      alt="..."
-                    />
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>Third slide label</h5>
-                      <p>
-                        Some representative placeholder content for the third
-                        slide.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Portfolio Tab 1 Icon Buttons -->
-                <button
-                  class="carousel-control-prev"
-                  type="button"
-                  data-bs-target="#st_portfolioCarousel"
-                  data-bs-slide="prev"
-                >
-                  <span
-                    class="carousel-control-prev-icon"
-                    aria-hidden="true"
-                  ></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-
-                <button
-                  class="carousel-control-next"
-                  type="button"
-                  data-bs-target="#st_portfolioCarousel"
-                  data-bs-slide="next"
-                >
-                  <span
-                    class="carousel-control-next-icon"
-                    aria-hidden="true"
-                  ></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
-
-              <div class="col-md-12">
-                <div class="row">
-                  <div class="col-sm-12 buttonRow">
-                    <button class="studiobtn" id="studiobtn1">
-                      View More?
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Second Tab **Templates -->
-          <div
-            class="tab-pane fade"
-            id="pills-profile"
-            role="tabpanel"
-            aria-labelledby="pills-profile-tab"
-          >
-            <div>
-              <!-- Second Tab Contents -->
-              <div
-                id="st_templatesCarousel "
-                class="carousel slide"
-                data-bs-ride="carousel"
-              >
-                <!-- Templates Tab 2 Indicatators -->
-                <div class="carousel-indicators">
-                  <button
-                    type="button"
-                    data-bs-target="#st_templatesCarousel"
-                    data-bs-slide-to="0"
-                    class="active"
-                    aria-current="true"
-                    aria-label="Slide 1"
-                  ></button>
-
-                  <button
-                    type="button"
-                    data-bs-target="#st_templatesCarousel"
-                    data-bs-slide-to="1"
-                    aria-label="Slide 2"
-                  ></button>
-
-                  <button
-                    type="button"
-                    data-bs-target="#st_templatesCarousel"
-                    data-bs-slide-to="2"
-                    aria-label="Slide 3"
-                  ></button>
-                </div>
-
-                <!-- Templates Tab 2 Contents -->
-                <div class="carousel-inner">
-                  <!-- Item 1 Tab 2 -->
-                  <div class="carousel-item active">
-                    <img
-                      src="MEDIA/wireframes/imgPlaceholder.svg"
-                      class="d-block w-100"
-                      alt="..."
-                    />
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>First slide label</h5>
-                      <p>
-                        Some representative placeholder content for the first
-                        slide.
-                      </p>
-                    </div>
-                  </div>
-
-                  <!-- Item 2 Tab 2 -->
-                  <div class="carousel-item">
-                    <img
-                      src="MEDIA/wireframes/apple-showcase-wireframe-black.svg"
-                      class="d-block w-100"
-                      alt="..."
-                    />
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>Second slide label</h5>
-                      <p>
-                        Some representative placeholder content for the second
-                        slide.
-                      </p>
-                    </div>
-                  </div>
-
-                  <!-- Item 3 Tab 2  -->
-                  <div class="carousel-item">
-                    <img
-                      src="MEDIA/wireframes/imgPlaceholder.svg"
-                      class="d-block w-100"
-                      alt="..."
-                    />
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>Third slide label</h5>
-                      <p>
-                        Some representative placeholder content for the third
-                        slide.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <button
-                  class="carousel-control-prev"
-                  type="button"
-                  data-bs-target="#st_templatesCarousel"
-                  data-bs-slide="prev"
-                >
-                  <span
-                    class="carousel-control-prev-icon"
-                    aria-hidden="true"
-                  ></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button
-                  class="carousel-control-next"
-                  type="button"
-                  data-bs-target="#st_templatesCarousel"
-                  data-bs-slide="next"
-                >
-                  <span
-                    class="carousel-control-next-icon"
-                    aria-hidden="true"
-                  ></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
-            </div>
-
-            <div class="col-md-12">
-              <div class="row">
-                <div class="col-sm-12 buttonRow">
-                  <button>View More?</button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Third Tab **Gallery -->
-          <div
-            class="tab-pane fade"
-            id="pills-contact"
-            role="tabpanel"
-            aria-labelledby="pills-contact-tab"
-          >
-            <!-- Third Tab Contents -->
-            <div
-              id="st_galleryCarousel"
-              class="carousel slide"
-              data-bs-ride="carousel"
-            >
-              <!-- Third Tab Indicators -->
-              <div class="carousel-indicators">
-                <button
-                  type="button"
-                  data-bs-target="#st_galleryCarousel"
-                  data-bs-slide-to="0"
-                  class="active"
-                  aria-current="true"
-                  aria-label="Slide 1"
-                ></button>
-
-                <button
-                  type="button"
-                  data-bs-target="#st_galleryCarousel"
-                  data-bs-slide-to="1"
-                  aria-label="Slide 2"
-                ></button>
-
-                <button
-                  type="button"
-                  data-bs-target="#st_galleryCarousel"
-                  data-bs-slide-to="2"
-                  aria-label="Slide 3"
-                ></button>
-              </div>
-
-              <!-- Tab 3 Contents -->
-              <div class="carousel-inner">
-                <!-- Tab 3 Item 1 -->
-                <div class="carousel-item active">
-                  <img
-                    src="MEDIA/wireframes/apple-showcase-wireframe-black.svg"
-                    class="d-block w-100"
-                    alt="..."
-                  />
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5>First slide label</h5>
-                    <p>
-                      Some representative placeholder content for the first
-                      slide.
-                    </p>
-                  </div>
-                </div>
-
-                <!-- Tab 3 Item 2 -->
-                <div class="carousel-item">
-                  <img
-                    src="MEDIA/wireframes/imgPlaceholder.svg"
-                    class="d-block w-100"
-                    alt="..."
-                  />
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5>Second slide label</h5>
-                    <p>
-                      Some representative placeholder content for the second
-                      slide.
-                    </p>
-                  </div>
-                </div>
-
-                <!-- Tab 3 Item 3 -->
-                <div class="carousel-item">
-                  <img
-                    src="MEDIA/wireframes/imgPlaceholder.svg"
-                    class="d-block w-100"
-                    alt="..."
-                  />
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5>Third slide label</h5>
-                    <p>
-                      Some representative placeholder content for the third
-                      slide.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <button
-                class="carousel-control-prev"
-                type="button"
-                data-bs-target="#st_galleryCarousel"
-                data-bs-slide="prev"
-              >
-                <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button
-                class="carousel-control-next"
-                type="button"
-                data-bs-target="#st_galleryCarousel"
-                data-bs-slide="next"
-              >
-                <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
-
-            <div class="col-md-12">
-              <div class="row">
-                <div class="col-sm-12 buttonRow">
-                  <button class="studiobtn" id="studiobtn1">View More?</button>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
