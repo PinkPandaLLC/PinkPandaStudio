@@ -60,6 +60,7 @@ h5 {
 }
 .cu_infoCardContents {
   @include flex-rowc;
+  align-items: center;
 }
 .cu_infoCardContents h5 {
   @include leftBorder;

@@ -26,3 +26,10 @@
   @include flex-rowc;
   align-items: center;
 }
+.ab_img img {
+  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  transform: translate(-20px, -20px);
+  box-shadow: 10px 10px 5px map-get($colors, color-secondary);
+}
