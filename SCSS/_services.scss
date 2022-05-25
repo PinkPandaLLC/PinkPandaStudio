@@ -36,6 +36,7 @@
     min-width: 100%;
     min-height: 100%;
     z-index: -1;
+}
 .sr_learnHeader{
     @include leftBorder;
     color: map-get($colors , color-white );
