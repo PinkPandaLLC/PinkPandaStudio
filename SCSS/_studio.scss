@@ -20,7 +20,7 @@
 // Studio Hero Title
 .st_header {
   @include leftBorder;
-  @include flex-rowsb;
+  @include flex-rowb;
   // border: orange 4px solid:
   transform: translateY(-150px);
   color: map-get($colors, color-primary);

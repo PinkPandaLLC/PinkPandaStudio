@@ -1,6 +1,6 @@
 .sr_hero{
     @include flex-rowc;
-    background-color: rgba(0, 0, 0, 0.356);
+    background-color: rgba(0, 0, 0, 0.442);
     position: relative;
 }
 .sr_heroContent{
@@ -10,36 +10,82 @@
 .sr_heroTitle{
     @include leftBorder;
     color: map-get($colors , color-primary );
-    margin-top: 5%;
+    margin-top: 2%;
 }
 .heroImgOverlay{
-    width: fit-content;
-    height: 65%;
+    width: auto;
+    height: 45%;
     border: 6px inset white;
 }
 .sr_heroCaption{
     color: map-get($colors , color-white );
     text-align: center;
-    margin-top: 5%;
+    margin-top: 3%;
 }
 .sr_heroImgContainer{
-    // display: flex;
-    // flex-direction: row;
-    // justify-content: flex-start;
-    // flex-wrap: wrap;
-    margin-top: 7%;
+    @include flex-rowc;
+    margin-top: 5%;
 
 }
 .sr_learnMore{
-    border: 4px orange solid;
-    top: 50%;
-    left: 0%
+    transform: translateX(-300px);
 }
 .sr_heroBg{
-    width: 100%;
-    max-width: 100%;
-    max-height: 100%;
-    z-index: -1;
     position: sticky;
-    margin: 0;
+    width: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
 }
+.sr_learnHeader{
+    @include leftBorder;
+    color: map-get($colors , color-white );
+    margin-bottom: 5%;
+}
+.sr_clickHeader{
+    margin-left: 5%;
+    color: map-get($colors , color-white );  
+}
+.clickService{
+    border-left: 4px solid map-get($colors, color-grey); 
+    padding-left: 1%; 
+}
+.clickService:hover{
+    border-left: 4px solid map-get($colors, color-primary); 
+    padding-left: 1%;
+    cursor: pointer; 
+    color: map-get($colors , color-secondary);  
+}
+
+//cards
+//Responsive web design
+
+.sr_cardContainer{
+    margin-top: 10%;
+    @include flex-rowc;
+    align-items: center;
+}
+
+.sr_cardImg {
+    max-width: 100%;
+}
+
+.sr_cardHeader{
+    @include leftBorder;
+}
+.sr_cardText{
+    margin-left: 5%;
+    margin-top: 3%;
+}
+.sr_cardPoints{
+    margin-top: 3%;
+    margin-left: 10%;
+    font-family: $secondary-font;
+}
+//XD revision - 5/13/2022
+// .arrowImg{
+//     width: 100%;
+//     max-width: 25px;
+//     max-height: 25px;
+//     transform: translateY(-5px);
+// }

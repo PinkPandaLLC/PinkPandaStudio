@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Title -->
-    <title>PinkPandaStudio|Home</title>
+    <title>PinkPandaStudio/Home</title>
     <!-- Links -->
     <link rel="stylesheet" href="SCSS/styles.css">
 </head>
@@ -117,23 +117,23 @@
     <main>
         <!--Hero-->
 		<section>
+            <div class="hm_hero ">
             <div class="hm_herovideo">
-                <video playsinline autoplay loop muted id="herovideo" width="x" height="y">
+                <video playsinline autoplay loop muted id="herovideo" width="100%" height="920px">
                     <source src="MEDIA/vid_home_balloons.mp4" type="video/mp4">
                 </video>
             </div>	
-                <div>
-                    <span class="hm_content" ><h1>Pink Panda Ltd Liability Co</h1></span>
-                    <span class="hm_content"><h2 id="target"></h2></span>
-                    <div class="hm_herobtn">
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <button type="button" class="hm_btn" id="hm_studiobtn"> <h5>Studio</h5> </button>
-                            </div>
-                        </div>
+                <div class="hm_content container row">
+                    <div class="hm_header col-lg-12">
+                        <h1>Pink Panda Ltd Liability Co</h1>
+                        <h2 id="target"></h2>
                     </div>
-                </div>
-            </div>		
+
+                    <div class="hm_herobtn col-lg-12">
+                        <button type="button" class="hm_btn" id="hm_studiobtn"> <h5>Studio</h5> </button>
+                    </div>
+               
+            </div>	
     </section>
     <!--Section-->
     <section class="container">
@@ -142,6 +142,8 @@
         </div>
         <!-- Show Card -->
         <div class="hm_readCard">
+            Temp Card Info
+            <div class="tempCard">
             <div class="col-lg-12 showCard">
                 <div class="row showCardinner">
                     <div class="col-lg-4 showImg">
@@ -149,73 +151,130 @@
                     </div>
                     <div class="col-lg-8">
                         <div class="cardBody">
-                            <div class="showTitle"><h5>Responsive Web Development</h5></div>
-                            <p> 
-                                Full stack developers with the passion to design a modern unique front end experience. <br>
-                                Equipped with the technical expertise to perfect and manage your backend programming. <br>
-                                Whatever the need we can provide a professional all encompassing experience for you or your business.
-                            </p>
+                                <div class="showTitle">
+                                    <h5>Responsive Web Development</h5>
+                                </div>
+                                <div class="showText">
+                                    <p> 
+                                        Full stack developers with the passion to design a modern unique front end experience. <br>
+                                        Equipped with the technical expertise to perfect and manage your backend programming. <br>
+                                        Whatever the need we can provide a professional all encompassing experience for you or your business.
+                                    </p>
+                                </div>
+                            </div> 
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+            <!-- Web Card Info -->
+            <div class="fillWeb showCardToggle">
+            <div class="col-lg-12 showCard">
+                <div class="row showCardinner">
+                    <div class="col-lg-4 showImg">
+                        <img src="MEDIA/img_home_doMore.svg" alt="...">
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="cardBody">
+                                <div class="showTitle">
+                                    <h5>Responsive Web Development</h5>
+                                </div>
+                                <div class="showText">
+                                    <p> 
+                                        Full stack developers with the passion to design a modern unique front end experience. <br>
+                                        Equipped with the technical expertise to perfect and manage your backend programming. <br>
+                                        Whatever the need we can provide a professional all encompassing experience for you or your business.
+                                    </p>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Services Card Info -->
+            <div class="fillServices showCardToggle">
+                <div class="col-lg-12 showCard">
+                    <div class="row showCardinner">
+                        <div class="col-lg-4 showImg">
+                            <img src="MEDIA/img_home_heartBinary.svg" alt="...">
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="cardBody">
+                                <div class="showTitle">
+                                    <h5>Server Management</h5>
+                                </div>
+                                <div class="showText">
+                                    <p> 
+                                        We take away the daunting task of the unknown with our unique CMS approach. We wont leave 
+                                        you stranded after deployment but provide detailed training of how to manage it yourself. 
+                                        Not a techie person? Ask us about managing it for you!   <br>
+                                        Server management can be so much more, with tasks such as backups, database 
+                                        set up and management, updates and preventative maintenance we can take the weight of your 
+                                        shoulders and allow you to focus on what matters. 
+                                    </p>
+                                </div>
+                            </div>                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Custom Card Info -->
+            <div class="fillCustom showCardToggle">
+                <div class="col-lg-12 showCard">
+                    <div class="row showCardinner">
+                        <div class="col-lg-4 showImg">
+                            <img src="MEDIA/img_home_branding.svg" alt="...">
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="cardBody">
+                                <div class="showTitle">
+                                    <h5>Custom Branding</h5>
+                                </div>
+                                <div class="showText">
+                                    <p> 
+                                        Your website is the Showcase of your business and center of your visual marketing 
+                                        Driven and passionate let our design team and end to end web developers take you from 
+                                        start to finish! <br>
+                                        Logos, Infographics, Brochures, Social Media content and more to help bring your vision to life
+                                    </p>
+                                </div>
+                            </div>                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>    
         <!-- Keywords -->
         <div class="hm_blurb">
             <h6>Full Stack Developers - Project Management - Graphic Design - Brand Development - ECommerce</h6>
         </div>
         <!-- Card Stack -->
         <div class="row hm_cardStack">
-            <div class="col hm_card" id="hmcard1">
+            <div class="col hm_card hmcard1" id="hmcard1">
                 <div>
                     <img src="MEDIA/img_home_doMore.svg" alt="">
                 </div>
                 <div class="container">
                     <h6>Web Development</h6>
                 </div>
-                <!-- <div class="container">
-                    <p> 
-                        Full stack developers with the passion to design a modern unique front end experience. <br>
-                        Equipped with the technical expertise to perfect and manage your backend programming. <br>
-                        Whatever the need we can provide a professional all encompassing experience for you or your business.
-                    </p>
-                </div> -->
             </div>
-            <div class="col hm_card">
+            <div class="col hm_card hmcard2" id="hmcard2">
                 <div>
                     <img src="MEDIA/img_home_heartBinary.svg" id="hmcard2" alt="">
                 </div>
-                <div class="container">
+                <div class="container fillCard2">
                     <h6>Server Management</h6>
                 </div>
-                <!-- <div class="container">
-                    <p> 
-                        We take away the daunting task of the unknown with our unique CMS approach. We wont leave 
-                        you stranded after deployment but provide detailed training of how to manage it yourself. 
-                        Not a techie person? Ask us about managing it for you!   <br>
-                        Server management can be so much more, with tasks such as backups, database 
-                        set up and management, updates and preventative maintenance we can take the weight of your 
-                        shoulders and allow you to focus on what matters. 
-                    </p>
-                </div> -->
             </div>
-            <div class="col hm_card">
+            <div class="col hm_card hmcard3" id="hmcard3">
                 <div>
                     <img src="MEDIA/img_home_branding.svg" id="hmcard3" alt="">
                 </div>
                 <div class="container">
                     <h6>Custom Branding</h6>
                 </div>
-                <!-- <div class="container">
-                    <p> 
-                        Your website is the Showcase of your business and center of your visual marketing 
-                        Driven and passionate let our design team and end to end web developers take you from 
-                        start to finish! <br>
-                        Logos, Infographics, Brochures, Social Media content and more to help bring your vision to life
-                    </p>
-                </div> -->
             </div>
-            <div class="col hm_card">
+            <div class="col hm_card" id="hmcard4">
                 <div>
                     <img src="MEDIA/img_home_seo.svg" id="hmcard4" alt="">
                 </div>
@@ -234,7 +293,7 @@
         </div>
         <div class="hm_learnMore row">
             <div class=" col-md-4">
-                <button type="button" class="learnMoreBtn"> <h6>Learn More</h6> </button>
+                <button type="button" class="learnMoreBtn" id="hm_learnBtn"> <h6>Learn More</h6> </button>
             </div>
         </div>
         <div class="hm_rocketDivider row">
@@ -290,7 +349,7 @@
                         <div class="col-lg-12"><h4>About Us</h4></div>
 
                         <div class="col-lg-12 fsBtn">
-                            <button type="button" class="hm_btn"> <h6>Studio</h6> </button>
+                            <button type="button" class="hm_btn" id="hm_aboutBtn"> <h6>About</h6> </button>
                         </div>
 
                     </div>
@@ -320,7 +379,7 @@
                         <div class="col-lg-12"><h4>Pink Panda World</h4></div>
 
                         <div class="col-lg-12 fsBtn">
-                            <button type="button" class="hm_btn"> <h6>Studio</h6> </button>
+                            <button type="button" class="hm_btn"> <h6>PPW</h6> </button>
                         </div>
                     </div>
                     
@@ -332,24 +391,7 @@
             
         </div>
     </section>
-<<<<<<< Updated upstream
-=======
 
-    <!-- Modal Contact Form -->
-    <!-- Button that uses BS to create a modal form for contact -->
-    <section>
-      <div class="contactbutton position-fixed top-50 end-0">
-        <button
-          type="button"
-          class="btn btn-primary"
-          data-bs-toggle="modal"
-          data-bs-target="#exampleModal"
-          id="toggleContactButton"
-        >
-          Contact Us!
-        </button>
-      </div>
-    </section>
     <!-- Code for contact us modal -->
     <section class="container">
         <!-- Modal -->
@@ -478,7 +520,6 @@
           </div>
         </div>
       </section>
->>>>>>> Stashed changes
     </main>
     <!-- Footer -->
 	<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top container">
