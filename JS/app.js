@@ -139,44 +139,15 @@ $("button").click(function(){
    pause: 500}
    );
 
-//    //services scroll spy
-//    let offset = 80;
-
-// $('.sr_clickHeader').click(function(event) {
-//     event.preventDefault();
-//     let service = $(this).attr('href')
-//     .scrollIntoView();
-//     scrollBy(0, -offset);
-// });
 
 //********
 //Home Page Card Fill Automation
 //********
 
-
-
-
-$(".hm_card").click(function(){
-  let cardFill = $(this).attr("id"); 
-  console.log(cardFill);
-  let cardToggle = $(this).attr('showCardToggle');
-  let cardClass = $(this).attr('class');
-
-
-    if ( cardFill === 'hmcard1'){
-      if ( cardToggle === true) and ( cardClass === 'fillWeb');{
-        $('.tempCard').addClass('showCardToggle');  
-        $('.fillWeb').toggleClass('showCardToggle', addOrRemove);
-        $('.fillWeb').show(1000);
-        $('.fillServices, .fillCustom').addClass('showCardToggle');
-      }
-    }
-    else if ( cardFill === 'hmcard2'){
-      if ( cardToggle === true) and ( cardClass === 'fillServices');{
-        $('.tempCard').addClass('showCardToggle');  
-        $('.fillServices').toggleClass('showCardToggle', addOrRemove);
-        $('.fillServices').show(1000);
-        $('.fillWeb, .fillCustom').addClass('showCardToggle');
-    }
-  }
+$(".clickCard").on('click tap', function(e){   
+    e.preventDefault();
+    $('.showCard').css('z-index', '0');
+    $('.showCard.activeC').css('z-index', '3');
+    $('.showCard').removeClass('activeC');
+    $($(this).attr('href')).addClass('activeC');
 });

@@ -185,20 +185,20 @@
           <div class="cu_title">
             <h2>Contact Us</h2>
           </div>
-
-          <div class="cu_statement">
-            <h4 class="cu_headers">Get your Journey Started Today!</h4>
-            <h5 class="cu_headers">
-              Tell us about your vision and how we can make it a reality.
-            </h5>
-          </div>
         </div>
       </section>
 
       <!-- Contact us form -->
       <section class="container">
-        <div>
-          <form class="cu_form">
+        <div class="cu_formWrapper row">
+          <form class="cu_form col-lg-10">
+            <!-- form headers -->
+              <div class="cu_statement row">
+                <h4 class="cu_headers col-lg-12">Get your Journey Started Today!</h4> 
+                <h5 class="cu_headers col-lg-12">
+                  Tell us about your vision and how we can make it a reality.
+                </h5>
+              </div>
             <!-- First & Last Names -->
             <div>
               <div class="form-floating col-md-4">
@@ -281,16 +281,15 @@
             </div>
 
             <!-- Comments -->
-            <div>
-              <div class="form-floating">
+            <div class="row">
+              <div class="form-floating col-lg-7">
+                <label for="floatingTextarea" class="cu_formLabel">Message</label>
                 <textarea
-                  class="form-control"
+                  class="form-control "
                   placeholder="."
                   id="floatingTextarea"
+                  rows="15"
                 ></textarea>
-                <label for="floatingTextarea" class="cu_formLabel"
-                  >Message</label
-                >
               </div>
             </div>
 

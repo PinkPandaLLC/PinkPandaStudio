@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="SCSS/styles.css">
 </head>
 <!-- Body -->
-<body>
+<body data-bs-spy="scroll" data-bs-target="#clickHeader" data-bs-offset="80" data-bs-smooth-scroll="true" tabindex="0">
     <!-- Header -->
     <header>	
 		<!-- Navbar -->
@@ -34,7 +34,7 @@
 				  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
 
 					<li class="nav-item">
-						<a class="nav-item nav-link active" id="pageselect" aria-current="page" href="index.html">Home</a>
+						<a class="nav-item nav-link " href="index.html">Home</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-item nav-link" href="studio.html">Studio</a>
@@ -59,7 +59,7 @@
                             </li> -->
                     <!-- ************************************************************************* -->
 					  <li class="nav-item">
-						<a class="nav-item nav-link" href="services.html">Services</a>
+						<a class="nav-item nav-link active" href="services.html" id="pageselect" aria-current="page">Services</a>
 					</li>
 					  <li class="nav-item">
 						<a class="nav-item nav-link" href="about.html">About</a>
@@ -141,7 +141,7 @@
 							<h5>Click a Topic to learn more</h5>
 						</div>
 
-							<div class="sr_clickHeader">
+							<div class="sr_clickHeader" id="clickHeader">
 
 								<div class="clickService">
 									<a href="#scrollspyHeading1">Responsive Web Design</a>
@@ -166,7 +166,9 @@
 			</div>
 			</div>
         </section>
-		<section class="container" data-bs-spy="scroll" data-bs-target="sr_clickHeader" data-bs-offset="80px" class="scrollspy-example" tabindex="0">
+	
+		<section class="container" >
+			
 			<!-- responsive web design -->
 			<div class="sr_cardContainer row" id="scrollspyHeading1" >
 
@@ -598,6 +600,7 @@
 
 			</div>
 		</section>
+	
 	</main>
 
     <!-- Footer -->

@@ -142,33 +142,9 @@
         </div>
         <!-- Show Card -->
         <div class="hm_readCard">
-            Temp Card Info
-            <div class="tempCard">
-            <div class="col-lg-12 showCard">
-                <div class="row showCardinner">
-                    <div class="col-lg-4 showImg">
-                        <img src="MEDIA/img_home_doMore.svg" alt="...">
-                    </div>
-                    <div class="col-lg-8">
-                        <div class="cardBody">
-                                <div class="showTitle">
-                                    <h5>Responsive Web Development</h5>
-                                </div>
-                                <div class="showText">
-                                    <p> 
-                                        Full stack developers with the passion to design a modern unique front end experience. <br>
-                                        Equipped with the technical expertise to perfect and manage your backend programming. <br>
-                                        Whatever the need we can provide a professional all encompassing experience for you or your business.
-                                    </p>
-                                </div>
-                            </div> 
-                        </div>
-                    </div>
-                </div>
-            </div>
             <!-- Web Card Info -->
-            <div class="fillWeb showCardToggle">
-            <div class="col-lg-12 showCard">
+            <div class="showCard activeC" id="card1">
+            <div class="col-lg-12 ">
                 <div class="row showCardinner">
                     <div class="col-lg-4 showImg">
                         <img src="MEDIA/img_home_doMore.svg" alt="...">
@@ -191,8 +167,8 @@
                 </div>
             </div>
             <!-- Services Card Info -->
-            <div class="fillServices showCardToggle">
-                <div class="col-lg-12 showCard">
+            <div class="showCard" id="card2">
+                <div class="col-lg-12 ">
                     <div class="row showCardinner">
                         <div class="col-lg-4 showImg">
                             <img src="MEDIA/img_home_heartBinary.svg" alt="...">
@@ -204,12 +180,11 @@
                                 </div>
                                 <div class="showText">
                                     <p> 
-                                        We take away the daunting task of the unknown with our unique CMS approach. We wont leave 
+                                        We take away the daunting task of the unknown with our unique client focused CMS approach. We wont leave 
                                         you stranded after deployment but provide detailed training of how to manage it yourself. 
-                                        Not a techie person? Ask us about managing it for you!   <br>
-                                        Server management can be so much more, with tasks such as backups, database 
-                                        set up and management, updates and preventative maintenance we can take the weight of your 
-                                        shoulders and allow you to focus on what matters. 
+                                        Not a techie person? <br>
+                                        Ask us about how we can help, with tasks such as backups, database 
+                                        set up and management, updates and preventative maintenance!
                                     </p>
                                 </div>
                             </div>                           
@@ -218,8 +193,8 @@
                 </div>
             </div>
             <!-- Custom Card Info -->
-            <div class="fillCustom showCardToggle">
-                <div class="col-lg-12 showCard">
+            <div class="showCard" id="card3">
+                <div class="col-lg-12 ">
                     <div class="row showCardinner">
                         <div class="col-lg-4 showImg">
                             <img src="MEDIA/img_home_branding.svg" alt="...">
@@ -242,53 +217,71 @@
                     </div>
                 </div>
             </div>
+            <!-- SEO Card Info -->
+            <div class="showCard" id="card4">
+                <div class="col-lg-12 ">
+                    <div class="row showCardinner">
+                        <div class="col-lg-4 showImg">
+                            <img src="MEDIA/img_home_seo.svg" alt="...">
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="cardBody">
+                                <div class="showTitle">
+                                    <h5>SEO and Analytics</h5>
+                                </div>
+                                <div class="showText">
+                                    <p> 
+                                        Is your business projecting the right online presence? Talk to one of our Panda Team specialists 
+                                        for a website analysis and see what we can do for you!<br>
+                                        Our team can help ensure you get in front of the right client with keyword rich SEO.<br>
+                                        Maximizing traffic generation to ensure your website is showcased in an ever evolving world
+                                    </p>
+                                </div>
+                            </div>                           
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-        </div>    
+        </div> 
+      <div class="hm_push">   
         <!-- Keywords -->
         <div class="hm_blurb">
             <h6>Full Stack Developers - Project Management - Graphic Design - Brand Development - ECommerce</h6>
         </div>
         <!-- Card Stack -->
         <div class="row hm_cardStack">
-            <div class="col hm_card hmcard1" id="hmcard1">
-                <div>
-                    <img src="MEDIA/img_home_doMore.svg" alt="">
+            <div class="col hm_card">
+                <div >
+                  <a href="#card1" class="clickCard"><img src="MEDIA/img_home_doMore.svg" alt=""></a>
                 </div>
                 <div class="container">
                     <h6>Web Development</h6>
                 </div>
             </div>
-            <div class="col hm_card hmcard2" id="hmcard2">
-                <div>
-                    <img src="MEDIA/img_home_heartBinary.svg" id="hmcard2" alt="">
+            <div class="col hm_card">
+                <div >
+                  <a href="#card2" class="clickCard"><img src="MEDIA/img_home_heartBinary.svg"  alt=""></a>
                 </div>
-                <div class="container fillCard2">
+                <div class="container ">
                     <h6>Server Management</h6>
                 </div>
             </div>
-            <div class="col hm_card hmcard3" id="hmcard3">
-                <div>
-                    <img src="MEDIA/img_home_branding.svg" id="hmcard3" alt="">
+            <div class="col hm_card">
+                <div >
+                  <a href="#card3" class="clickCard"><img src="MEDIA/img_home_branding.svg"  alt=""></a>
                 </div>
                 <div class="container">
                     <h6>Custom Branding</h6>
                 </div>
             </div>
-            <div class="col hm_card" id="hmcard4">
-                <div>
-                    <img src="MEDIA/img_home_seo.svg" id="hmcard4" alt="">
+            <div class="col hm_card">
+                <div >
+                  <a href="#card4" class="clickCard"><img src="MEDIA/img_home_seo.svg" alt=""></a>
                 </div>
                 <div class="container">
                     <h6>SEO and Analytics</h6>
                 </div>
-                <!-- <div class="container">
-                    <p> 
-                        Is your business projecting the right online presence? Talk to one of our Panda Team specialists 
-                        for a website analysis and see what we can do for you!<br>
-                        Our team can help ensure you get in front of the right client with keyword rich SEO.<br>
-                        Maximizing traffic generation to ensure your website is showcased in an ever evolving world
-                    </p>
-                </div> -->
             </div>
         </div>
         <div class="hm_learnMore row">
@@ -299,6 +292,7 @@
         <div class="hm_rocketDivider row">
             <img src="media/img_home_dividerRocket.svg" alt="">
         </div>
+      </div>
     </section>
     <!--Section-->
     <section class="container">
@@ -392,134 +386,6 @@
         </div>
     </section>
 
-    <!-- Code for contact us modal -->
-    <section class="container">
-        <!-- Modal -->
-        <div
-          class="modal fade"
-          id="exampleModal"
-          tabindex="-1"
-          aria-labelledby="exampleModalLabel"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Contact Us!</h5>
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <div class="modal-body">
-                <img src="MEDIA/img_logo.svg" alt="" />
-                <form class="row" id="contactUsForm">
-                  <!-- Names -->
-  
-                  <div>
-                    <div class="form-floating col-md-4">
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="floatingInputFname"
-                        placeholder="First Name"
-                      />
-                      <label for="floatingInputFname">First Name</label>
-                    </div>
-                    <div class="form-floating col-md-4">
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="floatingInputLname"
-                        placeholder="Last Name"
-                      />
-                      <label for="floatingInputLname">Last Name</label>
-                    </div>
-                  </div>
-  
-                  <!-- Contact Info -->
-  
-                  <div>
-                    <div class="form-floating col-md-4">
-                      <input
-                        type="email"
-                        class="form-control"
-                        id="floatingInputEmail"
-                        placeholder="Email"
-                      />
-                      <label for="floatingInputEmail">Email</label>
-                    </div>
-                    <div class="form-floating col-md-4">
-                      <input
-                        type="tel"
-                        class="form-control"
-                        id="floatingInputPhone"
-                        placeholder="Phone"
-                      />
-                      <label for="floatingInputPhone">Phone</label>
-                    </div>
-                  </div>
-  
-                  <!-- Business Information -->
-  
-                  <div>
-                    <div class="form-floating col-md-4">
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="floatingInputBusName"
-                        placeholder="Business Name"
-                      />
-                      <label for="floatingInputBusName">Business Name</label>
-                    </div>
-                    <div class="form-floating col-md-4">
-                      <input
-                        type="url"
-                        class="form-control"
-                        id="floatingInputBusURL"
-                        placeholder="Business URL"
-                      />
-                      <label for="floatingInputBusURL">Business URL</label>
-                    </div>
-                  </div>
-  
-                  <!-- Comments -->
-  
-                  <div>
-                    <div class="form-floating">
-                      <textarea
-                        class="form-control"
-                        placeholder="."
-                        id="floatingTextarea"
-                      ></textarea>
-                      <label for="floatingTextarea">Message</label>
-                    </div>
-                  </div>
-  
-                  <!-- Captcha location 1.2 -->
-                  <!-- <div> -->
-                  <!-- Captcha code here 1.2 -->
-                  <!-- </div> -->
-  
-                  <div>
-                    <div class="col-12">
-                      <button type="submit" class="btn btn-primary">
-                        Submit
-                      </button>
-                    </div>
-                  </div>
-                </form>
-              </div>
-              <!-- <div class="modal-footer">
-                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                  <button type="button" class="btn btn-primary">Save changes</button>
-                              </div> -->
-            </div>
-          </div>
-        </div>
-      </section>
     </main>
     <!-- Footer -->
 	<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top container">

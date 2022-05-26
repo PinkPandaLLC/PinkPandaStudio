@@ -115,6 +115,12 @@ p{
     justify-content: flex-start;
     flex-wrap: wrap;
 }
+@mixin flex-rowend {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
 
 @mixin leftBorder {
     border-left: 4px solid map-get($colors, color-primary); 

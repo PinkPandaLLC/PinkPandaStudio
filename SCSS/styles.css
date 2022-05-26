@@ -12161,11 +12161,11 @@ p {
   border-left: 4px solid #EC1F94;
   padding-left: 1%;
   color: #EC1F94;
+  margin-top: 3%;
 }
 
 .ab_cardTitle {
-  border-left: 4px solid #EC1F94;
-  padding-left: 1%;
+  text-align: center;
 }
 
 .ab_cardContents {
@@ -12181,6 +12181,7 @@ p {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  text-align: center;
 }
 
 .ab_cardImages {
@@ -12191,6 +12192,7 @@ p {
 
 .ab_cardContents p {
   padding: 2%;
+  margin-left: 7%;
 }
 
 .ab_info {
@@ -12266,19 +12268,31 @@ form div {
   color: #EC1F94;
   border-left: 4px solid #EC1F94;
   padding-left: 1%;
+  margin-top: 5%;
 }
 
 .cu_statement h5, .cu_statement .h5 {
   font-weight: lighter;
 }
 
-.cu_studioText {
-  margin: auto;
-  padding: 4% 10%;
+.cu_formWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.cu_studioText h4, .cu_studioText .h4, h5, .h5 {
-  padding: 1% 0%;
+.cu_statement {
+  text-align: center;
+  margin-bottom: 3%;
 }
 
 .cu_infoCard {
@@ -12339,6 +12353,7 @@ ul {
 
 .cu_form {
   padding: 2% 2%;
+  border: 4px solid #FFE9F5;
 }
 
 .box {
@@ -12455,7 +12470,6 @@ video {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 100%;
 }
 
 .showCard {
@@ -12471,11 +12485,42 @@ video {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 5%;
+  background-color: #FFFFFF;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   /* 5px rounded corners */
+  position: absolute;
+  width: 1000px;
+  height: 400px;
+}
+
+.activeC {
+  z-index: 4 !important;
+  -webkit-animation: showCarda 2s ease 1;
+          animation: showCarda 2s ease 1;
+}
+
+@-webkit-keyframes showCarda {
+  0% {
+    -webkit-transform: translateX(400px);
+            transform: translateX(400px);
+  }
+  100% {
+  }
+}
+
+@keyframes showCarda {
+  0% {
+    -webkit-transform: translateX(400px);
+            transform: translateX(400px);
+  }
+  100% {
+  }
 }
 
 .showCardToggle {
@@ -12503,6 +12548,9 @@ video {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 2%;
 }
 
@@ -12510,9 +12558,13 @@ video {
   margin-bottom: 5%;
 }
 
+.hm_push {
+  margin-top: 550px;
+}
+
 .hm_blurb {
-  text-align: center;
   margin: 3%;
+  text-align: center;
 }
 
 .hm_cardStack {
@@ -12556,7 +12608,7 @@ video {
 .hm_card img {
   border-radius: 5px 5px 0 0;
   width: 250px;
-  height: auto;
+  height: 250px;
   padding: 5%;
   display: -webkit-box;
   display: -ms-flexbox;
