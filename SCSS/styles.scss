@@ -1,3 +1,12 @@
+// Quick color refrences
+// "color-primary": #ec1f94,
+// "color-secondary": #ff9ed5,
+// "color-tertiary": #ffe9f5,
+// "color-quad": #dcb8cd,
+// "color-white": #ffffff,
+// "color-black": #000000,
+// "color-grey": #ebebeb,
+
 // 1. Include any default variable overrides here
 //Nav - Header
 $offcanvas-padding-y: 5%;
@@ -17,12 +26,13 @@ $carousel-indicator-active-bg: #ebebeb;
 $carousel-indicator-spacer: 10px;
 
 // Studio Tabs
-$nav-link-padding-y: 1rem;
-$nav-link-padding-x: 3rem;
-$nav-link-color: #707070;
-$nav-link-hover-color: #000;
-$nav-pills-link-active-color: #ff9ed5;
-$nav-pills-link-active-bg: #fff;
+$nav-link-padding-y: 1.2rem;
+$nav-link-padding-x: 2rem;
+$nav-link-color: #000000;
+$nav-link-hover-color: #ec1f94;
+$nav-pills-link-active-color: #ec1f94;
+// $border-radius: 25% 30%;
+// $nav-tabs-border-radius: $border-radius;
 
 // Contact us
 $input-padding-x: 10%;
@@ -252,7 +262,22 @@ $colors: (
   top: 10;
   right: 0;
   z-index: 1000;
-  transform: rotate(90deg);
+}
+.md_submitBtn {
+  margin-top: 2%;
+  border: 1px solid map-get($colors, color-primary);
+  background-color: map-get($colors, color-tertiary);
+  color: map-get($colors, color-primary);
+  padding: 18px 140px;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.md_submitBtn:hover {
+  border: 4px insetmap-get($colors, color-tertiary);
+  background-color: map-get($colors, color-primary);
+  color: map-get($colors, color-tertiary);
+  box-shadow: 0 0.5em 0.5em -0.4em map-get($colors, color-primary);
 }
 
 //Off Canvas social media icons

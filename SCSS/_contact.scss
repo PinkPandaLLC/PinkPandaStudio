@@ -123,23 +123,6 @@ ul {
   box-shadow: 0 0.5em 0.5em -0.4em map-get($colors, color-primary);
 }
 
-.md_submitBtn {
-  margin-top: 2%;
-  border: 1px solid map-get($colors, color-primary);
-  background-color: map-get($colors, color-tertiary);
-  color: map-get($colors, color-primary);
-  padding: 18px 140px;
-  text-align: center;
-  border-radius: 15px;
-}
-
-.md_submitBtn:hover {
-  border: 4px insetmap-get($colors, color-tertiary);
-  background-color: map-get($colors, color-primary);
-  color: map-get($colors, color-tertiary);
-  box-shadow: 0 0.5em 0.5em -0.4em map-get($colors, color-primary);
-}
-
 .cu_messageArea {
   width: 80%;
   height: 80%;
