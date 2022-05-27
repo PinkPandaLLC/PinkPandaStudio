@@ -51,7 +51,7 @@ video{
 }
 
 .hm_btn:hover {
-    border: 4px insetmap-get($colors, color-tertiary);
+    border: 4px map-get($colors, color-tertiary);
     background-color: map-get($colors, color-primary);
     color: map-get($colors, color-tertiary);
     // display: inline-block;

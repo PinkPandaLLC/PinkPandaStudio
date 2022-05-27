@@ -1,3 +1,14 @@
+// ******
+// Quick color refrences
+// ******
+// "color-primary": #ec1f94,
+// "color-secondary": #ff9ed5,
+// "color-tertiary": #ffe9f5,
+// "color-quad": #dcb8cd,
+// "color-white": #ffffff,
+// "color-black": #000000,
+// "color-grey": #ebebeb,
+
 // 1. Include any default variable overrides here
 //Nav - Header
 $offcanvas-padding-y:               5%;
@@ -17,12 +28,11 @@ $carousel-indicator-active-bg: #ebebeb;
 $carousel-indicator-spacer: 10px;
 
 // Studio Tabs
-$nav-link-padding-y: 1rem;
-$nav-link-padding-x: 3rem;
-$nav-link-color: #707070;
-$nav-link-hover-color: #000;
-$nav-pills-link-active-color: #ff9ed5;
-$nav-pills-link-active-bg: #fff;
+// $nav-link-padding-y: $nav_y;
+// $nav-link-padding-x: $nav_x;
+$nav-link-color: #000000;
+$nav-link-hover-color: #ec1f94;
+$nav-pills-link-active-color: #ec1f94;
 
 // Contact us
 $input-padding-x: 10%;
@@ -131,6 +141,13 @@ p{
     border-left: 4px solid map-get($colors, color-grey);
   
     padding-left: 1%;
+  }
+
+  @mixin wh100 {
+    min-width: 100%;
+    min-height: 100%;
+    width: 100%;
+    height: 100%;
   }
 
 // syntax - @include flex-rowc;
@@ -246,6 +263,9 @@ $colors:(
         transform: translate3d(85px,0,0);
     }
     }
+
+    //studio override
+
     // Modal Contact Button
     .contactButton {
         padding: 0.5% 1.2%;
@@ -255,14 +275,37 @@ $colors:(
         z-index: 1000;
         transform: rotate(90deg);
     }
-    
+    .md_submitBtn {
+        margin-top: 2%;
+        border: 1px solid map-get($colors, color-primary);
+        background-color: map-get($colors, color-tertiary);
+        color: map-get($colors, color-primary);
+        padding: 18px 140px;
+        text-align: center;
+        border-radius: 15px;
+      }
+      
+      .md_submitBtn:hover {
+        border: 4px map-get($colors, color-tertiary);
+        background-color: map-get($colors, color-primary);
+        color: map-get($colors, color-tertiary);
+        box-shadow: 0 0.5em 0.5em -0.4em map-get($colors, color-primary);
+        transform: translateY(.25em) scale(115%);
+      }
+ 
     //Off Canvas social media icons
-    .socialnav {
-        @include flex-roweven();
-        margin-top: 200%;
-        transform: scale(60%);
+    .socialnav{
+        @include flex-rowc;
     }
-
+    .socialIcon{
+        max-width: 50px;
+        max-height: 50px;
+        width: 100%;
+        height: 100%;  
+    }
+    .navSpace{
+        height: 600px;
+    }
  // ******
 //Imports
 // *****

@@ -90,6 +90,11 @@
   background-color: map-get($colors, color-primary);
   // box-shadow: 1px 6px 10px #00000016;
 }
-.st_showcaseTabs {
-  @include leftBorder-grey;
+
+// .st_headerStatement {
+//   line-height: 3.5;
+// }
+.st_divide{
+  margin-top: 5%;
 }
+

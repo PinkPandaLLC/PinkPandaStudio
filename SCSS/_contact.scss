@@ -88,5 +88,18 @@ ul {
   margin-left: 5%;
 }
 .cu_submitBtn {
-  margin-top: 2%;
+  border: 1px solid map-get($colors, color-primary);
+  background-color: map-get($colors, color-tertiary);
+  color: map-get($colors, color-primary);
+  padding: 18px 140px;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.cu_submitBtn:hover{
+  border: 4px map-get($colors, color-tertiary);
+  background-color: map-get($colors, color-primary);
+  color: map-get($colors, color-tertiary);
+  box-shadow: 0 0.5em 0.5em -0.4em map-get($colors, color-primary);
+  transform: translateY(.25em) scale(115%);
 }
