@@ -73,13 +73,13 @@
 					  <div class="container">
 						  <div class= "socialnav row">
 						  <div class="col-3">
-							<a href="https://www.facebook.com/profile.php?id=100074592790768"  target="_blank" rel="noopener noreferrer" class="socialIcon"><img src="media/img_icon_fb.gif" alt=""></a>						  
+							<a href="https://www.facebook.com/profile.php?id=100074592790768"  target="_blank" rel="noopener noreferrer" class="socialIcon"><img src="MEDIA/img_icon_fb.gif" alt=""></a>						  
                         </div>
 						  <div class="col-3">
-							<a href= " https://www.instagram.com/my_pink_panda_/"  target="_blank" rel="noopener noreferrer" class="socialIcon"><img src="media/img_icon_instagram.gif"></a>	
+							<a href= " https://www.instagram.com/my_pink_panda_/"  target="_blank" rel="noopener noreferrer" class="socialIcon"><img src="MEDIA/img_icon_instagram.gif"></a>	
 						  </div>
 						  <div class="col-3">
-							<a href="https://github.com/PinkPandaLLC?tab=repositories"  target="_blank" rel="noopener noreferrer" class="socialIcon"><img src="media/img_icon_github.gif" alt=""></a>
+							<a href="https://github.com/PinkPandaLLC?tab=repositories"  target="_blank" rel="noopener noreferrer" class="socialIcon"><img src="MEDIA/img_icon_github.gif" alt=""></a>
 						  </div>
 						</div>
 					</div>
@@ -116,6 +116,7 @@
 	</header>
     <!-- Main -->
     <main>
+
         <!--Hero-->
 		<section>
             <div class="hm_hero ">
@@ -378,7 +379,7 @@
                         <div class="col-lg-12"><h4>Pink Panda World</h4></div>
 
                         <div class="col-lg-12 fsBtn">
-                            <button type="button" class="hm_btn"> <h6>PPW</h6> </button>
+                            <button type="button" class="hm_btn" id="hm_ppwBtn"> <h6>PPW</h6> </button>
                         </div>
                     </div>
                     
@@ -390,7 +391,151 @@
             
         </div>
     </section>
+       <!-- Modal Contact Form -->
+      <!-- Button that uses BS to create a modal form for contact -->
+      <section>
+        <div class="contactButton position-fixed top-50 end-0">
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+            id="toggleContactButton"
+          >
+            Contact Us!
+          </button>
+        </div>
+      </section>
 
+      <!-- Code for contact us modal -->
+      <section class="container">
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Contact Us!</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <img src="MEDIA/img_logo.svg" alt="" />
+                <form class="row" id="contactUsForm">
+                  <!-- Names First and Last  -->
+                  <div>
+                    <div class="form-floating col-md-4">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="floatingInputFname"
+                        placeholder="First Name"
+                      />
+                      <label for="floatingInputFname">First Name</label>
+                    </div>
+                    <div class="form-floating col-md-4">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="floatingInputLname"
+                        placeholder="Last Name"
+                      />
+                      <label for="floatingInputLname">Last Name</label>
+                    </div>
+                  </div>
+
+                  <!-- Contact Info -->
+                  <div>
+                    <div class="form-floating col-md-4">
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="floatingInputEmail"
+                        placeholder="Email"
+                      />
+                      <label for="floatingInputEmail">Email</label>
+                    </div>
+                    <div class="form-floating col-md-4">
+                      <input
+                        type="tel"
+                        class="form-control"
+                        id="floatingInputPhone"
+                        placeholder="Phone"
+                      />
+                      <label for="floatingInputPhone">Phone</label>
+                    </div>
+                  </div>
+
+                  <!-- Business Information -->
+                  <div>
+                    <div class="form-floating col-md-4">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="floatingInputBusName"
+                        placeholder="Business Name"
+                      />
+                      <label for="floatingInputBusName">Business Name</label>
+                    </div>
+                    <div class="form-floating col-md-4">
+                      <input
+                        type="url"
+                        class="form-control"
+                        id="floatingInputBusURL"
+                        placeholder="Business URL"
+                      />
+                      <label for="floatingInputBusURL">Business URL</label>
+                    </div>
+                  </div>
+
+                  <!-- Comments -->
+                  <div>
+                    <div class="form-floating">
+                      <textarea
+                        class="form-control"
+                        rows="8"
+                        cols="55"
+                        placeholder="."
+                        id="floatingTextarea"
+                      ></textarea>
+                      <label for="floatingTextarea">Message</label>
+                    </div>
+                  </div>
+
+                  <!-- Captcha location 1.2 -->
+                  <!-- <div> -->
+                  <!-- Captcha code here 1.2 -->
+                  <!-- </div> -->
+
+                  <div>
+                    <div class="col-12">
+                      <button
+                        type="submit"
+                        class="btn btn-primary md_submitBtn"
+                      >
+                        Submit
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <!-- <div class="modal-footer">
+		                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+		                        <button type="button" class="btn btn-primary">Save changes</button>
+		                    </div> -->
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <!-- Footer -->
 	<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top container">
@@ -398,7 +543,7 @@
 			<span class="text-muted">Pink Panda Ltd Liability Co.<br> © 2021 Company</span>
 		</div>
 		<button type="button" class="btn btn-floating btn-lg" id="btn-back-to-top">
-			<img src="media/img_icon_upArrow.png" alt="">
+			<img src="MEDIA/img_icon_upArrow.png" alt="">
 		</button>
 	
 	</footer>

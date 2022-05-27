@@ -14,6 +14,9 @@ $("button").click(function(){
      else if(btnId === 'hm_aboutBtn'){
      location.href = 'about.html';
      }
+     else if(btnId === 'hm_ppwBtn'){
+     location.href = '404.html';
+     }
  });
  
 
