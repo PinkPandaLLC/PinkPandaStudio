@@ -1,12 +1,14 @@
 .ab_contentHeader {
   @include leftBorder;
   color: map-get($colors, color-primary);
+  margin-top: 3%;
 }
 .ab_cardTitle {
-  @include leftBorder;
+  text-align: center;
 }
 .ab_cardContents {
   @include flex-rowc;
+  text-align: center;
 }
 .ab_cardImages {
   object-fit: contain;
@@ -14,6 +16,7 @@
 }
 .ab_cardContents p {
   padding: 2%;
+  margin-left: 7%;
 }
 .ab_info {
   padding: 2%;

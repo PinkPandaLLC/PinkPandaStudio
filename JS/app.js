@@ -5,14 +5,17 @@
 $("button").click(function(){
   let btnId = $(this).attr("id");
   console.log(btnId);
-     if (btnId === 'hmbtn1'){
+     if (btnId === 'hm_studiobtn'){
      location.href = 'studio.html';
      }
-     else if(btnId === 'hmbtn2'){
-     location.href = 'contact.html';
+     else if(btnId === 'hm_learnBtn'){
+     location.href = 'services.html';
      }
-     else if(btnId === 'btn3'){
-     location.href = 'index.html';
+     else if(btnId === 'hm_aboutBtn'){
+     location.href = 'about.html';
+     }
+     else if(btnId === 'hm_ppwBtn'){
+     location.href = '404.html';
      }
  });
  
@@ -63,9 +66,9 @@ $("button").click(function(){
     document.body.scrollTop > 20 ||
     document.documentElement.scrollTop > 20
     ) {
-    mybutton.style.display = "block";
+    topButton.style.display = "block";
     } else {
-    mybutton.style.display = "none";
+    topButton.style.display = "none";
     }
     }
     // When the user clicks on the button, scroll to the top of the document
@@ -140,3 +143,14 @@ $("button").click(function(){
    );
 
 
+//********
+//Home Page Card Fill Automation
+//********
+
+$(".clickCard").on('click tap', function(e){   
+    e.preventDefault();
+    $('.showCard').css('z-index', '0');
+    $('.showCard.activeC').css('z-index', '3');
+    $('.showCard').removeClass('activeC');
+    $($(this).attr('href')).addClass('activeC');
+});

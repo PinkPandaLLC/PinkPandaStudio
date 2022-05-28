@@ -14,302 +14,108 @@
   <!-- Body -->
   <body>
     <!-- Header -->
-    <header>
+    <header>	
       <!-- Navbar -->
       <nav class="navbar navbar-light bg-transparent fixed-top">
+  
         <div class="container">
-          <a class="navbar-brand" href="#"
-            ><img src="MEDIA/img_logo.svg" alt=""
-          /></a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasNavbar"
-            aria-controls="offcanvasNavbar"
-          >
+          <a class="navbar-brand" href="index.html"><img src="MEDIA/img_logo.svg" alt=""></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
             <span class="navbar-toggler-icon"></span>
-          </button>
-          <div
-            class="offcanvas offcanvas-end"
-            tabindex="-1"
-            id="offcanvasNavbar"
-            aria-labelledby="offcanvasNavbarLabel"
-          >
-            <div class="offcanvas-header">
-              <div
-                class="offcanvas-title navbar-brand"
-                id="offcanvasNavbarLabel"
-              >
-                <img src="MEDIA/img_logo.svg" alt="" />
-              </div>
-              <button
-                type="button"
-                class="btn-close text-reset"
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-              ></button>
+              </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+              <div class="offcanvas-title navbar-brand" id="offcanvasNavbarLabel">
+              <a href="index.html"><img src="MEDIA/img_logo.svg" alt=""></a>
             </div>
-
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item">
-                  <a
-                    class="nav-item nav-link active"
-                    aria-current="page"
-                    href="index.html"
-                    >Home</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-item nav-link" href="studio.html">Studio</a>
-                </li>
-                <!-- ************************************************************************* -->
-                <!-- DROPDOWN MENU FOR STUDIO AFTER PORTFOLIO MORE PAGES ARE COMPLETED -->
-
-                <!-- <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Studio
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-                                <li><a class="dropdown-item" href="#">Studio</a></li>
-                                <li><a class="dropdown-item" href="#">Portfolio</a></li>
-                                <li><a class="dropdown-item" href="#">Templates</a></li>
-                                <li><a class="dropdown-item" href="#">Gallery</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Pink Panda World</a></li>
-                                </ul>
-                            </li> -->
-                <!-- ************************************************************************* -->
-                <li class="nav-item">
-                  <a class="nav-item nav-link" href="services.html">Services</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-item nav-link" id="pageselect" href="about.html"
-                    >About</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-item nav-link" href="contact.html">Contact</a>
-                </li>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+  
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+  
+            <li class="nav-item">
+              <a class="nav-item nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-item nav-link" href="studio.html">Studio</a>
+            </li>
+                      <!-- ************************************************************************* -->
+                      <!-- DROPDOWN MENU FOR STUDIO AFTER PORTFOLIO MORE PAGES ARE COMPLETED -->
+  
+                              <!-- <li class="nav-item dropdown">
+                                  <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Studio
+                                  </a>
+                                  <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                                  <li><a class="dropdown-item" href="#">Studio</a></li>
+                                  <li><a class="dropdown-item" href="#">Portfolio</a></li>
+                                  <li><a class="dropdown-item" href="#">Templates</a></li>
+                                  <li><a class="dropdown-item" href="#">Gallery</a></li>
+                                  <li>
+                                      <hr class="dropdown-divider">
+                                  </li>
+                                  <li><a class="dropdown-item" href="#">Pink Panda World</a></li>
+                                  </ul>
+                              </li> -->
+                      <!-- ************************************************************************* -->
+              <li class="nav-item">
+              <a class="nav-item nav-link" href="services.html">Services</a>
+            </li>
+              <li class="nav-item">
+              <a class="nav-item nav-link active" id="pageselect" aria-current="page"  href="about.html">About</a>
+            </li>
+              <li class="nav-item">
+              <a class="nav-item nav-link" href="contact.html">Contact</a>
+            </li>
               </ul>
-              <div class="container position-relative">
-                <div class="row socialnav">
-                  <div class="col-4">
-                    <img src="media/img_icon_fb64.png" alt="" />
-                  </div>
-                  <div class="col-4">
-                    <img src="media/img_icon_instagram64.png" alt="" />
-                  </div>
-                  <div class="col-4">
-                    <img src="media/img_icon_github.png" alt="" />
-                  </div>
+                        <div class="navSpace" style="visibility: hidden"></div>
+              <div class="container">
+                <div class= "socialnav row">
+                <div class="col-3">
+                <a href="https://www.facebook.com/profile.php?id=100074592790768"  target="_blank" rel="noopener noreferrer" class="socialIcon"><img src="MEDIA/img_icon_fb.gif" alt=""></a>						  
+                          </div>
+                <div class="col-3">
+                <a href= " https://www.instagram.com/my_pink_panda_/"  target="_blank" rel="noopener noreferrer" class="socialIcon"><img src="MEDIA/img_icon_instagram.gif"></a>	
+                </div>
+                <div class="col-3">
+                <a href="https://github.com/PinkPandaLLC?tab=repositories"  target="_blank" rel="noopener noreferrer" class="socialIcon"><img src="MEDIA/img_icon_github.gif" alt=""></a>
                 </div>
               </div>
-              <!-- ************************************************************************* -->
-              <!-- Optional Search Form -->
-              <!-- <form class="d-flex">
-					        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-					        <button class="btn btn-outline-success" type="submit">Search</button>
-				  	    </form> -->
-              <!-- ************************************************************************* -->
             </div>
+            <!-- ************************************************************************* -->
+              <!-- Optional Search Form -->
+            <!-- <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                  </form> -->
+                      <!-- ************************************************************************* -->
+          </div>
           </div>
         </div>
-      </nav>
-
-      <div class="header">
-        <!--Waves Container-->
-        <div>
-          <svg
-            class="waves"
-            xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-            viewBox="0 24 150 28"
-            preserveAspectRatio="none"
-            shape-rendering="auto"
-          >
-            <defs>
-              <path
-                id="gentle-wave"
-                d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
-              />
-            </defs>
-            <g class="parallax">
-              <use
-                xlink:href="#gentle-wave"
-                x="48"
-                y="0"
-                fill="rgba(255,255,255,0.7"
-              />
-              <use
-                xlink:href="#gentle-wave"
-                x="48"
-                y="3"
-                fill="rgba(255,255,255,0.5)"
-              />
-              <use
-                xlink:href="#gentle-wave"
-                x="48"
-                y="5"
-                fill="rgba(255,255,255,0.3)"
-              />
-              <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
-            </g>
-          </svg>
+        </nav>
+  
+        <div class="header">
+          <!--Waves Container-->
+          <div>
+            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+              viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+              <defs>
+                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+              </defs>
+              <g class="parallax">
+                <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+                <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+              </g>
+            </svg>
+          </div>
+          <!--Waves end-->
         </div>
-        <!--Waves end-->
-      </div>
     </header>
 
-    <!-- Modal Contact Form -->
-    <!-- Button that uses BS to create a modal form for contact -->
-    <section>
-      <div class="contactbutton position-fixed top-50 end-0">
-        <button
-          type="button"
-          class="btn btn-primary"
-          data-bs-toggle="modal"
-          data-bs-target="#exampleModal"
-          id="toggleContactButton"
-        >
-          Contact Us!
-        </button>
-      </div>
-    </section>
 
-    <!-- Code for contact us modal -->
-    <section class="container">
-      <!-- Modal -->
-      <div
-        class="modal fade"
-        id="exampleModal"
-        tabindex="-1"
-        aria-labelledby="exampleModalLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Contact Us!</h5>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="modal-body">
-              <img src="MEDIA/img_logo.svg" alt="" />
-              <form class="row" id="contactUsForm">
-                <!-- Names -->
-
-                <div>
-                  <div class="form-floating col-md-4">
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="floatingInputFname"
-                      placeholder="First Name"
-                    />
-                    <label for="floatingInputFname">First Name</label>
-                  </div>
-                  <div class="form-floating col-md-4">
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="floatingInputLname"
-                      placeholder="Last Name"
-                    />
-                    <label for="floatingInputLname">Last Name</label>
-                  </div>
-                </div>
-
-                <!-- Contact Info -->
-
-                <div>
-                  <div class="form-floating col-md-4">
-                    <input
-                      type="email"
-                      class="form-control"
-                      id="floatingInputEmail"
-                      placeholder="Email"
-                    />
-                    <label for="floatingInputEmail">Email</label>
-                  </div>
-                  <div class="form-floating col-md-4">
-                    <input
-                      type="tel"
-                      class="form-control"
-                      id="floatingInputPhone"
-                      placeholder="Phone"
-                    />
-                    <label for="floatingInputPhone">Phone</label>
-                  </div>
-                </div>
-
-                <!-- Business Information -->
-
-                <div>
-                  <div class="form-floating col-md-4">
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="floatingInputBusName"
-                      placeholder="Business Name"
-                    />
-                    <label for="floatingInputBusName">Business Name</label>
-                  </div>
-                  <div class="form-floating col-md-4">
-                    <input
-                      type="url"
-                      class="form-control"
-                      id="floatingInputBusURL"
-                      placeholder="Business URL"
-                    />
-                    <label for="floatingInputBusURL">Business URL</label>
-                  </div>
-                </div>
-
-                <!-- Comments -->
-
-                <div>
-                  <div class="form-floating">
-                    <textarea
-                      class="form-control"
-                      rows="8"
-                      cols="55"
-                      placeholder="."
-                      id="floatingTextarea"
-                    ></textarea>
-                    <label for="floatingTextarea">Message</label>
-                  </div>
-                </div>
-
-                <!-- Captcha location 1.2 -->
-                <!-- <div> -->
-                <!-- Captcha code here 1.2 -->
-                <!-- </div> -->
-
-                <div>
-                  <div class="col-12">
-                    <button type="submit" class="btn btn-primary md_submitBtn">
-                      Submit
-                    </button>
-                  </div>
-                </div>
-              </form>
-            </div>
-            <!-- <div class="modal-footer">
-		                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-		                        <button type="button" class="btn btn-primary">Save changes</button>
-		                    </div> -->
-          </div>
-        </div>
-      </div>
-    </section>
 
     <!-- Heading -->
     <section class="container">
@@ -335,8 +141,8 @@
             rock and water searching for awe inspiring moments and taking in all
             of its wonder and beauty!
           </p>
-          <p class="col-md-6">
-            Let us take part of adventure and meet the crew below
+          <p class="col-md-12">
+            Let us take part of your adventure and meet the crew below
           </p>
         </div>
       </div>
@@ -352,8 +158,8 @@
           </div>
 
           <div class="col-md-6 ab_infoText row">
-            <p class="col-md-12">Justin McCafferty</p>
-            <p class="col-md-12">Co-Founder & CTO</p>
+            <p class="col-md-12">Justin McCafferty <br> Co-Founder & CTO</p>
+            
             <!-- <div>
               <img src="media/img_icon_fb64.png" alt="" />
               <img src="media/img_icon_instagram64.png" alt="" />
@@ -364,13 +170,12 @@
 
         <!-- Kevin Info -->
         <div class="row col-md-6 ab_infoContent">
-          <div class="col-md-6">
+          <div class="col-md-6 ab_img">
             <img src="MEDIA/img_home_heartBinary.svg" alt="" />
           </div>
 
           <div class="col-md-6 ab_infoText row">
-            <p class="col-md-12">Kevin Davis</p>
-            <p class="col-md-12">Co-Founder & COO</p>
+            <p class="col-md-12">Kevin Davis <br> Co-Founder & COO</p>
             <!-- <div>
               <img src="media/img_icon_fb64.png" alt="" />
               <img src="media/img_icon_instagram64.png" alt="" />
@@ -380,6 +185,151 @@
         </div>
       </div>
     </section>
+          <!-- Modal Contact Form -->
+      <!-- Button that uses BS to create a modal form for contact -->
+      <section>
+        <div class="contactButton position-fixed top-50 end-0">
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+            id="toggleContactButton"
+          >
+            Contact Us!
+          </button>
+        </div>
+      </section>
+
+      <!-- Code for contact us modal -->
+      <section class="container">
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Contact Us!</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <img src="MEDIA/img_logo.svg" alt="" />
+                <form class="row" id="contactUsForm">
+                  <!-- Names First and Last  -->
+                  <div>
+                    <div class="form-floating col-md-4">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="floatingInputFname"
+                        placeholder="First Name"
+                      />
+                      <label for="floatingInputFname">First Name</label>
+                    </div>
+                    <div class="form-floating col-md-4">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="floatingInputLname"
+                        placeholder="Last Name"
+                      />
+                      <label for="floatingInputLname">Last Name</label>
+                    </div>
+                  </div>
+
+                  <!-- Contact Info -->
+                  <div>
+                    <div class="form-floating col-md-4">
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="floatingInputEmail"
+                        placeholder="Email"
+                      />
+                      <label for="floatingInputEmail">Email</label>
+                    </div>
+                    <div class="form-floating col-md-4">
+                      <input
+                        type="tel"
+                        class="form-control"
+                        id="floatingInputPhone"
+                        placeholder="Phone"
+                      />
+                      <label for="floatingInputPhone">Phone</label>
+                    </div>
+                  </div>
+
+                  <!-- Business Information -->
+                  <div>
+                    <div class="form-floating col-md-4">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="floatingInputBusName"
+                        placeholder="Business Name"
+                      />
+                      <label for="floatingInputBusName">Business Name</label>
+                    </div>
+                    <div class="form-floating col-md-4">
+                      <input
+                        type="url"
+                        class="form-control"
+                        id="floatingInputBusURL"
+                        placeholder="Business URL"
+                      />
+                      <label for="floatingInputBusURL">Business URL</label>
+                    </div>
+                  </div>
+
+                  <!-- Comments -->
+                  <div>
+                    <div class="form-floating">
+                      <textarea
+                        class="form-control"
+                        rows="8"
+                        cols="55"
+                        placeholder="."
+                        id="floatingTextarea"
+                      ></textarea>
+                      <label for="floatingTextarea">Message</label>
+                    </div>
+                  </div>
+
+                  <!-- Captcha location 1.2 -->
+                  <!-- <div> -->
+                  <!-- Captcha code here 1.2 -->
+                  <!-- </div> -->
+
+                  <div>
+                    <div class="col-12">
+                      <button
+                        type="submit"
+                        class="btn btn-primary md_submitBtn"
+                      >
+                        Submit
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <!-- <div class="modal-footer">
+		                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+		                        <button type="button" class="btn btn-primary">Save changes</button>
+		                    </div> -->
+            </div>
+          </div>
+        </div>
+      </section>
 
     <!-- Footer -->
     <footer
@@ -396,7 +346,7 @@
         class="btn btn-floating btn-lg"
         id="btn-back-to-top"
       >
-        <img src="media/img_icon_upArrow.png" alt="" />
+        <img src="MEDIA/img_icon_upArrow.png" alt="" />
       </button>
     </footer>
 

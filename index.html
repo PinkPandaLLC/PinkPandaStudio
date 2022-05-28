@@ -19,14 +19,14 @@
 		<nav class="navbar navbar-light bg-transparent fixed-top">
 
 			<div class="container">
-			  <a class="navbar-brand" href="#"><img src="MEDIA/img_logo.svg" alt=""></a>
+			  <a class="navbar-brand" href="index.html"><img src="MEDIA/img_logo.svg" alt=""></a>
 			      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
 					<span class="navbar-toggler-icon"></span>
 			      </button>
 			  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
 				<div class="offcanvas-header">
 				  	<div class="offcanvas-title navbar-brand" id="offcanvasNavbarLabel">
-						<img src="MEDIA/img_logo.svg" alt="">
+						<a href="index.html"><img src="MEDIA/img_logo.svg" alt=""></a>
 					</div>
 				  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
 				</div>
@@ -69,16 +69,17 @@
 						<a class="nav-item nav-link" href="contact.html">Contact</a>
 					</li>
 				  	</ul>
-					  <div class="container position-relative">
-						  <div class= "row socialnav">
-						  <div class="col-4">
-							<img src="media/img_icon_fb64.png" alt="">	
+                      <div class="navSpace" style="visibility: hidden"></div>
+					  <div class="container">
+						  <div class= "socialnav row">
+						  <div class="col-3">
+							<a href="https://www.facebook.com/profile.php?id=100074592790768"  target="_blank" rel="noopener noreferrer" class="socialIcon"><img src="MEDIA/img_icon_fb.gif" alt=""></a>						  
+                        </div>
+						  <div class="col-3">
+							<a href= " https://www.instagram.com/my_pink_panda_/"  target="_blank" rel="noopener noreferrer" class="socialIcon"><img src="MEDIA/img_icon_instagram.gif"></a>	
 						  </div>
-						  <div class="col-4">
-							<img src="media/img_icon_instagram64.png" alt="">	
-						  </div>
-						  <div class="col-4">
-							<img src="media/img_icon_github.png" alt="">
+						  <div class="col-3">
+							<a href="https://github.com/PinkPandaLLC?tab=repositories"  target="_blank" rel="noopener noreferrer" class="socialIcon"><img src="MEDIA/img_icon_github.gif" alt=""></a>
 						  </div>
 						</div>
 					</div>
@@ -115,15 +116,19 @@
 	</header>
     <!-- Main -->
     <main>
+
         <!--Hero-->
 		<section>
             <div class="hm_hero ">
+
             <div class="hm_herovideo">
                 <video playsinline autoplay loop muted id="herovideo" width="100%" height="920px">
                     <source src="MEDIA/vid_home_balloons.mp4" type="video/mp4">
                 </video>
             </div>	
+
                 <div class="hm_content container row">
+                   
                     <div class="hm_header col-lg-12">
                         <h1>Pink Panda Ltd Liability Co</h1>
                         <h2 id="target"></h2>
@@ -134,6 +139,7 @@
                     </div>
                
             </div>	
+        </div>
     </section>
     <!--Section-->
     <section class="container">
@@ -142,33 +148,9 @@
         </div>
         <!-- Show Card -->
         <div class="hm_readCard">
-            Temp Card Info
-            <div class="tempCard">
-            <div class="col-lg-12 showCard">
-                <div class="row showCardinner">
-                    <div class="col-lg-4 showImg">
-                        <img src="MEDIA/img_home_doMore.svg" alt="...">
-                    </div>
-                    <div class="col-lg-8">
-                        <div class="cardBody">
-                                <div class="showTitle">
-                                    <h5>Responsive Web Development</h5>
-                                </div>
-                                <div class="showText">
-                                    <p> 
-                                        Full stack developers with the passion to design a modern unique front end experience. <br>
-                                        Equipped with the technical expertise to perfect and manage your backend programming. <br>
-                                        Whatever the need we can provide a professional all encompassing experience for you or your business.
-                                    </p>
-                                </div>
-                            </div> 
-                        </div>
-                    </div>
-                </div>
-            </div>
             <!-- Web Card Info -->
-            <div class="fillWeb showCardToggle">
-            <div class="col-lg-12 showCard">
+            <div class="showCard activeC" id="card1">
+            <div class="col-lg-12 ">
                 <div class="row showCardinner">
                     <div class="col-lg-4 showImg">
                         <img src="MEDIA/img_home_doMore.svg" alt="...">
@@ -191,8 +173,8 @@
                 </div>
             </div>
             <!-- Services Card Info -->
-            <div class="fillServices showCardToggle">
-                <div class="col-lg-12 showCard">
+            <div class="showCard" id="card2">
+                <div class="col-lg-12 ">
                     <div class="row showCardinner">
                         <div class="col-lg-4 showImg">
                             <img src="MEDIA/img_home_heartBinary.svg" alt="...">
@@ -204,12 +186,11 @@
                                 </div>
                                 <div class="showText">
                                     <p> 
-                                        We take away the daunting task of the unknown with our unique CMS approach. We wont leave 
+                                        We take away the daunting task of the unknown with our unique client focused CMS approach. We wont leave 
                                         you stranded after deployment but provide detailed training of how to manage it yourself. 
-                                        Not a techie person? Ask us about managing it for you!   <br>
-                                        Server management can be so much more, with tasks such as backups, database 
-                                        set up and management, updates and preventative maintenance we can take the weight of your 
-                                        shoulders and allow you to focus on what matters. 
+                                        Not a techie person? <br>
+                                        Ask us about how we can help, with tasks such as backups, database 
+                                        set up and management, updates and preventative maintenance!
                                     </p>
                                 </div>
                             </div>                           
@@ -218,8 +199,8 @@
                 </div>
             </div>
             <!-- Custom Card Info -->
-            <div class="fillCustom showCardToggle">
-                <div class="col-lg-12 showCard">
+            <div class="showCard" id="card3">
+                <div class="col-lg-12 ">
                     <div class="row showCardinner">
                         <div class="col-lg-4 showImg">
                             <img src="MEDIA/img_home_branding.svg" alt="...">
@@ -242,53 +223,71 @@
                     </div>
                 </div>
             </div>
+            <!-- SEO Card Info -->
+            <div class="showCard" id="card4">
+                <div class="col-lg-12 ">
+                    <div class="row showCardinner">
+                        <div class="col-lg-4 showImg">
+                            <img src="MEDIA/img_home_seo.svg" alt="...">
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="cardBody">
+                                <div class="showTitle">
+                                    <h5>SEO and Analytics</h5>
+                                </div>
+                                <div class="showText">
+                                    <p> 
+                                        Is your business projecting the right online presence? Talk to one of our Panda Team specialists 
+                                        for a website analysis and see what we can do for you!<br>
+                                        Our team can help ensure you get in front of the right client with keyword rich SEO.<br>
+                                        Maximizing traffic generation to ensure your website is showcased in an ever evolving world
+                                    </p>
+                                </div>
+                            </div>                           
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-        </div>    
+        </div> 
+      <div class="hm_push">   
         <!-- Keywords -->
         <div class="hm_blurb">
             <h6>Full Stack Developers - Project Management - Graphic Design - Brand Development - ECommerce</h6>
         </div>
         <!-- Card Stack -->
         <div class="row hm_cardStack">
-            <div class="col hm_card hmcard1" id="hmcard1">
-                <div>
-                    <img src="MEDIA/img_home_doMore.svg" alt="">
+            <div class="col hm_card">
+                <div >
+                  <a href="#card1" class="clickCard"><img src="MEDIA/img_home_doMore.svg" alt=""></a>
                 </div>
                 <div class="container">
                     <h6>Web Development</h6>
                 </div>
             </div>
-            <div class="col hm_card hmcard2" id="hmcard2">
-                <div>
-                    <img src="MEDIA/img_home_heartBinary.svg" id="hmcard2" alt="">
+            <div class="col hm_card">
+                <div >
+                  <a href="#card2" class="clickCard"><img src="MEDIA/img_home_heartBinary.svg"  alt=""></a>
                 </div>
-                <div class="container fillCard2">
+                <div class="container ">
                     <h6>Server Management</h6>
                 </div>
             </div>
-            <div class="col hm_card hmcard3" id="hmcard3">
-                <div>
-                    <img src="MEDIA/img_home_branding.svg" id="hmcard3" alt="">
+            <div class="col hm_card">
+                <div >
+                  <a href="#card3" class="clickCard"><img src="MEDIA/img_home_branding.svg"  alt=""></a>
                 </div>
                 <div class="container">
                     <h6>Custom Branding</h6>
                 </div>
             </div>
-            <div class="col hm_card" id="hmcard4">
-                <div>
-                    <img src="MEDIA/img_home_seo.svg" id="hmcard4" alt="">
+            <div class="col hm_card">
+                <div >
+                  <a href="#card4" class="clickCard"><img src="MEDIA/img_home_seo.svg" alt=""></a>
                 </div>
                 <div class="container">
                     <h6>SEO and Analytics</h6>
                 </div>
-                <!-- <div class="container">
-                    <p> 
-                        Is your business projecting the right online presence? Talk to one of our Panda Team specialists 
-                        for a website analysis and see what we can do for you!<br>
-                        Our team can help ensure you get in front of the right client with keyword rich SEO.<br>
-                        Maximizing traffic generation to ensure your website is showcased in an ever evolving world
-                    </p>
-                </div> -->
             </div>
         </div>
         <div class="hm_learnMore row">
@@ -299,6 +298,7 @@
         <div class="hm_rocketDivider row">
             <img src="media/img_home_dividerRocket.svg" alt="">
         </div>
+      </div>
     </section>
     <!--Section-->
     <section class="container">
@@ -379,7 +379,7 @@
                         <div class="col-lg-12"><h4>Pink Panda World</h4></div>
 
                         <div class="col-lg-12 fsBtn">
-                            <button type="button" class="hm_btn"> <h6>PPW</h6> </button>
+                            <button type="button" class="hm_btn" id="hm_ppwBtn"> <h6>PPW</h6> </button>
                         </div>
                     </div>
                     
@@ -391,11 +391,10 @@
             
         </div>
     </section>
-
-      <!-- Modal Contact Form -->
+       <!-- Modal Contact Form -->
       <!-- Button that uses BS to create a modal form for contact -->
       <section>
-        <div class="contactbutton position-fixed top-50 end-0">
+        <div class="contactButton position-fixed top-50 end-0">
           <button
             type="button"
             class="btn btn-primary"
@@ -407,8 +406,9 @@
           </button>
         </div>
       </section>
-    <!-- Code for contact us modal -->
-    <section class="container">
+
+      <!-- Code for contact us modal -->
+      <section class="container">
         <!-- Modal -->
         <div
           class="modal fade"
@@ -431,8 +431,7 @@
               <div class="modal-body">
                 <img src="MEDIA/img_logo.svg" alt="" />
                 <form class="row" id="contactUsForm">
-                  <!-- Names -->
-  
+                  <!-- Names First and Last  -->
                   <div>
                     <div class="form-floating col-md-4">
                       <input
@@ -453,9 +452,8 @@
                       <label for="floatingInputLname">Last Name</label>
                     </div>
                   </div>
-  
+
                   <!-- Contact Info -->
-  
                   <div>
                     <div class="form-floating col-md-4">
                       <input
@@ -476,9 +474,8 @@
                       <label for="floatingInputPhone">Phone</label>
                     </div>
                   </div>
-  
+
                   <!-- Business Information -->
-  
                   <div>
                     <div class="form-floating col-md-4">
                       <input
@@ -499,30 +496,32 @@
                       <label for="floatingInputBusURL">Business URL</label>
                     </div>
                   </div>
-  
+
                   <!-- Comments -->
-  
                   <div>
                     <div class="form-floating">
                       <textarea
                         class="form-control"
-                      rows="8"
-                      cols="55"
+                        rows="8"
+                        cols="55"
                         placeholder="."
                         id="floatingTextarea"
                       ></textarea>
                       <label for="floatingTextarea">Message</label>
                     </div>
                   </div>
-  
+
                   <!-- Captcha location 1.2 -->
                   <!-- <div> -->
                   <!-- Captcha code here 1.2 -->
                   <!-- </div> -->
-  
+
                   <div>
                     <div class="col-12">
-                      <button type="submit" class="btn btn-primary md_submitBtn">
+                      <button
+                        type="submit"
+                        class="btn btn-primary md_submitBtn"
+                      >
                         Submit
                       </button>
                     </div>
@@ -530,9 +529,9 @@
                 </form>
               </div>
               <!-- <div class="modal-footer">
-                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                  <button type="button" class="btn btn-primary">Save changes</button>
-                              </div> -->
+		                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+		                        <button type="button" class="btn btn-primary">Save changes</button>
+		                    </div> -->
             </div>
           </div>
         </div>
@@ -544,7 +543,7 @@
 			<span class="text-muted">Pink Panda Ltd Liability Co.<br> © 2021 Company</span>
 		</div>
 		<button type="button" class="btn btn-floating btn-lg" id="btn-back-to-top">
-			<img src="media/img_icon_upArrow.png" alt="">
+			<img src="MEDIA/img_icon_upArrow.png" alt="">
 		</button>
 	
 	</footer>
