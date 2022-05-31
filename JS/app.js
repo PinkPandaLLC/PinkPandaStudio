@@ -23,32 +23,61 @@ $("button").click(function(){
  //********
  //Scroll hide header
  //********
- 
- let scrollableElement = globalThis; //document.getElementById('scrollableElement');
- 
- scrollableElement.addEventListener('wheel', checkScrollDirection);
- 
- function checkScrollDirection(event) {
-  if (checkScrollDirectionIsUp(event)) {
-         console.log('Up');
-         $(".navbar").show(500);
-         $(".header").show(500);
+
+ $(document).ready(function() {
+        
+  var load_flag = true;
+  $(document).scroll(function() {
+      
+      var mywindow = $(window);
+      var mypos = mywindow.scrollTop();
+      var up = false;
+      var newscroll;
+
+      mywindow.scroll(function () {
+          newscroll = mywindow.scrollTop();
+          if (newscroll > (mypos) && !up) {
+              $('header').fadeOut();
+              up = !up;
+              console.log(up);
+          } else if(newscroll < (mypos) && up) {
+              $('header').fadeIn();
+              up = !up;
+          }
+          mypos = newscroll;
+      });
+  });
+});
+//************
+// legacy Scroll Hide Animation 5-31-2022
+//************
+
+// $(window).scroll(function checkScrollDirection(event) {
+
+//   let scrollableElement = globalThis; //document.getElementById('scrollableElement');
+
+//   }
+//   scrollableElement.addEventListener('wheel', checkScrollDirection);
+
+//   if (checkScrollDirectionIsUp(event)) {
+//          console.log('Up');
+//          $('header').show(500);
+
               
-   }
-   else {
-       console.log('Down');
-       $(".navbar").hide(500);
-       $(".header").hide(500);
+//    }
+//    else {
+//        console.log('Down');
+//        $('header').show(500);
  
-   }
- }
+//    }
+//  })
  
- function checkScrollDirectionIsUp(event) {
-   if (event.wheelDelta) {
-     return event.wheelDelta > 0;
-   }
-   return event.deltaY < 0;
- }
+//  function checkScrollDirectionIsUp(event) {
+//    if (event.wheelDelta) {
+//      return event.wheelDelta > 0;
+//    }
+//    return event.deltaY < 0;
+//  }
 
   //********
  //Return to Top button

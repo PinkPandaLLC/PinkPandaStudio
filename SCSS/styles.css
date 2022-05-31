@@ -11961,7 +11961,7 @@ fieldset:disabled .btn {
 }
 
 body {
-  margin-top: 85px;
+  margin-top: 80px;
 }
 
 h1, .h1 {
@@ -12023,8 +12023,12 @@ p {
   }
 }
 
+header {
+  position: -webkit-sticky;
+}
+
 .navbar {
-  height: 80px;
+  height: 85px;
   z-index: 5000;
 }
 

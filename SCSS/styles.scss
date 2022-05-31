@@ -54,7 +54,7 @@ $input-btn-font-family: oswald;
 $primary-font: oswald;
 $secondary-font: bodoni MT;
 body{
-    margin-top: 85px;
+    margin-top: 80px;
 }
 h1{
     font-family: $primary-font;
@@ -181,11 +181,10 @@ $colors:(
 // ******
 //Template Page Styling
 // ******
-
+ 
     //Navbar
-
     .navbar{
-        height: 80px;
+        height: 85px;
         z-index: 5000;
     }
     .navbar-brand {
