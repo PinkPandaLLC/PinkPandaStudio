@@ -36,3 +36,15 @@
   transform: translate(-20px, -20px);
   box-shadow: 10px 10px 5px map-get($colors, color-secondary);
 }
+// MQ Testing
+@media screen and (max-width: 991px) {
+  .ab_infoText p {
+    font-size: small;
+    color: red;
+  }
+  .ab_info {
+    @include flex-rowc;
+    // @include space-between;
+    padding: 5%;
+  }
+}
