@@ -92,7 +92,9 @@ p {
   font-family: $secondary-font;
   font-size: 25px;
 }
-
+:root {
+  font-size: 16px;
+}
 // ******
 // Mixins
 // ******

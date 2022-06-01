@@ -12044,6 +12044,10 @@ p {
   font-size: 25px;
 }
 
+:root {
+  font-size: 16px;
+}
+
 /*************/
 /* Keyframes */
 /*************/
@@ -13042,26 +13046,35 @@ video {
 }
 
 @media screen and (min-width: 22em) and (max-width: 48em) {
-  .st_heroIMG img {
+  .st_hero {
+    max-width: 100%;
+    height: fit-content(19em);
+  }
+  .st_heroIMG {
+    background-image: url(MEDIA/img_studio_colorPencil.gif);
     image-rendering: optimizeSpeed;
     -o-object-fit: contain;
        object-fit: contain;
-    height: 95vh;
+    max-width: 100%;
+    height: fit-content(18em);
+  }
+  .st_headerBox {
+    max-height: 80vh;
   }
   .st_headerBox h1, .st_headerBox .h1 {
     margin-top: 5%;
-    font-size: 2.5em;
-    line-height: 2.5em;
-    height: 2.5em;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    height: 2.5rem;
     border-left: 4px solid #ec1f94;
     padding-left: 1%;
     color: #ec1f94;
   }
   .st_headerBox h2, .st_headerBox .h2 {
     margin-top: 5%;
-    font-size: 1.8em;
-    line-height: 1.8em;
-    height: 1.8em;
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    height: 1.8rem;
     border-left: 4px solid #ec1f94;
     padding-left: 1%;
     color: #ec1f94;
@@ -13070,9 +13083,9 @@ video {
     margin-top: 12vh;
   }
   .st_headerStatements h3, .st_headerStatements .h3 {
-    font-size: 1.5em;
-    line-height: 1.5em;
-    height: 1.5em;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    height: 1.5rem;
     font-weight: lighter;
   }
   .st_divide {
@@ -13080,9 +13093,9 @@ video {
   }
   .st_carouselTitle {
     margin-top: 5%;
-    font-size: 2.5em;
-    line-height: 2.5em;
-    height: 2.5em;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    height: 2.5rem;
     border-left: 4px solid #ec1f94;
     padding-left: 1%;
     color: #ec1f94;
@@ -13103,50 +13116,64 @@ video {
     -o-object-fit: contain;
        object-fit: contain;
     justify-items: center;
-    padding: 5vh;
+    padding: 7vh;
   }
   .st_tabs button {
     margin-left: 3.3vh;
   }
   .st_tabs button h6, .st_tabs button .h6 {
-    font-size: 1em;
+    font-size: 1rem;
   }
 }
 
-@media screen and (min-width: 48em) and (max-width: 85.375em) {
+@media screen and (min-width: 48.01em) and (max-width: 85.375em) {
+  .st_heroIMG img {
+    image-rendering: optimizeSpeed;
+    -o-object-fit: contain;
+       object-fit: contain;
+    max-width: 100%;
+    height: fit-content(35em);
+  }
   .st_headerStatements h3, .st_headerStatements .h3 {
-    padding-left: 5vh;
-    font-size: 1.8em;
-    line-height: 1.8em;
-    height: 1.8em;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    height: 1.6rem;
     font-weight: lighter;
   }
   .st_headerBox h1, .st_headerBox .h1 {
     margin-top: 5%;
-    font-size: 3.1em;
-    line-height: 3.1em;
-    height: 3.1em;
+    font-size: 3.1rem;
+    line-height: 3.1rem;
+    height: 3.1rem;
     border-left: 4px solid #ec1f94;
     padding-left: 1%;
     color: #ec1f94;
   }
   .st_headerBox h2, .st_headerBox .h2 {
     margin-top: 5%;
-    font-size: 1.8em;
-    line-height: 1.8em;
-    height: 1.8em;
+    font-size: 2rem;
+    line-height: 2rem;
+    height: 2rem;
     border-left: 4px solid #ec1f94;
     padding-left: 1%;
     color: #ec1f94;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
   }
   .st_headerStatements {
     margin-top: 20vh;
   }
+  #st_long {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    height: 1.5rem;
+  }
   .st_carouselTitle {
     margin-top: 5%;
-    font-size: 3.5em;
-    line-height: 3.5em;
-    height: 3.5em;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    height: 2.5rem;
     border-left: 4px solid #ec1f94;
     padding-left: 1%;
     color: #ec1f94;
@@ -13170,10 +13197,10 @@ video {
     padding: 5vh;
   }
   .st_tabs button {
-    margin-left: 3.3vh;
+    margin-left: 2vh;
   }
   .st_tabs button h6, .st_tabs button .h6 {
-    font-size: 2em;
+    font-size: 2rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */

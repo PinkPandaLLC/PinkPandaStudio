@@ -204,25 +204,41 @@
 @media screen and (min-width: 22em) and (max-width: 48em) {
   // Styles For Hero
   // Background Image Styles
-  .st_heroIMG img {
-    // Testing Attribute for load speed 5/30/22
+  .st_hero {
+    max-width: 100%;
+    height: fit-content(19em);
+  }
+  .st_heroIMG {
+    background-image: url(MEDIA/img_studio_colorPencil.gif);
     image-rendering: optimizeSpeed;
     object-fit: contain;
-    height: 95vh;
+    max-width: 100%;
+    height: fit-content(18em);
+  }
+  // .st_heroIMG img {
+  //   // Testing Attribute for load speed 5/30/22
+  //   // background-image: url(MEDIA/img_studio_colorPencil.gif);
+  //   image-rendering: optimizeSpeed;
+  //   object-fit: contain;
+  //   max-width: 100%;
+  //   height: fit-content(18em);
+  // }
+  .st_headerBox {
+    max-height: 80vh;
   }
   // Styling Hero Text
   .st_headerBox h1 {
-    @include studioHeaders(2.5em);
+    @include studioHeaders(2.5rem);
   }
 
   .st_headerBox h2 {
-    @include studioHeaders(1.8em);
+    @include studioHeaders(1.8rem);
   }
   .st_headerStatements {
     margin-top: 12vh;
   }
   .st_headerStatements h3 {
-    @include mediaText(1.5em);
+    @include mediaText(1.5rem);
     font-weight: lighter;
   }
 
@@ -234,44 +250,56 @@
   }
   // Carousel Text Styling
   .st_carouselTitle {
-    @include studioHeaders(2.5em);
+    @include studioHeaders(2.5rem);
   }
   // Carousel IMG Styles
   .st_portfolioContents IMG {
     @include studioContent;
     object-fit: contain;
     justify-items: center;
-    padding: 5vh;
+    padding: 7vh;
   }
   // Carousel Tabs
   .st_tabs button {
     margin-left: 3.3vh;
   }
   .st_tabs button h6 {
-    font-size: 1em;
+    font-size: 1rem;
   }
 }
 
 // MQ to adjust Studio Content @~768px
-@media screen and (min-width: 48em) and (max-width: 85.375em) {
+@media screen and (min-width: 48.01em) and (max-width: 85.375em) {
   // Styles For Hero
+  // Background Image Styles
+  .st_heroIMG img {
+    // Testing Attribute for load speed 5/30/22
+    image-rendering: optimizeSpeed;
+    object-fit: contain;
+    max-width: 100%;
+    height: fit-content(35em);
+  }
   .st_headerStatements h3 {
-    padding-left: 5vh;
-    @include mediaText(1.8em);
+    // padding-left: 5vh;
+    @include mediaText(1.6rem);
     font-weight: lighter;
   }
   .st_headerBox h1 {
-    @include studioHeaders(3.1em);
+    @include studioHeaders(3.1rem);
   }
   .st_headerBox h2 {
-    @include studioHeaders(1.8em);
+    @include studioHeaders(2rem);
+    width: fit-content;
   }
   .st_headerStatements {
     margin-top: 20vh;
   }
+  #st_long {
+    @include mediaText(1.5rem);
+  }
   // Carousel
   .st_carouselTitle {
-    @include studioHeaders(3.5em);
+    @include studioHeaders(2.5rem);
   }
   .st_portfolioContents IMG {
     @include studioContent;
@@ -280,9 +308,9 @@
     padding: 5vh;
   }
   .st_tabs button {
-    margin-left: 3.3vh;
+    margin-left: 2vh;
   }
   .st_tabs button h6 {
-    font-size: 2em;
+    font-size: 2rem;
   }
 }
