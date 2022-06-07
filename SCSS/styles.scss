@@ -39,6 +39,10 @@ $input-btn-font-family: oswald;
 // Modifying _utilities.scss @ Line 167 viewport-width
 // Modifying _utilities.scss @ Line 179 min-viewport-width
 
+// Services MQ edits
+$accordion-button-active-color: #ec1f94;
+$accordion-button-active-bg: #ffe9f5;
+
 // 2. Import Bootstrap
 @import "../NODE_MODULES/bootstrap/scss/bootstrap";
 
@@ -142,7 +146,6 @@ p {
 }
 @mixin leftBorder-grey {
   border-left: 4px solid map-get($colors, color-grey);
-
   padding-left: 1%;
 }
 
@@ -160,6 +163,22 @@ p {
   flex-direction: row;
 }
 
+@mixin mediaText($totalHeight) {
+  // setting Left border height testing
+  font-size: $totalHeight;
+  line-height: $totalHeight;
+  height: $totalHeight;
+}
+@mixin boxSizing($size) {
+  line-height: $size;
+  height: $size;
+}
+@mixin studioHeaders($lineSize) {
+  margin-top: 5%;
+  @include mediaText($lineSize);
+  @include leftBorder;
+  color: map-get($colors, color-primary);
+}
 /*************/
 /* Keyframes */
 /*************/
@@ -295,12 +314,20 @@ $colors: (
   .contactButton {
     position: absolute;
     z-index: 1000;
-    // display: block;
-    // margin-left: auto;
-    // margin-right: 0;
+    // right: 0 !important;
+  }
+  .contactButton button {
+    background-color: map-get($colors, color-secondary);
+    // -ms-transform: rotate(90deg); /* IE 9 */
+    // -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+    // transform: rotate(90deg);
+    // transform-origin: bottom left;
+    // position: absolute;
+    // z-index: 1000;
+    // right: 0px !important;
   }
 }
-//
+
 .md_submitBtn {
   margin-top: 2%;
   border: 1px solid map-get($colors, color-primary);
@@ -311,13 +338,13 @@ $colors: (
   border-radius: 15px;
 }
 
-// .md_submitBtn:hover {
-//   border: 4px map-get($colors, color-tertiary);
-//   background-color: map-get($colors, color-primary);
-//   color: map-get($colors, color-tertiary);
-//   box-shadow: 0 0.5em 0.5em -0.4em map-get($colors, color-primary);
-//   transform: translateY(0.25em) scale(115%);
-// }
+.md_submitBtn:hover {
+  border: 4px map-get($colors, color-tertiary);
+  background-color: map-get($colors, color-primary);
+  color: map-get($colors, color-tertiary);
+  box-shadow: 0 0.5em 0.5em -0.4em map-get($colors, color-primary);
+  // transform: translateY(0.25em) scale(115%);
+}
 
 //Off Canvas social media icons
 .socialnav {

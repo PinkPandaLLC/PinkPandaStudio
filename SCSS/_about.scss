@@ -1,50 +1,161 @@
-.ab_contentHeader {
-  @include leftBorder;
-  color: map-get($colors, color-primary);
-  margin-top: 3%;
-}
-.ab_cardTitle {
-  text-align: center;
-}
-.ab_cardContents {
-  @include flex-rowc;
-  text-align: center;
-}
-.ab_cardImages {
-  object-fit: contain;
-  max-height: 400px;
-}
-.ab_cardContents p {
-  padding: 2%;
-  margin-left: 7%;
-}
-.ab_info {
-  padding: 2%;
-  margin: auto;
-}
-.ab_infoContent {
-  padding: 3%;
-}
-.ab_infoText {
-  @include flex-rowc;
-  align-items: center;
-}
-.ab_img img {
-  width: 100%;
-  max-width: 100%;
-  max-height: 100%;
-  transform: translate(-20px, -20px);
-  box-shadow: 10px 10px 5px map-get($colors, color-secondary);
-}
-// MQ Testing
-@media screen and (max-width: 991px) {
-  .ab_infoText p {
-    font-size: small;
-    color: red;
+// .ab_contentHeader {
+//   @include leftBorder;
+//   color: map-get($colors, color-primary);
+//   margin-top: 3%;
+// }
+// .ab_cardTitle {
+//   text-align: center;
+// }
+// .ab_cardContents {
+//   @include flex-rowc;
+//   text-align: center;
+// }
+// .ab_cardImages {
+//   object-fit: contain;
+//   max-height: 400px;
+// }
+// .ab_cardContents p {
+//   padding: 2%;
+//   margin-left: 7%;
+// }
+// .ab_info {
+//   padding: 2%;
+//   margin: auto;
+// }
+// .ab_infoContent {
+//   padding: 3%;
+// }
+// .ab_infoText {
+//   @include flex-rowc;
+//   align-items: center;
+// }
+// .ab_img img {
+//   width: 100%;
+//   max-width: 100%;
+//   max-height: 100%;
+//   transform: translate(-20px, -20px);
+//   box-shadow: 10px 10px 5px map-get($colors, color-secondary);
+// }
+// // MQ Testing
+// @media screen and (max-width: 991px) {
+//   .ab_infoText p {
+//     font-size: small;
+//     color: red;
+//   }
+//   .ab_info {
+//     @include flex-rowc;
+//     // @include space-between;
+//     padding: 5%;
+//   }
+// }
+
+// MQ
+@media screen and (min-width: 22em) and (max-width: 47.9375em) {
+  .ab_contentHeader h1 {
+    // font-size: 3em;
+    @include studioHeaders(2em);
+    margin-left: 3vw;
+  }
+  .ab_cardTitle h3 {
+    @include mediaText(1.5em);
+    // @include studioHeaders(1.5em);
+  }
+  .ab_cardContents p {
+    font-size: 1em;
+    @include studioContent;
+    margin: 2vh 2vw;
+  }
+  .ab_img img {
+    object-fit: contain;
+    justify-items: center;
+    justify-content: center;
+    // padding: 2vh 3vh;
+    max-height: 236px;
+    max-width: 100%;
+    transform: translate(-20px, -20px);
+    box-shadow: 10px 10px 5px map-get($colors, color-secondary);
   }
   .ab_info {
-    @include flex-rowc;
-    // @include space-between;
-    padding: 5%;
+    margin: 2vh 3vw;
+  }
+  .ab_infoText h5 {
+    font-size: 1.8em;
+  }
+  .ab_infoText p {
+    font-size: 1em;
+  }
+  .ab_cardContents p {
+    // margin: 2vh 10vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+}
+// MQ for tablet +
+@media screen and (min-width: 47.93751em) and (max-width: 85.3125em) {
+  .ab_contentHeader h1 {
+    // font-size: 3em;
+    @include studioHeaders(2.8em);
+    @include mediaText(2.8em);
+  }
+  .ab_cardTitle h3 {
+    @include mediaText(2.2em);
+    // @include studioHeaders(2.5em);
+  }
+  .ab_cardContents p {
+    font-size: 1.4em;
+    @include studioContent;
+    margin: 4vh 4vw;
+  }
+  .ab_img img {
+    object-fit: contain;
+    justify-items: center;
+    justify-content: center;
+    // padding: 4vh 6vh;
+    max-height: 100%;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-20px, -20px);
+    box-shadow: 10px 10px 5px map-get($colors, color-secondary);
+  }
+  .ab_info {
+    margin: 2vh 5vh;
+  }
+  .ab_infoText h5 {
+    font-size: 1em;
+  }
+  .ab_infoText p {
+    font-size: 1em;
+  }
+  .ab_cardContents p {
+    margin: 2vh 4vw;
+  }
+}
+// MQ for Laptop to Desktop +
+@media screen and (min-width: 85.375em) {
+  .ab_contentHeader h1 {
+    @include studioHeaders(5em);
+    @include mediaText(4em);
+  }
+  .ab_cardTitle h3 {
+    @include mediaText(3.2em);
+  }
+  .ab_info {
+    margin-top: 5vh;
+  }
+  .ab_img img {
+    object-fit: contain;
+    justify-items: center;
+    justify-content: center;
+    // padding: 4vh 6vh;
+    max-height: 100%;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-20px, -20px);
+    box-shadow: 10px 10px 5px map-get($colors, color-secondary);
+  }
+  .ab_cardContents p {
+    margin: 2vh 4vw;
   }
 }
