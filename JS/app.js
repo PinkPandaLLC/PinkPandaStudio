@@ -154,3 +154,18 @@ $(".clickCard").on('click tap', function(e){
     $('.showCard').removeClass('activeC');
     $($(this).attr('href')).addClass('activeC');
 });
+
+
+// Hiding Textarea label when text is present in box
+
+$( "textarea" ).click(function() {
+  $(".st_labelTA").addClass( "hide" );
+  $("#floatingTextarea").blur(function(){
+    $(".st_labelTA").removeClass( "hide" );
+  });
+    $("#floatingTextarea").focus(function(){
+    
+    $(".st_labelTA").addClass( "hide" );
+  });
+});
+

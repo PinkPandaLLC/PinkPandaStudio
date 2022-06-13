@@ -183,25 +183,9 @@
     </header>
 
     <!-- Hero Image -->
-    <section>
+    <section class="container-xxl">
       <div class="cu_hero">
-        <div class="cu_heroIMG">
-          <img
-            src="MEDIA/img_contact_liveColorfully.gif"
-            alt=""
-            class="cu_largeHeroImg"
-          />
-          <img
-            src="MEDIA/img_contact_liveColorfullySmall.png"
-            alt=""
-            class="cu_smallHeroImg"
-          />
-          <img
-            src="MEDIA/img_contact_liveColorfullyMobile.png"
-            alt=""
-            class="cu_mobileHeroImg"
-          />
-        </div>
+        <img src="MEDIA/img_contactHeroDPI-01.png" alt="" class="img-fluid" />
       </div>
     </section>
 
@@ -209,165 +193,153 @@
     <main>
       <!-- Title Area -->
       <section class="container">
-        <div class="cu_studioText">
-          <div class="cu_title">
-            <h2>Contact Us</h2>
-          </div>
+        <div class="cu_title">
+          <h2>Contact Us</h2>
         </div>
       </section>
 
       <!-- Contact us form -->
       <section class="container">
-        <div class="cu_formWrapper row">
-          <form class="cu_form col-lg-10">
-            <!-- form headers -->
-            <div class="cu_statement row">
-              <h4 class="cu_headers col-lg-12">
-                Get your Journey Started Today!
-              </h4>
-              <h5 class="cu_headers col-lg-12">
-                Tell us about your vision and how we can make it a reality.
-              </h5>
-            </div>
-            <!-- First & Last Names -->
-            <div>
-              <div class="form-floating col-md-4">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="floatingInputFname"
-                  placeholder="First Name"
-                />
-                <label for="floatingInputFname" class="cu_formLabel"
-                  >First Name</label
-                >
-              </div>
+        <form>
+          <!-- Form headers -->
+          <div class="row d-flex justify-content-center">
+            <h4 class="cu_headers col-12">Get your Journey Started Today!</h4>
+            <h5 class="cu_headers col-12">
+              Tell us about your vision and how we can make it a reality.
+            </h5>
+          </div>
 
-              <div class="form-floating col-md-4">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="floatingInputLname"
-                  placeholder="Last Name"
-                />
-                <label for="floatingInputLname" class="cu_formLabel"
-                  >Last Name</label
-                >
-              </div>
+          <!-- First & Last Names -->
+          <div class="row mb-2 d-flex justify-content-center">
+            <!-- First Name -->
+            <div class="form-floating mb-2 col-8 col-xl-6">
+              <input
+                type="text"
+                class="form-control"
+                id="floatingInputFname"
+                placeholder="First Name"
+              />
+              <label for="floatingInputFname" class="cu_formLabel"
+                >First Name</label
+              >
             </div>
 
-            <!-- Contact Info Phone/Email -->
-            <div>
-              <div class="form-floating col-md-4">
-                <input
-                  type="email"
-                  class="form-control"
-                  id="floatingInputEmail"
-                  placeholder="Email"
-                />
-                <label for="floatingInputEmail" class="cu_formLabel"
-                  >Email</label
-                >
-              </div>
+            <!-- Last Name -->
+            <div class="form-floating mb-2 col-8 col-xl-6">
+              <input
+                type="text"
+                class="form-control"
+                id="floatingInputLname"
+                placeholder="Last Name"
+              />
+              <label for="floatingInputLname" class="cu_formLabel"
+                >Last Name</label
+              >
+            </div>
+          </div>
 
-              <div class="form-floating col-md-4">
-                <input
-                  type="tel"
-                  class="form-control"
-                  id="floatingInputPhone"
-                  placeholder="Phone"
-                />
-                <label for="floatingInputPhone" class="cu_formLabel"
-                  >Phone</label
-                >
-              </div>
+          <!-- Contact Info Email/Phone -->
+          <div class="row mb-2 d-flex justify-content-center">
+            <!-- Email -->
+            <div class="form-floating mb-2 col-8 col-xl-6">
+              <input
+                type="email"
+                class="form-control"
+                id="floatingInputEmail"
+                placeholder="Email"
+              />
+              <label for="floatingInputEmail" class="cu_formLabel">Email</label>
             </div>
 
-            <!-- Business Information Name/URL-->
-            <div>
-              <div class="form-floating col-md-4">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="floatingInputBusName"
-                  placeholder="Business Name"
-                />
-                <label for="floatingInputBusName" class="cu_formLabel"
-                  >Business Name</label
-                >
-              </div>
+            <!-- Phone -->
+            <div class="form-floating mb-2 col-8 col-xl-6">
+              <input
+                type="tel"
+                class="form-control"
+                id="floatingInputPhone"
+                placeholder="Phone"
+              />
+              <label for="floatingInputPhone" class="cu_formLabel">Phone</label>
+            </div>
+          </div>
 
-              <div class="form-floating col-md-4">
-                <input
-                  type="url"
-                  class="form-control"
-                  id="floatingInputBusURL"
-                  placeholder="Business URL"
-                />
-                <label for="floatingInputBusURL" class="cu_formLabel"
-                  >Business URL</label
-                >
-              </div>
+          <!-- Business Information Name/URL-->
+          <div class="row mb-2 d-flex justify-content-center">
+            <div class="form-floating mb-2 col-8 col-xl-6">
+              <input
+                type="text"
+                class="form-control"
+                id="floatingInputBusName"
+                placeholder="Business Name"
+              />
+              <label for="floatingInputBusName" class="cu_formLabel"
+                >Business Name</label
+              >
             </div>
 
-            <!-- Comments -->
-            <div class="row">
-              <div class="form-floating col-lg-7">
-                <label for="floatingTextarea" class="cu_formLabel"
-                  >Message</label
-                >
-                <textarea
-                  class="form-control"
-                  placeholder="."
-                  id="floatingTextarea"
-                  rows="15"
-                ></textarea>
-              </div>
+            <div class="form-floating mb-2 col-8 col-xl-6">
+              <input
+                type="url"
+                class="form-control"
+                id="floatingInputBusURL"
+                placeholder="Business URL"
+              />
+              <label for="floatingInputBusURL" class="cu_formLabel"
+                >Business URL</label
+              >
             </div>
+          </div>
 
-            <!-- Captcha location 1.2 -->
-            <!-- <div> -->
-            <!-- Captcha code here 1.2 -->
-            <!-- </div> -->
-
-            <!-- Submit Button -->
-            <div>
-              <div class="col-12">
-                <button type="submit" class="cu_submitBtn col-8">
-                  <h5>Submit</h5>
-                </button>
-              </div>
+          <!-- Comments -->
+          <div class="row mb-2 d-flex justify-content-center">
+            <div class="form-floating col-8 col-xl-6 st_messageBox">
+              <textarea
+                class="form-control"
+                placeholder="Leave a message here"
+                id="floatingTextarea"
+              ></textarea>
+              <label for="floatingTextarea" class="cu_formLabel st_labelTA"
+                >Message</label
+              >
             </div>
-          </form>
-        </div>
+          </div>
+
+          <!-- Submit Button -->
+          <div>
+            <div class="col-12">
+              <button type="submit" class="cu_submitBtn col-8 col-lg-4">
+                <h5>Submit</h5>
+              </button>
+            </div>
+          </div>
+        </form>
       </section>
     </main>
 
     <!-- Information Card  -->
     <section class="container">
-      <div class="cu_infoCard">
-        <div class="cu_infoCardContents row">
+      <div>
+        <div class="row">
           <!-- Image  -->
-          <div class="col-md-6">
-            <img
-              src="MEDIA/img_contact_pinkMug.gif"
-              alt=""
-              id="cu_infoCardimg"
-            />
+          <div class="col-xs-12 col-lg-6 cu_infoImage">
+            <img src="MEDIA/img_contact_pinkMug.gif" alt="" class="img-fluid" />
           </div>
 
-          <div class="col-md-6 col-sm-12 cu_phases">
-            <div>
+          <div class="col-lg-6 col-sm-12">
+            <!-- Titles -->
+            <div class="cu_infoTitles">
               <h4>What to expect</h4>
               <h5>Phases to Success</h5>
             </div>
+
+            <!-- Phases to Success -->
             <div class="cu_phases_List">
               <ul class="cu_phases_List_item">
                 <li>Website analysis with the Panda Team</li>
                 <li>Partnership kickoff and onboard meeting</li>
                 <li>Wireframing, Content & SEO</li>
                 <li>Web Development and Strategic Deployment</li>
-                <li>Quality Testing and CMS</li>
+                <li>Quality Testing</li>
                 <li>Launch Day!!</li>
               </ul>
             </div>

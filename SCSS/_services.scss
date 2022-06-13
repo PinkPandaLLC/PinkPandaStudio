@@ -148,20 +148,12 @@
     @include flex-rowc;
   }
   .sr_heroBg {
-    // object-fit: fill;
-    // width: 100vw;
-    // height: 100%;
     image-rendering: optimizeSpeed;
     object-fit: contain;
-    max-width: 100%;
-    height: fit-content(18em);
   }
   .sr_heroBgMobile {
     display: block;
-    width: 100%;
-    height: 100%;
-    // max-width: 100vw;
-    // max-height: 100%;
+    width: 100vw;
   }
   .sr_heroBgLarge {
     display: none;
@@ -174,7 +166,7 @@
   }
   // setting box size for border around title
   .sr_heroTitle h1 {
-    @include boxSizing(1em);
+    @include boxSizing;
   }
   .sr_heroCaption {
     // color: map-get($colors, color-white);
@@ -184,7 +176,7 @@
   }
   .sr_heroCaption h6 {
     font-size: 0.8em;
-    @include boxSizing(0.8em);
+    @include boxSizing;
   }
   .sr_overlayHero {
     display: none;
@@ -197,6 +189,15 @@
     // offset from top
     margin-top: 20vh;
   }
+  .sr_oSimg img {
+    height: 300px;
+    width: 100vw;
+  }
+  .heroImgOverlay {
+    width: 100vw;
+    height: 45%;
+    //   border: 6px inset white;
+  }
   .sr_learnHeader {
     color: map-get($colors, color-primary);
   }
@@ -207,7 +208,7 @@
   }
   .sr_cardHeader h4 {
     font-size: 2em;
-    @include boxSizing(2em);
+    @include boxSizing;
   }
   .sr_cardText p {
     font-size: 1.2em;
@@ -222,11 +223,15 @@
   #sr_cbsHeadingMobile {
     font-size: 1.7em;
   }
-  // .heroImgOverlay {
-  //   width: auto;
-  //   height: 45%;
-  //   border: 6px inset white;
-  // }
+  .sr_cardImg {
+    max-height: 66%;
+    max-width: 33%;
+    height: 100%;
+    width: 100%;
+  }
+  .sr_cardImgContainer {
+    @include flex-rowc;
+  }
 }
 // MQ for tablet to laptop
 @media screen and (min-width: 47.9376em) and (max-width: 85.375em) {

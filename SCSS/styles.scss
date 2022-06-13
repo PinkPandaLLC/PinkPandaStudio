@@ -20,10 +20,11 @@ $navbar-light-toggler-border-color: transparent;
 $accordion-button-color: #ff9ed5;
 
 // Studio
-$carousel-control-color: #dcb8cd;
-// $carousel-control-width: 30%;
+$carousel-control-color: #000;
+// $carousel-control-color: #dcb8cd;
 $carousel-indicator-active-bg: #ebebeb;
 $carousel-indicator-spacer: 10px;
+// $nav-tabs-border-color: #000;
 
 // Studio Tabs
 $nav-link-color: #000000;
@@ -103,12 +104,6 @@ p {
 // Mixins
 // ******
 
-@mixin flex-rowc {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-}
 @mixin flex-roweven {
   display: flex;
   flex-direction: row;
@@ -125,6 +120,12 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  flex-wrap: wrap;
+}
+@mixin flex-rowc {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   flex-wrap: wrap;
 }
 @mixin flex-rows {
@@ -163,21 +164,17 @@ p {
   flex-direction: row;
 }
 
-@mixin mediaText($totalHeight) {
-  // setting Left border height testing
-  font-size: $totalHeight;
-  line-height: $totalHeight;
-  height: $totalHeight;
-}
-@mixin boxSizing($size) {
-  line-height: $size;
-  height: $size;
+@mixin boxSizing {
+  // forces height and aligns text with border@left
+  display: inline;
+  vertical-align: middle;
 }
 @mixin studioHeaders($lineSize) {
-  margin-top: 5%;
-  @include mediaText($lineSize);
-  @include leftBorder;
+  margin-top: 5vh;
   color: map-get($colors, color-primary);
+  @include leftBorder;
+  font-size: $lineSize;
+  // @include mediaText($lineSize);
 }
 /*************/
 /* Keyframes */
@@ -203,6 +200,7 @@ $colors: (
   "color-white": #ffffff,
   "color-black": #000000,
   "color-grey": #ebebeb,
+  // #ff8eb4
 );
 
 // ******
@@ -317,7 +315,7 @@ $colors: (
     // right: 0 !important;
   }
   .contactButton button {
-    background-color: map-get($colors, color-secondary);
+    background-color: map-get($colors, color-quad);
     // -ms-transform: rotate(90deg); /* IE 9 */
     // -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
     // transform: rotate(90deg);
@@ -326,6 +324,16 @@ $colors: (
     // z-index: 1000;
     // right: 0px !important;
   }
+
+  // Testing styling the modal
+  // CU btn with an icon
+
+  // .md_iconButton {
+  //   display: inline;
+  //   &::after {
+  //     content: icon;
+  //   }
+  // }
 }
 
 .md_submitBtn {
@@ -369,10 +377,10 @@ $colors: (
 // Import locations
 @import "about";
 
-@import "contact";
-
 @import "index";
 
 @import "services";
 
 @import "studio";
+
+@import "contact";

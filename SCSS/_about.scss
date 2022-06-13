@@ -57,7 +57,8 @@
     margin-left: 3vw;
   }
   .ab_cardTitle h3 {
-    @include mediaText(1.5em);
+    font-size: 1.5em;
+    // @include mediaText(1.5em);
     // @include studioHeaders(1.5em);
   }
   .ab_cardContents p {
@@ -95,10 +96,12 @@
   .ab_contentHeader h1 {
     // font-size: 3em;
     @include studioHeaders(2.8em);
-    @include mediaText(2.8em);
+    // @include mediaText(2.8em);
+    font-size: 2.8em;
   }
   .ab_cardTitle h3 {
-    @include mediaText(2.2em);
+    // @include mediaText(2.2em);
+    font-size: 2.2em;
     // @include studioHeaders(2.5em);
   }
   .ab_cardContents p {
@@ -135,10 +138,12 @@
 @media screen and (min-width: 85.375em) {
   .ab_contentHeader h1 {
     @include studioHeaders(5em);
-    @include mediaText(4em);
+    // @include mediaText(4em);
+    font-size: 4em;
   }
   .ab_cardTitle h3 {
-    @include mediaText(3.2em);
+    // @include mediaText(3.2em);
+    font-size: 3.2em;
   }
   .ab_info {
     margin-top: 5vh;

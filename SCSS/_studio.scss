@@ -1,411 +1,219 @@
-// Commented out for testing
-// // Darkend overlay for Studio Hero
-// .st_hero {
-//   background-color: #00000042;
-//   // has to stay relative for hero img to work
-//   position: relative;
-//   width: 102%;
-// }
-
-// // Text Contents for the Studio Hero
-// .st_heroContent {
-//   @include flex-rowc;
-//   z-index: 2;
-//   position: absolute;
-//   left: 50%;
-//   top: 50%;
-//   transform: translate(-50%, -100%);
-// }
-
-// // Studio Hero Title
-// .st_header {
-//   // @include leftBorder;
-//   @include flex-rowb;
-//   // border: orange 4px solid:
-//   transform: translateY(-150px);
-//   color: map-get($colors, color-primary);
-//   box-sizing: border-box;
-// }
-
-// // used to be st_headerText
-// // Studio Header Text
-// .st_headerStatements {
-//   @include flex-roweven;
-//   // border: orange 4px solid;
-//   text-align: center;
-//   transform: translateX(100px);
-// }
-
-// // Studio Hero Image
-// .st_heroIMG {
-//   max-width: 100%;
-//   max-height: 100%;
-//   width: 100%;
-//   height: 100%;
-//   z-index: -1;
-//   position: sticky;
-// }
-
-// .st_carouselTitle {
-//   margin: 5% 0% 1.5%;
-//   padding: 0.5% 0% 0.2%;
-//   @include leftBorder;
-//   height: min-content;
-// }
-// .st_carouselTitle h1 {
-//   font-weight: bold;
-// }
-
-// .st_portfolioContents img {
-//   object-fit: contain;
-//   padding: 0.5% 10%;
-//   max-height: 650px;
-//   max-width: 900px;
-//   justify-items: center;
-//   margin: 0 auto 280px;
-// }
-
-// .st_portfolioContents {
-//   align-content: center;
-//   justify-content: center;
-//   flex-direction: row;
-//   align-items: center;
-// }
-
-// .st_portfolio {
-//   align-content: center;
-//   justify-content: center;
-//   flex-direction: row;
-//   align-items: center;
-// }
-
-// .st_portfolioLabel {
-//   color: map-get($colors, color-black);
-// }
-
-// .st_portfolioFlavor {
-//   color: map-get($colors, color-black);
-//   font-weight: lighter;
-// }
-
-// .st_carouselIndicators button.active {
-//   background-color: map-get($colors, color-primary);
-//   // box-shadow: 1px 6px 10px #00000016;
-// }
-
-// .st_divide {
-//   margin-top: 5%;
-// }
-// used to be st_textBox not st_headerBox jm @ 5-31-22
-// .st_headerBox {
-//   box-sizing: border-box;
-// }
-// .st_hText {
-//   @include leftBorder;
-// }
-
-// //
-// // MQ Testing
-// // MQ
-// // MQ Testing
-
-// @media screen and (max-width: 990px) {
-//   .st_heroIMG img {
-//     height: fit-content;
-//     width: fit-content;
-//     max-width: 992px;
-//     // Testing Attribute for load speed 5/30/22
-//     image-rendering: optimizeSpeed;
-//   }
-
-//   // Pushes objects down away from banner
-//   .st_header {
-//     transform: translate(0px, 180px);
-//     box-sizing: border-box;
-//   }
-
-//   .st_headerStatements {
-//     transform: translate(0px, 180px);
-//     box-sizing: border-box;
-//     height: 330px;
-//   }
-
-//   // Revisit idea to call Mixin/Function to set
-//   // all 3 attributes with variable em size
-// $st_rFs: 1;
-// $var: 1;
-
-//   }
-
-//   .st_header h2 {
-//     font-size: 1.8em;
-//     line-height: 1.8em;
-//     height: 1.8em;
-//   }
-
-//   .st_headerStatements h3 {
-//     color: red;
-//     font-size: small;
-//   }
-// }
-
-// V2.01 adding Media Queries for mobile breakpoints
-// Standard CSS no matter page size
-.st_smallHeroImg {
-  display: none;
-}
-// Doesnt work as intended
-.st_smallShowcaseImg {
-  display: none;
-}
-.st_portfolioContentSmall {
-  display: none;
-}
-// Sets smaller item carousels invisable For Media Queries
-.st_tab1ContentSmall {
-  display: none;
-}
-.st_tab2ContentSmall {
-  display: none;
-}
-.st_tab3ContentSmall {
-  display: none;
+// Studio Styles
+.st_hero {
+  @include flex-rowc;
+  background-color: #00000042;
+  // has to stay relative for hero img to work
+  position: relative;
+  width: 100%;
+  height: 750px;
 }
 
+// Background img
+.st_heroImg {
+  position: sticky;
+  z-index: -1;
+  min-width: 100%;
+  min-height: 750px;
+  width: 100%;
+  height: 100%;
+}
+
+// Darkend overlay for Studio Hero
+.st_heroImgPC {
+  display: none;
+  position: sticky;
+  z-index: -1;
+  width: 100%;
+  height: 768px;
+}
+
+// Text Contents for the Studio Hero
+// Studio Hero Title
+.st_heroHeader {
+  @include leftBorder;
+  color: map-get($colors, color-primary);
+  position: absolute;
+  margin-top: 5%;
+  margin-left: 5%;
+  z-index: 2;
+}
+// Studio Hero Container
+.st_heroContent {
+  @include flex-rowc;
+  margin-top: 10%;
+  align-self: center;
+  position: absolute;
+  z-index: 2;
+}
+
+// Studio Header Text
+.st_heroText {
+  @include leftBorder;
+  color: map-get($colors, color-primary);
+}
+
+.st_headerBlurb {
+  @include flex-rowc;
+  align-content: center;
+  margin-top: 10%;
+  text-align: center;
+  color: map-get($colors, color-white);
+}
+
+// Carousel Styling
+
+// Showcase Title
+.st_showcaseTitle {
+  @include leftBorder;
+  margin: 2%;
+}
+
+.st_showcaseTitle h1 {
+  font-weight: bold;
+}
+// Tab Buttons
+.st_tabButtons li {
+  margin: 0.5%;
+}
+// Carousel Indicators
 .st_carouselIndicators button.active {
   background-color: map-get($colors, color-primary);
 }
 
-// Carousel Header
-// .st_portfolioLabel {
-//   color: map-get($colors, color-secondary);
-// }
+// Carousel Images
 
-// MQ Updates
+.st_tablet,
+.st_large,
+.st_PC,
+.st_HD {
+  display: none;
+}
 
-// MQ that establishes the Overlays for content on images at any level
+.st_carouselItem {
+  height: 100%;
+  width: 100%;
+  margin: 5% auto 220px;
+  padding: 0.5% 9vw;
+}
 
-@media screen and (min-width: 1px) {
-  // Overlay
+// Carousels Captions
+
+// Carousels Header <h5>
+.st_portfolioLabel {
+  color: map-get($colors, color-primary);
+  font-size: 1.5em;
+}
+
+// Carousel Text <p>
+.st_portfolioFlavor {
+  color: map-get($colors, color-black);
+  font-weight: lighter;
+  font-size: 1.3em;
+}
+
+@include media-breakpoint-up(md) {
   .st_hero {
-    background-color: #00000042;
-    position: relative;
+    height: 900px;
   }
-  // Layer of Text Contents
+  .st_heroImg {
+    @include wh100;
+  }
   .st_heroContent {
-    position: absolute;
-    z-index: 2;
+    margin-top: 0;
+    align-self: center;
   }
-  .st_heroIMG img {
-    position: sticky;
-    object-fit: contain;
-    z-index: -1;
+  .st_headerBlurb {
+    margin-top: 20%;
+  }
+  .st_tablet {
+    display: block;
+  }
+  .st_mobile {
+    display: none;
+  }
+  .st_portfolioLabel {
+    font-size: 2.5em;
+  }
+  .st_portfolioFlavor {
+    font-size: 1.7em;
   }
 }
-
-// Mixins
-// added to styles.css 6/4/22 JM
-// @mixin mediaText($totalHeight) {
-//   // setting Left border height testing
-//   font-size: $totalHeight;
-//   line-height: $totalHeight;
-//   height: $totalHeight;
-// }
-
-// @mixin studioHeaders($lineSize) {
-//   margin-top: 5%;
-//   @include mediaText($lineSize);
-//   @include leftBorder;
-//   color: map-get($colors, color-primary);
-// }
-
-// Main  Media Queries for Content
-
-// 780px = 48.75em
-// MQ to adjust Studio content @~360px
-@media screen and (min-width: 22em) and (max-width: 47.9375em) {
-  // Styles For Hero
-  // Background Image Styles
+@include media-breakpoint-up(lg) {
   .st_hero {
-    max-width: 100%;
+    height: 768px;
   }
-  .st_largeHeroImg {
-    display: none;
-  }
-  .st_smallHeroImg {
+  .st_heroImgPC {
     display: block;
   }
-  // Sets display for small/large carousels
-  .st_tab1ContentSmall {
-    display: block;
-  }
-  .st_tab2ContentSmall {
-    display: block;
-  }
-  .st_tab3ContentSmall {
-    display: block;
-  }
-  .st_tab1ContentLarge {
+  .st_heroImg {
     display: none;
   }
-  .st_tab2ContentLarge {
+  .st_heroContent {
+    margin-top: 0;
+    align-items: flex-start;
+  }
+  .st_headerBlurb {
+    margin-top: 0;
+    align-items: center;
+  }
+  .st_heroText {
+    margin-bottom: 300px;
+  }
+  .st_mobile,
+  .st_tablet {
     display: none;
   }
-  .st_tab3ContentLarge {
+  .st_large {
+    display: block;
+  }
+  .st_carouselItem {
+    // height: 100%;
+    // width: 100%;
+    margin: 2% auto 200px;
+    padding: 0.5% 9%;
+  }
+}
+@include media-breakpoint-up(xl) {
+  .st_mobile,
+  .st_tablet,
+  .st_large,
+  .st_PC {
     display: none;
-  }
-  .st_heroIMG {
-    //   background-image: url(MEDIA/img_studio_colorPencil.gif);
-    image-rendering: optimizeSpeed;
-    object-fit: contain;
-    max-width: 100%;
-    // ↓↓↓↓↓↓ Not sure if working as intended ↓↓↓↓↓↓
-    height: fit-content(18em);
-    // ↑↑↑↑↑↑ Not sure if working as intended ↑↑↑↑↑↑
-  }
-  .st_heroIMG img {
-    // Testing Attribute for load speed 5/30/22
-    image-rendering: optimizeSpeed;
-    object-fit: contain;
-  }
-  .st_headerBox {
-    max-height: 80vh;
-  }
-  // Styling Hero Text
-  .st_headerBox h1 {
-    @include studioHeaders(2.5rem);
   }
 
-  .st_headerBox h2 {
-    @include studioHeaders(1.8rem);
+  .st_HD {
+    display: block;
   }
-  .st_headerStatements {
-    margin-top: 12vh;
+  .st_heroHeader {
+    margin-left: 0;
   }
-  .st_headerStatements h3 {
-    @include mediaText(1.5rem);
-    font-weight: lighter;
-    // color: map-get($colors, color-secondary);
+  .st_heroText {
+    margin: 2% auto;
   }
-
-  // Carousel Styles
-  // Creates Spacing at top for content
-  .st_divide {
-    // creates spacing on the top of the carousel
-    margin-top: 10%;
+  .st_headerBlurb {
+    margin: 5% auto;
   }
-  // Carousel Text Styling
-  .st_carouselTitle {
-    @include studioHeaders(2.5rem);
+}
+@include media-breakpoint-up(xxl) {
+  .st_PC {
+    display: none;
   }
-  .st_portfolio {
-    @include studioContent;
+  .st_HD {
+    display: block;
   }
-  .st_portfolioContents {
-    @include studioContent;
+  .st_heroHeader {
+    margin-left: 0;
   }
-  // Carousel IMG Styles
-  .st_portfolioContents IMG {
-    @include studioContent;
-    object-fit: contain;
-    justify-items: center;
-    padding: 2vh 3vh;
-    max-height: 513px;
-    max-width: 100%;
-    justify-items: center;
-    margin: 0 auto 8em;
+  .st_heroText {
+    margin: 2% auto;
   }
-  .st_portfolioLabel {
-    margin-top: 2vh;
-    color: map-get($colors, color-black);
+  .st_headerBlurb {
+    margin: 5% auto;
   }
-  .st_portfolioFlavor {
-    margin-top: 3vh;
-    color: map-get($colors, color-black);
-  }
-  // Carousel Tabs
-  .st_tabs button {
-    margin-left: 3.3vh;
-  }
-  .st_tabs button h6 {
-    font-size: 1rem;
+  .st_headerBlurb h3 {
+    font-size: 2em;
   }
 }
 
-// Testing with bootstrap
-// @media screen and (min-width: 36em) and (max-width: 48.01em) {
-//   .st_portfolioContents IMG {
-//     @include studioContent;
-//     object-fit: contain;
-//     justify-items: center;
-//     padding: 5vh;
-//   }
+// @include media-breakpoint-up(sm) {
 // }
-
-// MQ to adjust Studio Content @~768px
-//
-// min-width: 48em
-@media screen and (min-width: 47.9376em) and (max-width: 85.375em) {
-  // Styles For Hero
-  // Background Image Styles
-  .st_heroIMG img {
-    // Testing Attribute for load speed 5/30/22
-    image-rendering: optimizeSpeed;
-    object-fit: contain;
-    max-width: 100%;
-    height: fit-content(35em);
-  }
-  .st_headerStatements h3 {
-    // padding-left: 5vh;
-    @include mediaText(1.6rem);
-    font-weight: lighter;
-  }
-  .st_headerBox h1 {
-    @include studioHeaders(3.1rem);
-  }
-  .st_headerBox h2 {
-    @include studioHeaders(2rem);
-    width: fit-content;
-  }
-  .st_headerStatements {
-    margin-top: 20vh;
-  }
-  #st_long {
-    @include mediaText(1.5rem);
-  }
-  // Carousel
-  .st_carouselTitle {
-    @include studioHeaders(2.5rem);
-  }
-  .st_portfolio {
-    @include studioContent;
-  }
-  .st_portfolioContents {
-    @include studioContent;
-  }
-  // Carousel IMG Styles
-  .st_portfolioContents IMG {
-    @include studioContent;
-    object-fit: contain;
-    justify-items: center;
-    padding: 0.5vh 3vh;
-    max-height: auto;
-    max-width: 100%;
-    justify-items: center;
-    margin: 0 auto 10em;
-  }
-  .st_portfolioLabel {
-    margin-top: 2vh;
-    color: map-get($colors, color-black);
-  }
-  .st_portfolioFlavor {
-    margin-top: 3vh;
-    color: map-get($colors, color-black);
-  }
-  .st_tabs button {
-    margin-left: 2vh;
-  }
-  .st_tabs button h6 {
-    font-size: 2rem;
-  }
-}
