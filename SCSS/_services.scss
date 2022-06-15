@@ -1,49 +1,77 @@
+$sectionHeight: 800px;
+
 .sr_hero {
   @include flex-rowc;
+  object-fit: cover;
   background-color: rgba(0, 0, 0, 0.442);
   position: relative;
+  width: 100%;
+  height: $sectionHeight;
+  
 }
 .sr_heroContent {
   position: absolute;
+  @include flex-rowc;
+  top: 20%;
   z-index: 2;
 }
 .sr_heroTitle {
   @include leftBorder;
   color: map-get($colors, color-primary);
-  margin-top: 2%;
+  margin-top: 10%;
+  margin-left: 5%;
+  position: absolute;
+  z-index: 2;
+
 }
 .heroImgOverlay {
-  width: auto;
-  height: 45%;
-  border: 6px inset white;
+  display: none;
+  max-width: 250px;
+  max-height: 400px;
+  width: 100%;
+  height: 100%;
 }
 .sr_heroCaption {
   color: map-get($colors, color-white);
   text-align: center;
-  margin-top: 3%;
+  margin-top: 15%;
 }
 .sr_heroImgContainer {
   @include flex-rowc;
+  align-items: center;
   margin-top: 5%;
 }
 .sr_learnMore {
-  transform: translateX(-300px);
+  margin-top: 15%;
 }
-.sr_heroBg {
+.sr_heroBgOne {
   position: sticky;
+  object-fit: fill;
+  min-width: 100%;
+  min-height: $sectionHeight;
   width: 100%;
   height: 100%;
-  min-width: 100%;
-  min-height: 100%;
   z-index: -1;
 }
+.sr_heroBgTwo {
+  display: none;
+  position: sticky;
+  object-fit: fill;
+  min-width: 100%;
+  min-height: $sectionHeight;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
 .sr_learnHeader {
   @include leftBorder;
-  color: map-get($colors, color-white);
+  color: map-get($colors, color-tertiary);
   margin-bottom: 5%;
 }
 .sr_clickHeader {
   margin-left: 5%;
+  margin-top: 10%;
   color: map-get($colors, color-white);
 }
 .clickService {
@@ -56,18 +84,19 @@
   cursor: pointer;
   color: map-get($colors, color-secondary);
 }
-
-//cards
-//Responsive web design
-
-.sr_cardContainer {
-  margin-top: 10%;
+//Cards
+.sr_cardInfo{
   @include flex-rowc;
   align-items: center;
+  margin-top: 5%;
 }
-
-.sr_cardImg {
+.sr_cardImgOne {
   max-width: 100%;
+}
+.sr_cardImgTwo {
+  display: none;
+  max-width: 100%;
+  max-height: 500px;
 }
 
 .sr_cardImg img {
@@ -76,6 +105,7 @@
 
 .sr_cardHeader {
   @include leftBorder;
+  margin-left: 2%;
 }
 .sr_cardText {
   margin-left: 5%;
@@ -86,13 +116,101 @@
   margin-left: 10%;
   font-family: $secondary-font;
 }
-//XD revision - 5/13/2022
-// .arrowImg{
-//     width: 100%;
-//     max-width: 25px;
-//     max-height: 25px;
-//     transform: translateY(-5px);
-// }
 .sr_buffer {
-  height: 90px;
+  height: 20px;
+}
+//Responsive web design
+
+@include media-breakpoint-up(sm) {
+  
+}
+
+@include media-breakpoint-up(md) {
+  .sr_hero {
+    height: 1000px;
+  }
+  .sr_heroTitle {
+    margin-top: 5%;
+  }
+  .heroImgOverlay {
+    display: flex;
+  }
+  .sr_heroCaption {
+    margin-top: 0;
+  }
+  .sr_cardHeader {
+    margin-left: 0%;
+  }
+  .sr_learnHeader{
+      margin-bottom: 0%;
+  }
+  .sr_cardImgOne {
+    max-width: 100%;
+    max-height: 500px;
+    width: 100%;
+    height: 100%;
+  }
+  .sr_clickHeader{
+    margin-left: 0%;
+    height: 100%;
+  }
+  .sr_learnMore {
+    margin-top: 0;
+    margin-left: 5%;
+  }
+  .sr_heroImgContainer{
+    @include flex-roweven;
+    flex-wrap: nowrap;
+    margin-top: 15%;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .sr_heroBgOne{
+    display: none;
+  }
+  .sr_heroBgTwo{
+    display: flex;
+  }
+  .sr_heroImgContainer {
+    @include flex-rowc;
+    flex-wrap: nowrap;
+    margin-top: 10%;
+  }
+  .sr_cardImgOne{
+    display: none;
+  }
+  .sr_cardImgTwo{
+    display: flex;
+  }
+  .sr_cardContainer{
+    @include flex-rowc;
+    flex-wrap: nowrap;
+  }
+  .sr_cardText {
+    margin-left: 0%;
+  }
+  .sr_cardPoints {
+    margin-left: 0%;
+  }
+  .sr_cardContainer{
+    @include flex-rowc;
+    align-items: center;
+  }
+  .sr_cardInfo {
+    margin-top: 0%;
+  }
+    .sr_buffer {
+      height: 60px;
+    }
+}
+
+@include media-breakpoint-up(xl) {
+  .sr_heroCaption {
+      margin-top: 5%;
+    }
+}
+
+@include media-breakpoint-up(xxl) {
+ 
 }

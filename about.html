@@ -92,7 +92,7 @@
             </li>
               </ul>
                         <div class="navSpace" style="visibility: hidden"></div>
-              <div class="container">
+             
                 <div class= "socialnav row">
                 <div class="col-3">
                 <a href="https://www.facebook.com/profile.php?id=100074592790768"  target="_blank" rel="noopener noreferrer" class="socialIcon"><img src="MEDIA/img_icon_fb.gif" alt=""></a>						  
@@ -104,7 +104,7 @@
                 <a href="https://github.com/PinkPandaLLC?tab=repositories"  target="_blank" rel="noopener noreferrer" class="socialIcon"><img src="MEDIA/img_icon_github.gif" alt=""></a>
                 </div>
               </div>
-            </div>
+         
             <!-- ************************************************************************* -->
               <!-- Optional Search Form -->
             <!-- <form class="d-flex">
@@ -141,7 +141,7 @@
 
     <!-- Heading -->
     <section class="container">
-      <div class="ab_contentHeader row">
+      <div class="ab_contentHeader">
         <h1>About</h1>
       </div>
     </section>
@@ -154,18 +154,17 @@
         </div>
 
         <div class="row ab_cardContents">
-          <p class="col-md-12 row">
+          <p class="col-12">
             Wondering what a Pink Panda is? It is the interpretation of our
             universe, Full of Pink Flamingo and Red Panda inspiration. We
             believe in seeing the world in a positive light and aspire to create
             a more uplifting supportive community. Our Pink Panda Explorer is
             our reminder to continue to journey on this big ball of floating
             rock and water searching for awe inspiring moments and taking in all
-            of its wonder and beauty!
+            of its wonder and beauty! 
           </p>
-          <p class="col-md-12">
-            Let us take part of your adventure and meet the crew below
-          </p>
+          <h6>Let us take part of your adventure and meet the crew below:</h6>
+          
         </div>
       </div>
     </section>
@@ -174,13 +173,10 @@
     <section class="container">
       <div class="row ab_info">
         <!-- Justin Info -->
-        <div class="row col-md-6 ab_infoContent">
-          <div class="col-md-6 ab_img">
-            <img src="MEDIA/img_about_jmac.gif" alt="" />
-          </div>
-
-          <div class="col-md-6 ab_infoText row">
-            <p class="col-md-12">Justin McCafferty <br> Co-Founder & CTO</p>
+        <div class="col-12 col-lg-6 ab_infoContent row">
+            <img src="MEDIA/img_about_jmac.gif" class="col-12 col-lg-6 img-fluid ab_img" alt="" />
+          <div class="col-12 col-lg-6 ab_infoText row">
+            <p class="col-12"><b>Justin McCafferty</b> <br> Co-Founder & CTO</p>
             
             <!-- <div>
               <img src="media/img_icon_fb64.png" alt="" />
@@ -191,13 +187,10 @@
         </div>
 
         <!-- Kevin Info -->
-        <div class="row col-md-6 ab_infoContent">
-          <div class="col-md-6 ab_img">
-            <img src="MEDIA/img_home_heartBinary.svg" alt="" />
-          </div>
-
-          <div class="col-md-6 ab_infoText row">
-            <p class="col-md-12">Kevin Davis <br> Co-Founder & COO</p>
+        <div class="col-12 col-lg-6 ab_infoContent row ">
+            <img src="MEDIA/img_home_heartBinary.svg" class="col-12 col-lg-6 img-fluid ab_img" alt="" />
+          <div class="col-12 col-lg-6 ab_infoText row">
+            <p class="col-12"><b>Kevin Davis</b> <br> Co-Founder & COO</p>
             <!-- <div>
               <img src="media/img_icon_fb64.png" alt="" />
               <img src="media/img_icon_instagram64.png" alt="" />
@@ -208,151 +201,7 @@
       </div>
     </section>
           <!-- Modal Contact Form -->
-      <!-- Button that uses BS to create a modal form for contact -->
-      <section>
-        <div class="contactButton position-fixed top-50 end-0">
-          <button
-            type="button"
-            class="btn btn-primary"
-            data-bs-toggle="modal"
-            data-bs-target="#exampleModal"
-            id="toggleContactButton"
-          >
-            Contact Us!
-          </button>
-        </div>
-      </section>
-
-      <!-- Code for contact us modal -->
-      <section class="container">
-        <!-- Modal -->
-        <div
-          class="modal fade"
-          id="exampleModal"
-          tabindex="-1"
-          aria-labelledby="exampleModalLabel"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Contact Us!</h5>
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <div class="modal-body">
-                <img src="MEDIA/img_logo.svg" alt="" />
-                <form class="row" id="contactUsForm">
-                  <!-- Names First and Last  -->
-                  <div>
-                    <div class="form-floating col-md-4">
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="floatingInputFname"
-                        placeholder="First Name"
-                      />
-                      <label for="floatingInputFname">First Name</label>
-                    </div>
-                    <div class="form-floating col-md-4">
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="floatingInputLname"
-                        placeholder="Last Name"
-                      />
-                      <label for="floatingInputLname">Last Name</label>
-                    </div>
-                  </div>
-
-                  <!-- Contact Info -->
-                  <div>
-                    <div class="form-floating col-md-4">
-                      <input
-                        type="email"
-                        class="form-control"
-                        id="floatingInputEmail"
-                        placeholder="Email"
-                      />
-                      <label for="floatingInputEmail">Email</label>
-                    </div>
-                    <div class="form-floating col-md-4">
-                      <input
-                        type="tel"
-                        class="form-control"
-                        id="floatingInputPhone"
-                        placeholder="Phone"
-                      />
-                      <label for="floatingInputPhone">Phone</label>
-                    </div>
-                  </div>
-
-                  <!-- Business Information -->
-                  <div>
-                    <div class="form-floating col-md-4">
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="floatingInputBusName"
-                        placeholder="Business Name"
-                      />
-                      <label for="floatingInputBusName">Business Name</label>
-                    </div>
-                    <div class="form-floating col-md-4">
-                      <input
-                        type="url"
-                        class="form-control"
-                        id="floatingInputBusURL"
-                        placeholder="Business URL"
-                      />
-                      <label for="floatingInputBusURL">Business URL</label>
-                    </div>
-                  </div>
-
-                  <!-- Comments -->
-                  <div>
-                    <div class="form-floating">
-                      <textarea
-                        class="form-control"
-                        rows="8"
-                        cols="55"
-                        placeholder="."
-                        id="floatingTextarea"
-                      ></textarea>
-                      <label for="floatingTextarea">Message</label>
-                    </div>
-                  </div>
-
-                  <!-- Captcha location 1.2 -->
-                  <!-- <div> -->
-                  <!-- Captcha code here 1.2 -->
-                  <!-- </div> -->
-
-                  <div>
-                    <div class="col-12">
-                      <button
-                        type="submit"
-                        class="btn btn-primary md_submitBtn"
-                      >
-                        Submit
-                      </button>
-                    </div>
-                  </div>
-                </form>
-              </div>
-              <!-- <div class="modal-footer">
-		                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-		                        <button type="button" class="btn btn-primary">Save changes</button>
-		                    </div> -->
-            </div>
-          </div>
-        </div>
-      </section>
-
+    
     <!-- Footer -->
     <footer
       class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top container"

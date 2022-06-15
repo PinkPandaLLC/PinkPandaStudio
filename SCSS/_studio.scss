@@ -1,101 +1,233 @@
-// Darkend overlay for Studio Hero
+// Studio Styles
 .st_hero {
+  @include flex-rowc;
   background-color: #00000042;
   // has to stay relative for hero img to work
   position: relative;
-  width: 102%;
+  width: 100%;
+  height: 750px;
+}
+
+// Background img
+.st_heroImg {
+  position: sticky;
+  z-index: -1;
+  min-width: 100%;
+  min-height: 750px;
+  width: 100%;
+  height: 100%;
+}
+
+// Darkend overlay for Studio Hero
+.st_heroImgPC {
+  display: none;
+  position: sticky;
+  z-index: -1;
+  width: 100%;
+  height: 768px;
 }
 
 // Text Contents for the Studio Hero
+// Studio Hero Title
+.st_heroHeader {
+  @include leftBorder;
+  color: map-get($colors, color-primary);
+  position: absolute;
+  margin-top: 5%;
+  margin-left: 5%;
+  z-index: 2;
+}
+// Studio Hero Container
 .st_heroContent {
   @include flex-rowc;
-  z-index: 2;
+  margin-top: 10%;
+  align-self: center;
   position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -100%);
+  z-index: 2;
 }
 
-// used to be st_header
-// Studio Hero Title
-.st_header {
+// Studio Header Text
+.st_heroText {
   @include leftBorder;
-  @include flex-rowb;
-  // border: orange 4px solid:
-  transform: translateY(-150px);
   color: map-get($colors, color-primary);
 }
 
-// used to be st_headerText
-// Studio Header Text
-.st_headerText {
-  @include flex-roweven;
-  // border: orange 4px solid;
+.st_headerBlurb {
+  @include flex-rowc;
+  align-content: center;
+  margin-top: 10%;
   text-align: center;
-  transform: translateX(100px);
+  color: map-get($colors, color-white);
 }
 
-// Studio Hero Image
-.st_heroIMG {
-  max-width: 100%;
-  max-height: 100%;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  position: sticky;
-}
+// Carousel Styling
 
-.st_carouselTitle {
-  margin: 5% 0% 1.5%;
-  padding: 0.5% 0% 0.2%;
+// Showcase Title
+.st_showcaseTitle {
   @include leftBorder;
-  height: min-content;
+  margin: 2%;
 }
-.st_carouselTitle h1 {
+
+.st_showcaseTitle h1 {
   font-weight: bold;
 }
-
-.st_portfolioContents img {
-  object-fit: contain;
-  padding: 0.5% 10%;
-  max-height: 650px;
-  max-width: 900px;
-  justify-items: center;
-  margin: 0 auto 280px;
+// Tab Buttons
+.st_tabButtons li{
+  margin: .5%;
+}
+// Carousel Indicators
+.st_carouselIndicators button.active {
+  background-color: map-get($colors, color-primary);
 }
 
-.st_portfolioContents {
-  align-content: center;
-  justify-content: center;
-  flex-direction: row;
-  align-items: center;
+// Carousel Images
+
+// .st_portfolioContents {
+// }
+.st_tablet {
+  display: none;
+}
+.st_large {
+  display: none;
+}
+.st_PC {
+  display: none;
+}
+.st_HD {
+  display: none;
+}
+.st_carouselItem {
+  height: 100%;
+  width: 100%;
+  margin: 5% auto 220px;
+  padding: 0.5% 9vw;
 }
 
-.st_portfolio {
-  align-content: center;
-  justify-content: center;
-  flex-direction: row;
-  align-items: center;
-}
+// Carousels Captions
 
+// Carousels Header <h5>
 .st_portfolioLabel {
-  color: map-get($colors, color-black);
+  color: map-get($colors, color-primary);
+  font-size: 1.5em;
 }
 
+// Carousel Text <p>
 .st_portfolioFlavor {
   color: map-get($colors, color-black);
   font-weight: lighter;
+  font-size: 1.3em;
 }
 
-.st_carouselIndicators button.active {
-  background-color: map-get($colors, color-primary);
-  // box-shadow: 1px 6px 10px #00000016;
+@include media-breakpoint-up(md) {
+  .st_hero {
+    height: 900px;
+  }
+  .st_heroImg {
+    @include wh100;
+  }
+  .st_heroContent {
+    margin-top: 0;
+    align-self: center;
+  }
+  .st_headerBlurb {
+    margin-top: 20%;
+  }
+  .st_tablet {
+    display: block;
+  }
+  .st_mobile {
+    display: none;
+  }
+  .st_portfolioLabel {
+    font-size: 2.5em;
+  }
+  .st_portfolioFlavor {
+    font-size: 1.7em;
+  }
+}
+@include media-breakpoint-up(lg) {
+  .st_hero {
+    height: 768px;
+  }
+  .st_heroImgPC {
+    display: block;
+  }
+  .st_heroImg {
+    display: none;
+  }
+  .st_heroContent {
+    margin-top: 0;
+    align-items: flex-start;
+  }
+  .st_headerBlurb {
+    margin-top: 0;
+    align-items: center;
+  }
+  .st_heroText {
+    margin-bottom: 300px;
+  }
+  .st_mobile {
+    display: none;
+  }
+  .st_tablet {
+    display: none;
+  }
+  .st_large {
+    display: block;
+  }
+  .st_carouselItem {
+    // height: 100%;
+    // width: 100%;
+    margin: 2% auto 200px;
+    padding: 0.5% 9%;
+  }
+}
+@include media-breakpoint-up(xl) {
+  .st_mobile {
+    display: none;
+  }
+  .st_tablet {
+    display: none;
+  }
+  .st_large {
+    display: none;
+  }
+  .st_PC {
+    display: none;
+  }
+  .st_HD {
+    display: block;
+  }
+  .st_heroHeader {
+    margin-left: 0;
+  }
+  .st_heroText {
+    margin: 2% auto;
+  }
+  .st_headerBlurb {
+    margin: 5% auto;
+  }
+}
+@include media-breakpoint-up(xxl) {
+  .st_PC {
+    display: none;
+  }
+  .st_HD {
+    display: block;
+  }
+  .st_heroHeader {
+    margin-left: 0;
+  }
+  .st_heroText {
+    margin: 2% auto;
+  }
+  .st_headerBlurb {
+    margin: 5% auto;
+  }
+  .st_headerBlurb h3 {
+    font-size: 2em;
+  }
 }
 
-// .st_headerStatement {
-//   line-height: 3.5;
+// @include media-breakpoint-up(sm) {
 // }
-.st_divide{
-  margin-top: 5%;
-}
-

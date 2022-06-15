@@ -12,11 +12,14 @@ $("button").click(function(){
      location.href = 'services.html';
      }
      else if(btnId === 'hm_aboutBtn'){
-     location.href = 'about.html';
-     }
-     else if(btnId === 'hm_ppwBtn'){
-     location.href = '404.html';
-     }
+       location.href = 'about.html';
+      }
+      else if(btnId === 'hm_ppwBtn'){
+        location.href = '404.html';
+      }
+     else if(btnId === 'hm_showCasebtn'){
+      location.href = 'studio.html';
+      }
  });
  
 
@@ -34,54 +37,28 @@ $("button").click(function(){
       var up = false;
       var newscroll;
 
-      mywindow.scroll(function () {
-          newscroll = mywindow.scrollTop();
-          if (newscroll > (mypos) && !up) {
-              $('header').fadeOut();
-              up = !up;
-              console.log(up);
-          } else if(newscroll < (mypos) && up) {
-              $('header').fadeIn();
-              up = !up;
-          }
-          mypos = newscroll;
+      if (mypos >= 30)
+        mywindow.scroll (function () {
+            newscroll = mywindow.scrollTop();
+            if (newscroll > (mypos) && !up) {
+                $('header').fadeOut();
+                up = !up;
+            } else if(newscroll < (mypos) && up) {
+                $('header').fadeIn();
+                up = !up;
+            }
+            mypos = newscroll;
+                    });
+      else {
+        $('header').show();
+        }
       });
-  });
-});
-//************
-// legacy Scroll Hide Animation 5-31-2022
-//************
+    });
 
-// $(window).scroll(function checkScrollDirection(event) {
 
-//   let scrollableElement = globalThis; //document.getElementById('scrollableElement');
-
-//   }
-//   scrollableElement.addEventListener('wheel', checkScrollDirection);
-
-//   if (checkScrollDirectionIsUp(event)) {
-//          console.log('Up');
-//          $('header').show(500);
-
-              
-//    }
-//    else {
-//        console.log('Down');
-//        $('header').show(500);
- 
-//    }
-//  })
- 
-//  function checkScrollDirectionIsUp(event) {
-//    if (event.wheelDelta) {
-//      return event.wheelDelta > 0;
-//    }
-//    return event.deltaY < 0;
-//  }
-
-  //********
- //Return to Top button
- //********
+//****************
+//Return to Top button
+//****************
     //Get the button
     let topButton = document.getElementById("btn-back-to-top");
 
@@ -106,16 +83,14 @@ $("button").click(function(){
     function backToTop() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
-    $(".navbar").show(500);
-    $(".header").show(500);
+    $("header").show(500);
     }
 
 
 
-
- //Typewriter Animation
- //
- //
+//****************
+//Typewriter Animation
+//****************
  (function ($) {
    function typeString($target, str, cursor, delay, cb) {
      $target.html(function (_, html) {
@@ -172,14 +147,40 @@ $("button").click(function(){
    );
 
 
-//********
-//Home Page Card Fill Automation
-//********
-
+//****************
+//Home Page Card Swap
+//****************
+$( document ).ready(
 $(".clickCard").on('click tap', function(e){   
     e.preventDefault();
     $('.showCard').css('z-index', '0');
     $('.showCard.activeC').css('z-index', '3');
     $('.showCard').removeClass('activeC');
     $($(this).attr('href')).addClass('activeC');
+    $([document.documentElement, document.body]).animate({
+      scrollTop: $("#cardService").offset().top
+    }, 0);
+}));
+
+//****************
+// Hiding Textarea label when text is present in box
+//****************
+$( "textarea" ).click(function() {
+
+  $(".st_labelTA").addClass( "hide" );
+
+  $("#floatingTextarea").blur(function(){
+
+    $(".st_labelTA").removeClass( "hide" );
+
+  });
+
+    $("#floatingTextarea").focus(function(){
+
+   
+
+    $(".st_labelTA").addClass( "hide" );
+
+  });
+
 });

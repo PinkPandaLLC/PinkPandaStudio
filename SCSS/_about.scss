@@ -1,38 +1,55 @@
 .ab_contentHeader {
   @include leftBorder;
   color: map-get($colors, color-primary);
-  margin-top: 3%;
+  margin-top: 5%;
 }
 .ab_cardTitle {
   text-align: center;
+  margin-top: 5%
 }
 .ab_cardContents {
   @include flex-rowc;
   text-align: center;
 }
-.ab_cardImages {
-  object-fit: contain;
-  max-height: 400px;
-}
 .ab_cardContents p {
-  padding: 2%;
-  margin-left: 7%;
+  margin:5%;
 }
 .ab_info {
+  @include flex-rowc;
   padding: 2%;
   margin: auto;
 }
-.ab_infoContent {
-  padding: 3%;
+.ab_infoContent{
+  margin: 5%;
+}
+.ab_infoText b {
+  color:map-get($colors, color-primary);
+  font-size: 30px;
 }
 .ab_infoText {
-  @include flex-rowc;
-  align-items: center;
+  margin-top: 5%;
+  text-align: center; 
 }
-.ab_img img {
-  width: 100%;
-  max-width: 100%;
-  max-height: 100%;
-  transform: translate(-20px, -20px);
-  box-shadow: 10px 10px 5px map-get($colors, color-secondary);
+.ab_img {
+  object-fit: contain;
+  // box-shadow: 10px 10px 5px map-get($colors, color-secondary);
+}
+
+@include media-breakpoint-up(md){
+  .ab_img {
+      max-height: 400px;
+    }
+}
+
+@include media-breakpoint-up(lg){
+  .ab_info {
+      flex-wrap: nowrap;
+      margin-top: 5%;
+    }
+  .ab_infoContent{
+    @include flex-rowc;
+    align-items: center;
+    margin-top: 0%;
+    margin-bottom: 10%;
+  }
 }
