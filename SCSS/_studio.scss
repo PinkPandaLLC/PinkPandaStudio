@@ -72,8 +72,8 @@
   font-weight: bold;
 }
 // Tab Buttons
-.st_tabButtons li {
-  margin: 0.5%;
+.st_tabButtons li{
+  margin: .5%;
 }
 // Carousel Indicators
 .st_carouselIndicators button.active {
@@ -82,13 +82,20 @@
 
 // Carousel Images
 
-.st_tablet,
-.st_large,
-.st_PC,
+// .st_portfolioContents {
+// }
+.st_tablet {
+  display: none;
+}
+.st_large {
+  display: none;
+}
+.st_PC {
+  display: none;
+}
 .st_HD {
   display: none;
 }
-
 .st_carouselItem {
   height: 100%;
   width: 100%;
@@ -159,7 +166,9 @@
   .st_heroText {
     margin-bottom: 300px;
   }
-  .st_mobile,
+  .st_mobile {
+    display: none;
+  }
   .st_tablet {
     display: none;
   }
@@ -174,13 +183,18 @@
   }
 }
 @include media-breakpoint-up(xl) {
-  .st_mobile,
-  .st_tablet,
-  .st_large,
+  .st_mobile {
+    display: none;
+  }
+  .st_tablet {
+    display: none;
+  }
+  .st_large {
+    display: none;
+  }
   .st_PC {
     display: none;
   }
-
   .st_HD {
     display: block;
   }

@@ -1,260 +1,216 @@
-// .sr_hero {
-//   @include flex-rowc;
-//   background-color: rgba(0, 0, 0, 0.442);
-//   position: relative;
-// }
-// .sr_heroContent {
-//   position: absolute;
-//   z-index: 2;
-// }
-// .sr_heroTitle {
-//   @include leftBorder;
-//   color: map-get($colors, color-primary);
-//   margin-top: 2%;
-// }
-// .heroImgOverlay {
-//   width: auto;
-//   height: 45%;
-//   border: 6px inset white;
-// }
-// .sr_heroCaption {
-//   color: map-get($colors, color-white);
-//   text-align: center;
-//   margin-top: 3%;
-// }
-// .sr_heroImgContainer {
-//   @include flex-rowc;
-//   margin-top: 5%;
-// }
-// .sr_learnMore {
-//   transform: translateX(-300px);
-// }
-// .sr_heroBg {
-//   position: sticky;
-//   width: 100%;
-//   height: 100%;
-//   min-width: 100%;
-//   min-height: 100%;
-//   z-index: -1;
-// }
-// .sr_learnHeader {
-//   @include leftBorder;
-//   color: map-get($colors, color-white);
-//   margin-bottom: 5%;
-// }
-// .sr_clickHeader {
-//   margin-left: 5%;
-//   color: map-get($colors, color-white);
-// }
-// .clickService {
-//   border-left: 4px solid map-get($colors, color-grey);
-//   padding-left: 1%;
-// }
-// .clickService:hover {
-//   border-left: 4px solid map-get($colors, color-primary);
-//   padding-left: 1%;
-//   cursor: pointer;
-//   color: map-get($colors, color-secondary);
-// }
+$sectionHeight: 800px;
 
-// //cards
-// //Responsive web design
+.sr_hero {
+  @include flex-rowc;
+  object-fit: cover;
+  background-color: rgba(0, 0, 0, 0.442);
+  position: relative;
+  width: 100%;
+  height: $sectionHeight;
+  
+}
+.sr_heroContent {
+  position: absolute;
+  @include flex-rowc;
+  top: 20%;
+  z-index: 2;
+}
+.sr_heroTitle {
+  @include leftBorder;
+  color: map-get($colors, color-primary);
+  margin-top: 10%;
+  margin-left: 5%;
+  position: absolute;
+  z-index: 2;
 
-// .sr_cardContainer {
-//   margin-top: 10%;
-//   @include flex-rowc;
-//   align-items: center;
-// }
+}
+.heroImgOverlay {
+  display: none;
+  max-width: 250px;
+  max-height: 400px;
+  width: 100%;
+  height: 100%;
+}
+.sr_heroCaption {
+  color: map-get($colors, color-white);
+  text-align: center;
+  margin-top: 15%;
+}
+.sr_heroImgContainer {
+  @include flex-rowc;
+  align-items: center;
+  margin-top: 5%;
+}
+.sr_learnMore {
+  margin-top: 15%;
+}
+.sr_heroBgOne {
+  position: sticky;
+  object-fit: fill;
+  min-width: 100%;
+  min-height: $sectionHeight;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.sr_heroBgTwo {
+  display: none;
+  position: sticky;
+  object-fit: fill;
+  min-width: 100%;
+  min-height: $sectionHeight;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
 
-// .sr_cardImg {
-//   max-width: 100%;
-// }
+.sr_learnHeader {
+  @include leftBorder;
+  color: map-get($colors, color-tertiary);
+  margin-bottom: 5%;
+}
+.sr_clickHeader {
+  margin-left: 5%;
+  margin-top: 10%;
+  color: map-get($colors, color-white);
+}
+.clickService {
+  border-left: 4px solid map-get($colors, color-grey);
+  padding-left: 1%;
+}
+.clickService:hover {
+  border-left: 4px solid map-get($colors, color-primary);
+  padding-left: 1%;
+  cursor: pointer;
+  color: map-get($colors, color-secondary);
+}
+//Cards
+.sr_cardInfo{
+  @include flex-rowc;
+  align-items: center;
+  margin-top: 5%;
+}
+.sr_cardImgOne {
+  max-width: 100%;
+}
+.sr_cardImgTwo {
+  display: none;
+  max-width: 100%;
+  max-height: 500px;
+}
 
-// .sr_cardImg img {
-//   @include wh100;
-// }
+.sr_cardImg img {
+  @include wh100;
+}
 
-// .sr_cardHeader {
-//   @include leftBorder;
-// }
-// .sr_cardText {
-//   margin-left: 5%;
-//   margin-top: 3%;
-// }
-// .sr_cardPoints {
-//   margin-top: 3%;
-//   margin-left: 10%;
-//   font-family: $secondary-font;
-// }
-// //XD revision - 5/13/2022
-// // .arrowImg{
-// //     width: 100%;
-// //     max-width: 25px;
-// //     max-height: 25px;
-// //     transform: translateY(-5px);
-// // }
-
-// V2.01
-
+.sr_cardHeader {
+  @include leftBorder;
+  margin-left: 2%;
+}
+.sr_cardText {
+  margin-left: 5%;
+  margin-top: 3%;
+}
+.sr_cardPoints {
+  margin-top: 3%;
+  margin-left: 10%;
+  font-family: $secondary-font;
+}
 .sr_buffer {
-  // size with the height of the Nav bar. return to with jquery for more percision
-  height: 90px;
-  // height: ~vh;
+  height: 20px;
 }
-.sr_bufferMobile {
-  height: 10vh;
+//Responsive web design
+
+@include media-breakpoint-up(sm) {
+  
 }
 
-// MQ
-.sr_heroBgMobile {
-  display: none;
-}
-.sr_overlayShifted {
-  display: none;
-}
-.sr_content {
-  min-width: 100vw;
-}
-.sr_gdIMGswapMobile {
-  display: none;
-}
-
-// Overlays for hero
-@media screen and (min-width: 1px) {
+@include media-breakpoint-up(md) {
   .sr_hero {
-    background-color: rgba(0, 0, 0, 0.442);
-    position: relative;
-  }
-  .sr_heroContent {
-    position: absolute;
-    z-index: 2;
-  }
-  .sr_heroBg {
-    position: sticky;
-    z-index: -1;
-  }
-  .sr_oSimg {
-    position: relative;
-  }
-  .sr_oScontent {
-    position: absolute;
-    z-index: 2;
-  }
-}
-
-// MQ for mobile to tablet
-@media screen and (min-width: 22em) and (max-width: 47.9375em) {
-  .sr_hero {
-    @include flex-rowc;
-  }
-  .sr_heroBg {
-    image-rendering: optimizeSpeed;
-    object-fit: contain;
-  }
-  .sr_heroBgMobile {
-    display: block;
-    width: 100vw;
-  }
-  .sr_heroBgLarge {
-    display: none;
+    height: 1000px;
   }
   .sr_heroTitle {
-    @include leftBorder;
-    color: map-get($colors, color-primary);
-    margin-top: 2vh;
-    margin-left: 5vw;
+    margin-top: 5%;
   }
-  // setting box size for border around title
-  .sr_heroTitle h1 {
-    @include boxSizing;
+  .heroImgOverlay {
+    display: flex;
   }
   .sr_heroCaption {
-    // color: map-get($colors, color-white);
-    text-align: center;
-    margin-top: 1vh;
-    margin-left: 7vw;
-  }
-  .sr_heroCaption h6 {
-    font-size: 0.8em;
-    @include boxSizing;
-  }
-  .sr_overlayHero {
-    display: none;
-  }
-  .sr_overlayShifted {
-    display: block;
-  }
-  // oS means .overlayShifted classes nested within .sr_overlayShifted
-  .sr_oSdropdowns {
-    // offset from top
-    margin-top: 20vh;
-  }
-  .sr_oSimg img {
-    height: 300px;
-    width: 100vw;
-  }
-  .heroImgOverlay {
-    width: 100vw;
-    height: 45%;
-    //   border: 6px inset white;
-  }
-  .sr_learnHeader {
-    color: map-get($colors, color-primary);
+    margin-top: 0;
   }
   .sr_cardHeader {
-    @include leftBorder;
-    // margin-top: 4vh;
-    margin-left: 3vw;
+    margin-left: 0%;
   }
-  .sr_cardHeader h4 {
-    font-size: 2em;
-    @include boxSizing;
+  .sr_learnHeader{
+      margin-bottom: 0%;
   }
-  .sr_cardText p {
-    font-size: 1.2em;
-    margin: 3vh auto;
-  }
-  .sr_gdIMGswapDesktop {
-    display: none;
-  }
-  .sr_gdIMGswapMobile {
-    display: block;
-  }
-  #sr_cbsHeadingMobile {
-    font-size: 1.7em;
-  }
-  .sr_cardImg {
-    max-height: 66%;
-    max-width: 33%;
-    height: 100%;
+  .sr_cardImgOne {
+    max-width: 100%;
+    max-height: 500px;
     width: 100%;
+    height: 100%;
   }
-  .sr_cardImgContainer {
-    @include flex-rowc;
+  .sr_clickHeader{
+    margin-left: 0%;
+    height: 100%;
+  }
+  .sr_learnMore {
+    margin-top: 0;
+    margin-left: 5%;
+  }
+  .sr_heroImgContainer{
+    @include flex-roweven;
+    flex-wrap: nowrap;
+    margin-top: 15%;
   }
 }
-// MQ for tablet to laptop
-@media screen and (min-width: 47.9376em) and (max-width: 85.375em) {
-  .sr_hero {
+
+@include media-breakpoint-up(lg) {
+  .sr_heroBgOne{
+    display: none;
+  }
+  .sr_heroBgTwo{
+    display: flex;
+  }
+  .sr_heroImgContainer {
     @include flex-rowc;
+    flex-wrap: nowrap;
+    margin-top: 10%;
   }
-  .sr_heroBg {
-    // object-fit: fill;
-    width: 100vw;
-    // height: 100%;
-    image-rendering: optimizeSpeed;
-    object-fit: contain;
-    max-width: 100%;
-    height: fit-content(18em);
+  .sr_cardImgOne{
+    display: none;
   }
-  .sr_heroBgLarge {
-    display: block;
-    width: 100%;
-    height: 100%;
+  .sr_cardImgTwo{
+    display: flex;
   }
-  .heroImgOverlay {
-    width: auto;
-    height: 45%;
-    border: 6px inset white;
+  .sr_cardContainer{
+    @include flex-rowc;
+    flex-wrap: nowrap;
   }
+  .sr_cardText {
+    margin-left: 0%;
+  }
+  .sr_cardPoints {
+    margin-left: 0%;
+  }
+  .sr_cardContainer{
+    @include flex-rowc;
+    align-items: center;
+  }
+  .sr_cardInfo {
+    margin-top: 0%;
+  }
+    .sr_buffer {
+      height: 60px;
+    }
+}
+
+@include media-breakpoint-up(xl) {
+  .sr_heroCaption {
+      margin-top: 5%;
+    }
+}
+
+@include media-breakpoint-up(xxl) {
+ 
 }

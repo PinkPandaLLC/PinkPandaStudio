@@ -167,26 +167,12 @@ $utilities: map-merge(
     "viewport-width": (
       property: width,
       class: vw,
-      values: (
-        25: 25vw,
-        30: 30vw,
-        40: 40vw,
-        50: 50vw,
-        75: 75vw,
-        100: 100vw
-        )
+      values: (100: 100vw)
     ),
     "min-viewport-width": (
       property: min-width,
       class: min-vw,
-      values: (
-        25: 25vw,
-        30: 30vw,
-        40: 40vw,
-        50: 50vw,
-        75: 75vw,
-        100: 100vw
-        )
+      values: (100: 100vw)
     ),
     "height": (
       property: height,

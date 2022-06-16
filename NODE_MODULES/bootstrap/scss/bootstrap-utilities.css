@@ -588,48 +588,8 @@
   max-width: 100% !important;
 }
 
-.vw-25 {
-  width: 25vw !important;
-}
-
-.vw-30 {
-  width: 30vw !important;
-}
-
-.vw-40 {
-  width: 40vw !important;
-}
-
-.vw-50 {
-  width: 50vw !important;
-}
-
-.vw-75 {
-  width: 75vw !important;
-}
-
 .vw-100 {
   width: 100vw !important;
-}
-
-.min-vw-25 {
-  min-width: 25vw !important;
-}
-
-.min-vw-30 {
-  min-width: 30vw !important;
-}
-
-.min-vw-40 {
-  min-width: 40vw !important;
-}
-
-.min-vw-50 {
-  min-width: 50vw !important;
-}
-
-.min-vw-75 {
-  min-width: 75vw !important;
 }
 
 .min-vw-100 {
