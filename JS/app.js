@@ -29,29 +29,31 @@ $("button").click(function(){
 
  $(document).ready(function() {
         
-  var load_flag = true;
+ 
   $(document).scroll(function() {
       
       var mywindow = $(window);
       var mypos = mywindow.scrollTop();
       var up = false;
       var newscroll;
-
-      if (mypos >= 30)
+      var phonesize = $( window ).width();
+ 
+        if ( phonesize >= 768)
+          
         mywindow.scroll (function () {
-            newscroll = mywindow.scrollTop();
+
+        newscroll = mywindow.scrollTop();
+
             if (newscroll > (mypos) && !up) {
                 $('header').fadeOut();
                 up = !up;
             } else if(newscroll < (mypos) && up) {
                 $('header').fadeIn();
                 up = !up;
-            }
+            } 
             mypos = newscroll;
-                    });
-      else {
-        $('header').show();
-        }
+        
+        });
       });
     });
 

@@ -203,7 +203,6 @@ $colors:(
 // ******
 //Template Page Styling
 // ******
- 
     //Navbar
     .navbar{
         height: 85px;
@@ -326,7 +325,7 @@ $colors:(
         @include flex-rowc;
         align-items: flex-end;
         width: 100%;
-        height: 70%;
+        height: 67%;
     }
     @include media-breakpoint-up(lg){
         .socialnav{

@@ -12535,10 +12535,9 @@ video {
 
 .hm_btn {
   position: absolute;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  margin-top: 125%;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-bottom: 20%;
   border: 1px solid #EC1F94;
   background-color: #FFE9F5;
   color: #EC1F94;
@@ -12988,8 +12987,12 @@ video {
 }
 
 @media (min-width: 992px) {
-  .hm_btn {
-    margin-top: 25%;
+  video {
+    height: 720px;
+  }
+  .hm_hero {
+    width: 100%;
+    height: 720px;
   }
   .showImg {
     max-height: 650px;
@@ -13050,6 +13053,10 @@ video {
   .hm_hero {
     width: 100%;
     height: 920px;
+  }
+  .hm_btn {
+    margin-top: 0%;
+    margin-bottom: 10%;
   }
   .hm_services {
     height: 600px;
