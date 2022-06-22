@@ -38,7 +38,7 @@ $("button").click(function(){
       var newscroll;
       var phonesize = $( window ).width();
  
-        if ( phonesize >= 768)
+        if ( phonesize >= 1366)
           
         mywindow.scroll (function () {
 
