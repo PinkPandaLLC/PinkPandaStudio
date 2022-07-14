@@ -10,9 +10,9 @@
     <!-- Links -->
     <link rel="stylesheet" href="SCSS/styles.css" />
   </head>
-  <!-- Body -->
 
   <body>
+
     <!-- Header -->
     <header>
       <!-- Navbar -->
@@ -96,38 +96,36 @@
               </ul>
               <div class="navSpace" style="visibility: hidden"></div>
 
-              
-                <div class="socialnav row">
-                  <div class="col-3">
-                    <a
-                      href="https://www.facebook.com/profile.php?id=100074592790768"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      class="socialIcon"
-                      ><img src="MEDIA/img_icon_fb.gif" alt=""
-                    /></a>
-                  </div>
-                  <div class="col-3">
-                    <a
-                      href=" https://www.instagram.com/my_pink_panda_/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      class="socialIcon"
-                      ><img src="MEDIA/img_icon_instagram.gif"
-                    /></a>
-                  </div>
-                  <div class="col-3">
-                    <a
-                      href="https://github.com/PinkPandaLLC?tab=repositories"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      class="socialIcon"
-                      ><img src="MEDIA/img_icon_github.gif" alt=""
-                    /></a>
-                  </div>
+              <div class="socialnav row">
+                <div class="col-3">
+                  <a
+                    href="https://www.facebook.com/profile.php?id=100074592790768"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="socialIcon"
+                    ><img src="MEDIA/img_icon_fb.gif" alt=""
+                  /></a>
                 </div>
-         
-                
+                <div class="col-3">
+                  <a
+                    href=" https://www.instagram.com/my_pink_panda_/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="socialIcon"
+                    ><img src="MEDIA/img_icon_instagram.gif"
+                  /></a>
+                </div>
+                <div class="col-3">
+                  <a
+                    href="https://github.com/PinkPandaLLC?tab=repositories"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="socialIcon"
+                    ><img src="MEDIA/img_icon_github.gif" alt=""
+                  /></a>
+                </div>
+              </div>
+
               <!-- ************************************************************************* -->
               <!-- Optional Search Form -->
               <!-- <form class="d-flex">
@@ -184,29 +182,36 @@
       </div>
     </header>
 
-    <!-- Hero Image -->
-    <section class="container-xxl">
-      <div class="cu_hero">
-        <img src="MEDIA/img_contactHeroDPI-01.png" alt="" class="img-fluid" />
-      </div>
-    </section>
-
-    <!--Contact us Title, Form -->
     <main>
+      <!-- Hero Image -->
+      <section class="container-xxl">
+        <div class="cu_hero">
+          <img src="MEDIA/img_contactHeroDPI-01.png" alt="" class="img-fluid" />
+        </div>
+      </section>
+
+      <!--Contact us Title, Form -->
       <!-- Title Area -->
+
       <section class="container">
         <div class="cu_title">
           <h2>Contact Us</h2>
         </div>
       </section>
 
+      <!-- API Integration -->
       <!-- Contact us form -->
+
       <section class="container">
-        <form>
+        <form
+          action="https://mailthis.to/support@mypinkpanda.com"
+          method="POST"
+          enctype="multipart/form-data"
+        >
           <!-- Form headers -->
-          <div class="row d-flex justify-content-center">
-            <h4 class="cu_headers col-12">Get your Journey Started Today!</h4>
-            <h5 class="cu_headers col-12">
+          <div class="row d-flex cu_headers justify-content-center">
+            <h4 class=" col-12">Get your Journey Started Today!</h4>
+            <h5 class=" col-12">
               Tell us about your vision and how we can make it a reality.
             </h5>
           </div>
@@ -214,20 +219,21 @@
           <!-- First & Last Names -->
           <div class="row mb-2 d-flex justify-content-center">
             <!-- First Name -->
-            <div class="form-floating mb-2 col-8 col-xl-6">
+            <div class="form-floating mb-2 col-8 col-xl-8">
               <input
                 type="text"
                 class="form-control"
                 id="floatingInputFname"
-                placeholder="First Name"
+                name="name"
+                placeholder="Full Name"
               />
               <label for="floatingInputFname" class="cu_formLabel"
-                >First Name</label
+                >Full Name</label
               >
             </div>
 
             <!-- Last Name -->
-            <div class="form-floating mb-2 col-8 col-xl-6">
+            <!-- <div class="form-floating mb-2 col-8 col-xl-6">
               <input
                 type="text"
                 class="form-control"
@@ -237,24 +243,25 @@
               <label for="floatingInputLname" class="cu_formLabel"
                 >Last Name</label
               >
-            </div>
+            </div> -->
           </div>
 
           <!-- Contact Info Email/Phone -->
           <div class="row mb-2 d-flex justify-content-center">
             <!-- Email -->
-            <div class="form-floating mb-2 col-8 col-xl-6">
+            <div class="form-floating mb-2 col-8 col-xl-4">
               <input
                 type="email"
                 class="form-control"
                 id="floatingInputEmail"
+                name="_replyto"
                 placeholder="Email"
               />
               <label for="floatingInputEmail" class="cu_formLabel">Email</label>
             </div>
 
             <!-- Phone -->
-            <div class="form-floating mb-2 col-8 col-xl-6">
+            <div class="form-floating mb-2 col-8 col-xl-4">
               <input
                 type="tel"
                 class="form-control"
@@ -267,7 +274,7 @@
 
           <!-- Business Information Name/URL-->
           <div class="row mb-2 d-flex justify-content-center">
-            <div class="form-floating mb-2 col-8 col-xl-6">
+            <div class="form-floating mb-2 col-8 col-xl-4">
               <input
                 type="text"
                 class="form-control"
@@ -279,7 +286,7 @@
               >
             </div>
 
-            <div class="form-floating mb-2 col-8 col-xl-6">
+            <div class="form-floating mb-2 col-8 col-xl-4">
               <input
                 type="url"
                 class="form-control"
@@ -294,10 +301,11 @@
 
           <!-- Comments -->
           <div class="row mb-2 d-flex justify-content-center">
-            <div class="form-floating col-8 col-xl-6 st_messageBox">
+            <div class="form-floating col-8 col-xl-8 st_messageBox">
               <textarea
                 class="form-control"
                 placeholder="Leave a message here"
+                name="message"
                 id="floatingTextarea"
               ></textarea>
               <label for="floatingTextarea" class="cu_formLabel st_labelTA"
@@ -306,37 +314,59 @@
             </div>
           </div>
 
+          <!-- AJAX update? -->
+          <input type="hidden" name="_subject" value="Contact form submitted" />
+
+          <!-- Testing to reload contact -->
+          <input
+            type="hidden"
+            name="_after"
+            value="https://www.pinkpanda.studio/contact.html/"
+          />
+
+          <input type="hidden" name="_honeypot" value="" />
+          <input type="hidden" name="_confirmation" value="" />
+
           <!-- Submit Button -->
           <div>
             <div class="col-12">
-              <button type="submit" class="cu_submitBtn col-8 col-lg-4">
+              <button
+                type="submit"
+                class="cu_submitBtn col-8 col-lg-4"
+                value="Send"
+              >
                 <h5>Submit</h5>
               </button>
             </div>
           </div>
         </form>
       </section>
-    </main>
 
-    <!-- Information Card  -->
-    <section class="container">
-      <div>
-        <div class="row">
+      <!-- Information Card  -->
+      <section class="container">
+
+        <div class="row cu_infoCard">
+
           <!-- Image  -->
-          <div class="col-xs-12 col-lg-6 cu_infoImage">
-            <img src="MEDIA/img_contact_pinkMug.gif" alt="" class="img-fluid" />
+          <div class="col-12 col-lg-6 cu_Mug">
+            <img
+              src="MEDIA/img_contact_pinkMug.gif"
+              alt=""
+              class="img-fluid col-lg-6 cu_infoImage"
+            />
           </div>
-
-          <div class="col-lg-6 col-sm-12">
+          <!-- Text -->
+          <div class="col-12 col-lg-6 cu_statements">
+            
             <!-- Titles -->
             <div class="cu_infoTitles">
-              <h4>What to expect</h4>
-              <h5>Phases to Success</h5>
+              <h4 class="col-12">What to expect</h4>
+              <h5 class="col-12">Phases to Success</h5>
             </div>
 
             <!-- Phases to Success -->
             <div class="cu_phases_List">
-              <ul class="cu_phases_List_item">
+              <ul class="cu_phases_List_item col-12">
                 <li>Website analysis with the Panda Team</li>
                 <li>Partnership kickoff and onboard meeting</li>
                 <li>Wireframing, Content & SEO</li>
@@ -346,29 +376,22 @@
               </ul>
             </div>
           </div>
+
         </div>
-      </div>
-    </section>
 
-    <!-- Footer -->
-    <footer
-      class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top container"
-    >
-      <div class="col-lg-4 d-flex align-items-center">
-        <span class="text-muted"
-          >Pink Panda Ltd Liability Co.<br />
-          © 2021 Company</span
-        >
-      </div>
-      <button
-        type="button"
-        class="btn btn-floating btn-lg"
-        id="btn-back-to-top"
-      >
-        <img src="MEDIA/img_icon_upArrow.png" alt="" />
-      </button>
-    </footer>
-
+      </section>
+          <button type="button" id="btn-back-to-top">
+            <img src="MEDIA/rocketBtn-01.png" class="img-fluid" alt="">
+          </button>
+          </main>
+          
+          <!-- Footer -->
+          <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top container">
+            <div class="col-lg-4 d-flex align-items-center">
+              <span class="text-muted">Pink Panda Ltd Liability Co.<br> © 2021 Company</span>
+            </div>
+          </footer>
+  </body>
     <!-- Java script / Jquery -->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>

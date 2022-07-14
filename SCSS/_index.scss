@@ -6,7 +6,7 @@
 // Video
 .hm_hero{
     @include flex-rowc;
-    background-color: rgba(0, 0, 0, 0.356);
+    background-color: rgba(0, 0, 0, 0.404);
     position: relative;
     width: fit-content;
     height: 820px;
@@ -94,10 +94,10 @@ video{
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     border-radius: 5px; /* 5px rounded corners */
     position: absolute;
-    min-height: 1000px;
+    min-height: 100%;
     min-width: 100%;
     width: 100%;
-    height: 100%;
+    height: 1000px;
     }
 .activeC{   
     z-index: 4 !important;
@@ -121,8 +121,7 @@ video{
     margin-bottom: 5%;
 }
 .hm_push{
-    margin-top: 10%;
-    
+    margin-top: 10%;   
 }
 .hm_blurb{
     margin: 3%;
@@ -186,6 +185,9 @@ video{
     transform: translateY(.25em) scale(115%);
 }
   //Showcase
+  .hm_carouselIndicators button.active {
+      background-color: map-get($colors, color-primary);
+  }
   .hm_showcaseHeader{
       @include leftBorder;
       margin-top: 5%;
@@ -198,7 +200,7 @@ video{
   }
 
   .hm_showCasebtn {
-    margin-top: 10%;
+    margin: 10% 0;
     border: 1px solid map-get($colors, color-secondary);
     background-color:transparent;
     color: map-get($colors, color-secondary);
@@ -294,10 +296,10 @@ video{
         height: 1180px;
     }
     .showCard{
-        min-height: 1100px;
+        min-height: 100%;
         min-width: 100%;
         width: 100%;
-        height: 100%;
+        height: 1100px;
     }
     .hm_push{
         margin-top: 10%;
@@ -332,13 +334,13 @@ video{
         margin-top: 5%;
     }
     .hm_cardStack{
-        display: flex;
-        flex-wrap: nowrap;
-        flex-direction: row;
-        justify-content: space-evenly;
+        @include flex-rowc;
     }
     .showCard{
-        max-width: 700px;
+        max-height: 500px;
+    }
+    .hm_services {
+        height: 550px;
     }
     .squareInfoSwap{
         display: flex;
@@ -353,6 +355,9 @@ video{
     .hm_showCasebtn {
         margin-top: 7%;
     }
+    .cardBody {
+        margin-top: 0%;
+    }
 
 }
 //EXTRA LARGE SCREEN SIZING 1400px and up
@@ -363,6 +368,12 @@ video{
     .hm_hero{
         width: 100%;
         height: 920px;
+    }
+    .hm_cardStack {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: space-evenly;
     }
     .hm_btn{
         margin-top: 0%;
@@ -376,11 +387,6 @@ video{
         min-height: 0px;
         max-height: 500px;
     }
-    .cardBody{
-        margin-top: 0%;
-             
-    }
-    .hm_push{
-        margin-top: 0%;                 
-    }
+
+
 }

@@ -2,12 +2,19 @@
 <html lang="en">
   <head>
     <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-NB5LD88');</script>
-  <!-- End Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-NB5LD88");
+    </script>
+    <!-- End Google Tag Manager -->
     <!-- Meta -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -16,53 +23,83 @@
     <title>PinkPandaStudio/Services</title>
     <!-- Links -->
     <link rel="stylesheet" href="SCSS/styles.css" />
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-6LQNFNNLVK"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-6LQNFNNLVK"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  gtag('config', 'G-6LQNFNNLVK');
-</script>
+      gtag("config", "G-6LQNFNNLVK");
+    </script>
   </head>
   <!-- Body -->
   <body>
     <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NB5LD88"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-NB5LD88"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <!-- Header -->
-    <header>	
+    <header>
       <!-- Navbar -->
       <nav class="navbar navbar-light bg-transparent fixed-top">
-  
         <div class="container">
-          <a class="navbar-brand" href="index.html"><img src="MEDIA/img_logo.svg" alt=""></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <a class="navbar-brand" href="index.html"
+            ><img src="MEDIA/img_logo.svg" alt=""
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+          >
             <span class="navbar-toggler-icon"></span>
-              </button>
-          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-          <div class="offcanvas-header">
-              <div class="offcanvas-title navbar-brand" id="offcanvasNavbarLabel">
-                <a href="index.html"><img src="MEDIA/img_logo.svg" alt=""></a>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <div
+                class="offcanvas-title navbar-brand"
+                id="offcanvasNavbarLabel"
+              >
+                <a href="index.html"><img src="MEDIA/img_logo.svg" alt="" /></a>
               </div>
-            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-  
-          <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-  
-            <li class="nav-item">
-              <a class="nav-item nav-link "  href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-item nav-link" href="studio.html">Studio</a>
-            </li>
-                      <!-- ************************************************************************* -->
-                      <!-- DROPDOWN MENU FOR STUDIO AFTER PORTFOLIO MORE PAGES ARE COMPLETED -->
-  
-                              <!-- <li class="nav-item dropdown">
+              <button
+                type="button"
+                class="btn-close text-reset"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-item nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-item nav-link" href="studio.html">Studio</a>
+                </li>
+                <!-- ************************************************************************* -->
+                <!-- DROPDOWN MENU FOR STUDIO AFTER PORTFOLIO MORE PAGES ARE COMPLETED -->
+
+                <!-- <li class="nav-item dropdown">
                                   <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                   Studio
                                   </a>
@@ -77,79 +114,132 @@
                                   <li><a class="dropdown-item" href="#">Pink Panda World</a></li>
                                   </ul>
                               </li> -->
-                      <!-- ************************************************************************* -->
-              <li class="nav-item">
-              <a class="nav-item nav-link active" id="pageselect" aria-current="page" href="services.html">Services</a>
-            </li>
-              <li class="nav-item">
-              <a class="nav-item nav-link" href="about.html">About</a>
-            </li>
-              <li class="nav-item">
-              <a class="nav-item nav-link" href="contact.html">Contact</a>
-            </li>
+                <!-- ************************************************************************* -->
+                <li class="nav-item">
+                  <a
+                    class="nav-item nav-link active"
+                    id="pageselect"
+                    aria-current="page"
+                    href="services.html"
+                    >Services</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-item nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-item nav-link" href="contact.html">Contact</a>
+                </li>
               </ul>
-                   
+
               <!-- <div class="container"> -->
-                <div class= "socialnav row">
+              <div class="socialnav row">
                 <div class="col-3">
-                <a href="https://www.facebook.com/profile.php?id=100074592790768"  target="_blank" rel="noopener noreferrer" class="socialIcon"><img src="MEDIA/img_icon_fb.gif" alt=""></a>						  
-                          </div>
-                <div class="col-3">
-                <a href= " https://www.instagram.com/my_pink_panda_/"  target="_blank" rel="noopener noreferrer" class="socialIcon"><img src="MEDIA/img_icon_instagram.gif"></a>	
+                  <a
+                    href="https://www.facebook.com/profile.php?id=100074592790768"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="socialIcon"
+                    ><img src="MEDIA/img_icon_fb.gif" alt=""
+                  /></a>
                 </div>
                 <div class="col-3">
-                <a href="https://github.com/PinkPandaLLC?tab=repositories"  target="_blank" rel="noopener noreferrer" class="socialIcon"><img src="MEDIA/img_icon_github.gif" alt=""></a>
+                  <a
+                    href=" https://www.instagram.com/my_pink_panda_/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="socialIcon"
+                    ><img src="MEDIA/img_icon_instagram.gif"
+                  /></a>
+                </div>
+                <div class="col-3">
+                  <a
+                    href="https://github.com/PinkPandaLLC?tab=repositories"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="socialIcon"
+                    ><img src="MEDIA/img_icon_github.gif" alt=""
+                  /></a>
                 </div>
               </div>
-            <!-- </div> -->
-            <!-- ************************************************************************* -->
+              <!-- </div> -->
+              <!-- ************************************************************************* -->
               <!-- Optional Search Form -->
-            <!-- <form class="d-flex">
+              <!-- <form class="d-flex">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">Search</button>
                   </form> -->
-                      <!-- ************************************************************************* -->
-          </div>
+              <!-- ************************************************************************* -->
+            </div>
           </div>
         </div>
-        </nav>
-  
-        <div class="header">
-          <!--Waves Container-->
-          <div>
-            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-              viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-              <defs>
-                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-              </defs>
-              <g class="parallax">
-                <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
-                <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
-                <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
-                <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
-              </g>
-            </svg>
-          </div>
-          <!--Waves end-->
+      </nav>
+
+      <div class="header">
+        <!--Waves Container-->
+        <div>
+          <svg
+            class="waves"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 24 150 28"
+            preserveAspectRatio="none"
+            shape-rendering="auto"
+          >
+            <defs>
+              <path
+                id="gentle-wave"
+                d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+              />
+            </defs>
+            <g class="parallax">
+              <use
+                xlink:href="#gentle-wave"
+                x="48"
+                y="0"
+                fill="rgba(255,255,255,0.7"
+              />
+              <use
+                xlink:href="#gentle-wave"
+                x="48"
+                y="3"
+                fill="rgba(255,255,255,0.5)"
+              />
+              <use
+                xlink:href="#gentle-wave"
+                x="48"
+                y="5"
+                fill="rgba(255,255,255,0.3)"
+              />
+              <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+            </g>
+          </svg>
         </div>
+        <!--Waves end-->
+      </div>
     </header>
 
     <main>
       <!--Section -->
       <section>
-        <div class="sr_hero"> 
+        <div class="sr_hero">
+          <img
+            src="MEDIA/img_services_hero_phone-01.png"
+            class="img-fluid sr_heroBgOne"
+            alt=""
+          />
+          <img
+            src="MEDIA/img_services_hero.png"
+            class="img-fluid sr_heroBgTwo"
+            alt=""
+          />
 
-            <img src="MEDIA/img_services_hero_phone-01.png" class="img-fluid sr_heroBgOne" alt="" />
-            <img src="MEDIA/img_services_hero.png" class="img-fluid sr_heroBgTwo" alt="" />
-          
-            <div class="sr_heroTitle container">
-              <h1>Services</h1>
-            </div>
-            
-            
-            <div class="sr_heroContent container row">
+          <div class="sr_heroTitle container">
+            <h1>Services</h1>
+          </div>
 
-            <div class="col-12 sr_heroCaption ">
+          <div class="sr_heroContent container row">
+            <div class="col-12 sr_heroCaption">
               <h5>
                 At Pink Panda we offer an all encompassing unique digital
                 experience from <br />
@@ -158,67 +248,96 @@
             </div>
 
             <div class="col-12 col-md-8 sr_heroImgContainer row">
-        
-                <img src="MEDIA/img_services_handShake.svg" class="img-fluid col-4 col-lg-2 heroImgOverlay" alt="" />
-    
-                <div class="sr_learnMore row col-12 col-md-8 col-lg-10">
+              <img
+                src="MEDIA/img_services_handShake.svg"
+                class="img-fluid col-4 col-lg-2 heroImgOverlay"
+                alt=""
+              />
 
-                  <div class="sr_learnHeader col-12">
-                    <h5>Click to learn more</h5>
+              <div class="sr_learnMore row col-12 col-md-8 col-lg-10">
+                <div class="sr_learnHeader col-12">
+                  <h5>Click to learn more</h5>
+                </div>
+
+                <div class="sr_clickHeader col-12">
+                  <div class="clickService">
+                    <a href="#scrollspyHeading1">Responsive Web Design</a>
                   </div>
-
-                  <div class="sr_clickHeader col-12">
-                    <div class="clickService">
-                      <a href="#scrollspyHeading1">Responsive Web Design</a>
-                    </div>
-                    <div class="clickService">
-                      <a href="#scrollspyHeading2">Graphic Design</a>
-                    </div>
-                    <div class="clickService">
-                      <a href="#scrollspyHeading3">Server Management</a>
-                    </div>
-                    <div class="clickService">
-                      <a href="#scrollspyHeading4">Custom Branding</a>
-                    </div>
-                    <div class="clickService">
-                      <a href="#scrollspyHeading5">SEO and Analytics</a>
-                    </div>
+                  <div class="clickService">
+                    <a href="#scrollspyHeading2">Graphic Design</a>
+                  </div>
+                  <div class="clickService">
+                    <a href="#scrollspyHeading3">Server Management</a>
+                  </div>
+                  <div class="clickService">
+                    <a href="#scrollspyHeading4">Custom Branding</a>
+                  </div>
+                  <div class="clickService">
+                    <a href="#scrollspyHeading5">SEO and Analytics</a>
                   </div>
                 </div>
-              
+              </div>
             </div>
           </div>
-      
         </div>
       </section>
 
-      <section class="container sr_serviceContainer" data-bs-spy="scroll" data-bs-target="sr_clickHeader" data-bs-offset="80px"  class="scrollspy-example" tabindex="0">
-        <!-- responsive web design -->
-       
-        <div style="visibility: hidden" id="scrollspyHeading1" class="sr_buffer"></div>
+      <!-- https://www.geeksforgeeks.org/how-to-insert-spaces-tabs-in-text-using-html-css/#:~:text=spaces%20gap%3A%20%26-,emsp,-%3B -->
+      <section
+        class="container sr_serviceContainer"
+        data-bs-spy="scroll"
+        data-bs-target="sr_clickHeader"
+        data-bs-offset="80px"
+        class="scrollspy-example"
+        tabindex="0"
+      >
+        <!-- scrollspyHeading1 -->
+        <div
+          style="visibility: hidden"
+          id="scrollspyHeading1"
+          class="sr_buffer"
+        ></div>
+
+        <!-- Responsive Web Design -->
         <div class="sr_cardContainer row">
-        <img src="MEDIA/img_services_webDesign.svg" class="sr_cardImgOne col-12" alt="" />
+          <!-- Image -->
+          <img
+            src="MEDIA/img_services_webDesign.svg"
+            class="sr_cardImgOne col-12"
+            alt=""
+          />
+          <!-- Header & Content-->
           <div class="sr_cardInfo col-12 col-lg-8 row">
             <div class="sr_cardHeader col-12">
               <h4>Responsive Web Design</h4>
             </div>
             <div class="sr_cardText col-12">
               <p>
-                Over 50% of users that search on the web are doing it from their
+                Over 50% of users that are on the web are using it from their
                 phones. Lacking responsive design can result in your website
-                looking like a jumbled mess and being unresponsive. We've all
-                seen the "Pinching and Zooming" websites that can lead to missed
-                sales and opportunities. That's why we focus on page layout to
-                create a experience for the visitors. With our responsive web
-                design services you can target a wider audience and maximize
-                conversions
+                looking like a jumbled mess, being unresponsive and overall
+                leaving a poor experience. We've all seen the "Pinching and
+                Zooming" websites that can lead to missed sales and
+                opportunities. That's why we focus on page layout to create a
+                experience for the visitors. With our responsive web design
+                services customers and clients will be pleased and have a
+                positive experience.
               </p>
             </div>
+            <!-- Drop Downs -->
             <div class="sr_cardPoints col-12">
               <div class="accordion" id="accordionExample">
+                <!-- RWD Mock Ups -->
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingOne">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOneOne" aria-expanded="false" aria-controls="collapseOne">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseOneOne"
+                      aria-expanded="false"
+                      aria-controls="collapseOne"
+                    >
                       Mock Ups
                     </button>
                   </h2>
@@ -229,13 +348,21 @@
                     data-bs-parent="#accordionExample"
                   >
                     <div class="accordion-body">
-                      <strong
-                        >We start our process with user driver templates to
-                        establish a intial design</strong
-                      >
+                      <p>
+                        <!-- <br /> -->
+                        &emsp; Often an heavily under utilzed tool in project
+                        planning.<br />
+                        &emsp;<br />
+                        We here at Pink Panda strive to emphasize this step
+                        ensuring smooth transitions during phases.<br />
+                        &emsp;<br />
+                        &emsp; Creating detailed mock ups that can be previewed
+                        and reviewed before programmed to ensure satisfaction.
+                      </p>
                     </div>
                   </div>
                 </div>
+                <!-- RWD Landing Pages, Blogs, Portfolio -->
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingTwo">
                     <button
@@ -256,13 +383,17 @@
                     data-bs-parent="#accordionExample"
                   >
                     <div class="accordion-body">
-                      <strong
-                        >Whatever your need we can help make it a
-                        reality.</strong
-                      >
+                      <p>
+                        &emsp; We take the idea of standard landing pages and
+                        throw it out the window.<br />
+                        &emsp;<br />
+                        &emsp; Instead we offer an customized flow to fit the
+                        site of your dreams!
+                      </p>
                     </div>
                   </div>
                 </div>
+                <!-- RWD UI/UX -->
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingThree">
                     <button
@@ -283,15 +414,18 @@
                     data-bs-parent="#accordionExample"
                   >
                     <div class="accordion-body">
-                      <strong
-                        >A knack for attention to detail allows PinkPanda to
-                        help mitigate the hiccups everyday users get annoyed
-                        with. No more getting hung up on something small and
-                        silly, you know the one you just thought about.
-                      </strong>
+                      <p>
+                        &emsp; A knack for attention to detail allows PinkPanda
+                        to help mitigate the hiccups everyday users get annoyed
+                        with.<br />
+                        &emsp;<br />
+                        &emsp; No more getting hung up on something small and
+                        silly. You know the one you just thought about.<br />
+                      </p>
                     </div>
                   </div>
                 </div>
+                <!-- RWD Ecommerce -->
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingFour">
                     <button
@@ -302,7 +436,7 @@
                       aria-expanded="false"
                       aria-controls="collapseFour"
                     >
-                      Ecommerce
+                      E-Commerce
                     </button>
                   </h2>
                   <div
@@ -312,46 +446,72 @@
                     data-bs-parent="#accordionExample"
                   >
                     <div class="accordion-body">
-                      <strong
-                        >Money Money Money.... MONEY. E commerece is what we are
-                        all trying to do to stay relavent in todays fast paced
-                        markets. Let us help optimze that process.</strong
-                      >
+                      <!-- https://www.forbes.com/sites/jasongoldberg/2022/02/18/e-commerce-sales-grew-50-to-870-billion-during-the-pandemic/?sh=437ac6d34e83 -->
+                      <p>
+                        &emsp; E-Commerce sales came to a total around $870
+                        Billion USD in 2021 according to
+                        <a
+                          id="sr_links"
+                          href="https://www.forbes.com/sites/jasongoldberg/2022/02/18/e-commerce-sales-grew-50-to-870-billion-during-the-pandemic/?sh=437ac6d34e83"
+                          >Forbes</a
+                        >.<br />
+                        &emsp;<br />
+                        &emsp; The US is under utilizing this largly untapped
+                        market with only 13% of retail sales coming from
+                        E-Commerce in 2021.<br />
+                      </p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-            <img src="MEDIA/img_services_webDesign.svg" class="sr_cardImgTwo col-12 col-lg-4" alt="" />
+          <!-- Image -->
+          <img
+            src="MEDIA/img_services_webDesign.svg"
+            class="sr_cardImgTwo col-12 col-lg-4"
+            alt=""
+          />
         </div>
 
-        <!--Graphic Design  -->
-
+        <!-- scrollspyHeading2 -->
         <div
           style="visibility: hidden"
           id="scrollspyHeading2"
           class="sr_buffer"
         ></div>
-        
+
+        <!--Graphic Design  -->
         <div class="sr_cardContainer row">
-         <img src="MEDIA/img_services_graphicDesign.svg" class="sr_cardImgOne col-12" alt="" />
-         <img src="MEDIA/img_services_graphicDesign.svg" class="sr_cardImgTwo col-12 col-lg-4" alt="" />
+          <!-- Images -->
+          <img
+            src="MEDIA/img_services_graphicDesign.svg"
+            class="sr_cardImgOne col-12"
+            alt=""
+          />
+          <img
+            src="MEDIA/img_services_graphicDesign.svg"
+            class="sr_cardImgTwo col-12 col-lg-4"
+            alt=""
+          />
+          <!-- Header & Content-->
           <div class="sr_cardInfo col-12 col-lg-8 row">
             <div class="sr_cardHeader col-12">
               <h4>Graphic Design</h4>
             </div>
             <div class="sr_cardText col-12">
               <p>
-                Custom Graphics are the backbone of distinguishing you from the
-                competition. We provide custom graphic work that delivers
-                quality experiences with enhanced Brand Recognition. Creating a
-                memorable experience with customer satisfaction in mind we
-                strive to bring your brand to life.
+                Custom Graphics are the backbone for distinguishing the brand
+                being developed from the competition. We provide custom graphic
+                work that delivers quality experiences combined with enhanced
+                Brand Recognition. Creating a memorable experience with customer
+                satisfaction in mind. We strive to bring your brand to life.
               </p>
             </div>
+            <!-- Drop Downs -->
             <div class="sr_cardPoints col-12">
               <div class="accordion" id="accordionExample">
+                <!-- Graphic Design Logos -->
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingOne">
                     <button
@@ -373,13 +533,21 @@
                   >
                     <div class="accordion-body">
                       <!-- https://dailyblogging.org/technology/logo-statistics/ -->
-                      <strong
-                        >78% of consumers see logos as works of art. Let our
-                        artists help paint your busines in a new light.</strong
-                      >
+                      <!-- https://financesonline.com/logo-statistics/ -->
+                      <p>
+                        &emsp; 78% of consumers see logos as works of art. Let
+                        our artists help paint your busines in a new light.
+                        &emsp;<br />
+                        &emsp;<a
+                          id="sr_links"
+                          href="https://financesonline.com/logo-statistics/#:~:text=General%20Logo%20Features-,78%25%20of%20consumers%20believe%20that%20logos%20are%20works%20of%20art%20(Study%20Finds%2C%202020).,-The%20human%20brain"
+                          >Financesonline.com</a
+                        >
+                      </p>
                     </div>
                   </div>
                 </div>
+                <!-- Graphic Design Infographics -->
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingTwo">
                     <button
@@ -400,10 +568,21 @@
                     data-bs-parent="#accordionExample"
                   >
                     <div class="accordion-body">
-                      <strong>This is the second item's accordion body.</strong>
+                      <p>
+                        &emsp; With more and more business starting to use the
+                        Web to promote their businsses.<br />
+                        &emsp;<br />
+                        &emsp; Standing out with custom infographics is rapidly
+                        becoming the way to distinguish the brand being built vs
+                        the competitors.<br />
+                        &emsp;<br />
+                        &emsp; Infographics coupled with accompanying articles
+                        help boost your SEO (search engine optimization).
+                      </p>
                     </div>
                   </div>
                 </div>
+                <!-- Graphic Design Branding Materials -->
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingThree">
                     <button
@@ -414,7 +593,7 @@
                       aria-expanded="false"
                       aria-controls="collapseThree"
                     >
-                      Branding Materials
+                      Labeling
                     </button>
                   </h2>
                   <div
@@ -424,10 +603,19 @@
                     data-bs-parent="#accordionExample"
                   >
                     <div class="accordion-body">
-                      <strong>This is the third item's accordion body.</strong>
+                      <p>
+                        &emsp; Properly lableing your business can often be
+                        overlooked due to a false sense of simplicity. <br />
+                        &emsp;<br />
+                        &emsp; With custom graphic design pieces for your logo
+                        to fliers, menus etc these small things are what
+                        combined help cultivate a radically different experience
+                        for the clients.
+                      </p>
                     </div>
                   </div>
                 </div>
+                <!-- Graphic Design Branding Icons and Illustrations -->
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingFour">
                     <button
@@ -438,7 +626,7 @@
                       aria-expanded="false"
                       aria-controls="collapseFour"
                     >
-                      Icons and Illustrations
+                      Illustrations and Icons
                     </button>
                   </h2>
                   <div
@@ -448,23 +636,37 @@
                     data-bs-parent="#accordionExample"
                   >
                     <div class="accordion-body">
-                      <strong>This is the third item's accordion body.</strong>
+                      <p>
+                        &emsp; Custom Illustrations when properly utilzed can
+                        help create traction for your business.<br />
+                        &emsp;<br />
+                        &emsp; These illustrations can help with brand
+                        identification leading to repeat customers.
+                      </p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-
         </div>
-        <!-- Server Management -->
+
+        <!-- scrollspyHeading3 -->
         <div
           style="visibility: hidden"
           id="scrollspyHeading3"
           class="sr_buffer"
         ></div>
+
+        <!-- Server Management -->
         <div class="sr_cardContainer row">
-          <img src="MEDIA/img_services_serverManage.svg" class="sr_cardImgOne col-12" alt="" />
+          <!-- Image -->
+          <img
+            src="MEDIA/img_services_serverManage.svg"
+            class="sr_cardImgOne col-12"
+            alt=""
+          />
+          <!-- Header & Content-->
           <div class="sr_cardInfo col-12 col-lg-8 row">
             <div class="sr_cardHeader col-12">
               <h4>Server Management</h4>
@@ -473,15 +675,17 @@
               <p>
                 The fog of the unknown can be hard to navigate alone. Our team
                 are master helmsmen who can navigate the tricky side of server
-                management for your business. Whether its uploading the site to
-                the server, running scheduled maintenance and data backups our
-                team can guide you through it or just handle it for you for a
-                stress free experience that allows you to focus on your passion.
-                The team can work out a customized approach for your team today!
+                management for your business. From uploading the site, running
+                maintenance, to data backups and beyond! The team can guide you
+                through it or just manage it to create a stress free experience
+                that allows you to focus on your passion. Let us work out a
+                customized approach for your needs!
               </p>
             </div>
+            <!-- Drop Downs -->
             <div class="sr_cardPoints col-12">
               <div class="accordion" id="accordionExample">
+                <!-- Server Management E-Commerce Databasing -->
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingOne">
                     <button
@@ -492,7 +696,7 @@
                       aria-expanded="false"
                       aria-controls="collapseOne"
                     >
-                      CMS
+                      E-Commerce Databasing
                     </button>
                   </h2>
                   <div
@@ -502,10 +706,18 @@
                     data-bs-parent="#accordionExample"
                   >
                     <div class="accordion-body">
-                      <strong>This is the first item's accordion body.</strong>
+                      <p>
+                        &emsp; Setting up and managing databases can be
+                        difficult especially in the E-Commerece world where
+                        items being sold can change quickly.<br />
+                        &emsp;<br />
+                        &emsp; Let us help to allow you to focus on the things
+                        that drive you instead of techinical details.
+                      </p>
                     </div>
                   </div>
                 </div>
+                <!-- Server Management Domain Management -->
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingTwo">
                     <button
@@ -526,16 +738,20 @@
                     data-bs-parent="#accordionExample"
                   >
                     <div class="accordion-body">
-                      <strong
-                        >Cybercriminals exploiting weak domain security to
-                        degrade brand reputation isnt the first thing when
-                        thinking of domain management but we can explain why its
-                        important to think outside the box.
-                      </strong>
+                      <p>
+                        &emsp; Cybercriminals exploiting weak domain security to
+                        degrade brand reputation isn't the first thing when
+                        thinking of domain management.<br />
+                        &emsp;<br />
+                        &emsp; We can explain why its important to think outside
+                        the box when it comes to something intially simple like
+                        domain management.
+                      </p>
                       <!-- https://www.redpoints.com/blog/what-is-domain-management/ -->
                     </div>
                   </div>
                 </div>
+                <!-- Server Management Data Backups -->
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingThree">
                     <button
@@ -556,11 +772,20 @@
                     data-bs-parent="#accordionExample"
                   >
                     <div class="accordion-body">
-                      <strong>This is the third item's accordion body.</strong>
+                      <p>
+                        &emsp; Data Backups are on of those things that go
+                        unresolved untill something happens and you need a
+                        backup.<br />
+                        &emsp;<br />
+                        &emsp; Here at Pink Panda we can take that stress off
+                        your plate and help mitigate a potentially unfortunate
+                        situation.
+                      </p>
                     </div>
                   </div>
                 </div>
-                <div class="accordion-item">
+                <!-- Server Management Preventative Maintenance -->
+                <!-- <div class="accordion-item">
                   <h2 class="accordion-header" id="headingFour">
                     <button
                       class="accordion-button collapsed"
@@ -570,7 +795,7 @@
                       aria-expanded="false"
                       aria-controls="collapseFour"
                     >
-                      Preventative Maintenance
+                      Preventative Maintenance/Upgrades
                     </button>
                   </h2>
                   <div
@@ -580,41 +805,62 @@
                     data-bs-parent="#accordionExample"
                   >
                     <div class="accordion-body">
-                      <strong>This is the third item's accordion body.</strong>
+                      <p>This is the fourth item's accordion body.</p>
                     </div>
                   </div>
-                </div>
+                </div> -->
               </div>
             </div>
           </div>
-            <img src="MEDIA/img_services_serverManage.svg" class="sr_cardImgTwo col-12 col-lg-4" alt="" />
+          <!-- Image -->
+          <img
+            src="MEDIA/img_services_serverManage.svg"
+            class="sr_cardImgTwo col-12 col-lg-4"
+            alt=""
+          />
         </div>
-        <!-- Custom Branding -->
+
+        <!-- scrollspyHeading4 -->
         <div
           style="visibility: hidden"
           id="scrollspyHeading4"
           class="sr_buffer"
         ></div>
+
+        <!-- Custom Branding -->
         <div class="sr_cardContainer row">
-            <img src="MEDIA/img_services_branding.svg" class="sr_cardImgOne col-12" alt="" />
-            <img src="MEDIA/img_services_branding.svg" class="sr_cardImgTwo col-12 col-lg-4" alt="" />
+          <!-- Images -->
+          <img
+            src="MEDIA/img_services_branding.svg"
+            class="sr_cardImgOne col-12"
+            alt=""
+          />
+          <img
+            src="MEDIA/img_services_branding.svg"
+            class="sr_cardImgTwo col-12 col-lg-4"
+            alt=""
+          />
+          <!-- Header & Content-->
           <div class="sr_cardInfo col-12 col-lg-8 row">
             <div class="sr_cardHeader col-12">
               <h4>Custom Branding and Strategy</h4>
             </div>
             <div class="sr_cardText col-12">
+              <!-- https://www.hartfordbusiness.com/article/market-focus-or-product-focus -->
               <p>
-                Asking the right questions is one of the corner stones of
+                Asking the right questions is one of the cornerstones of
                 success. This is done through Research, Planning and Foresight.
-                The Panda Team will start early during the onboarding process to
-                better understand your business, focus market and customer
+                The Panda Team starts early during the onboarding process to
+                better understand your business, target market and customer
                 experience. We take the time to understand and get passionate
-                with you so we can accurately portray your vision, that's what
+                with you so we can accurately portray your vision. That's what
                 allows us to help you rise above all others!
               </p>
             </div>
+            <!-- Drop Downs -->
             <div class="sr_cardPoints col-12">
               <div class="accordion" id="accordionExample">
+                <!-- Custom Branding User Engagement -->
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingOne">
                     <button
@@ -635,10 +881,17 @@
                     data-bs-parent="#accordionExample"
                   >
                     <div class="accordion-body">
-                      <strong>This is the first item's accordion body.</strong>
+                      <!-- https://mixpanel.com/blog/what-is-user-engagement/ -->
+                      <p>
+                        &emsp; User Engagement is alligned with profitability.
+                        The more engaged a user the more likely it is for the
+                        user to return, utilize the services and even pass on
+                        recomendations.
+                      </p>
                     </div>
                   </div>
                 </div>
+                <!-- Custom Branding Big Picture Analysis -->
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingTwo">
                     <button
@@ -659,10 +912,17 @@
                     data-bs-parent="#accordionExample"
                   >
                     <div class="accordion-body">
-                      <strong>This is the second item's accordion body.</strong>
+                      <p>
+                        &emsp; Using a 10,000 foot approach to indentify what it
+                        is that makes you unique.<br />
+                        &emsp;<br />
+                        &emsp; We use the big picture of your company as a whole
+                        to isolate and strengthen the businesses brand.
+                      </p>
                     </div>
                   </div>
                 </div>
+                <!-- Custom Branding Content Strategy -->
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingThree">
                     <button
@@ -683,10 +943,18 @@
                     data-bs-parent="#accordionExample"
                   >
                     <div class="accordion-body">
-                      <strong>This is the third item's accordion body.</strong>
+                      <p>
+                        &emsp; After using the big picture approach we shift
+                        focus to Content Strategy.<br />
+                        &emsp;<br />
+                        &emsp; Creating a rare set of similar styles of content
+                        will help to create the image for the brand that fits
+                        all the needs.
+                      </p>
                     </div>
                   </div>
                 </div>
+                <!-- Custom Branding Project Management -->
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingFour">
                     <button
@@ -707,23 +975,39 @@
                     data-bs-parent="#accordionExample"
                   >
                     <div class="accordion-body">
-                      <strong>This is the third item's accordion body.</strong>
+                      <p>
+                        &emsp; Project management is key for Web Dev. Working
+                        with you to create a realalistic timeline with
+                        established milestones at each phase as a
+                        deliverable.<br />
+                        &emsp;<br />
+                        &emsp; The team will ensure that nothing slips through
+                        the cracks of the project.
+                      </p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          
         </div>
-        <!-- SEO -->
+
+        <!-- scrollspyHeading5 -->
         <div
           style="visibility: hidden"
           id="scrollspyHeading5"
           class="sr_buffer"
         ></div>
+
+        <!-- SEO -->
         <div class="sr_cardContainer row">
-          <img src="MEDIA/img_services_seo.svg" class="sr_cardImgOne col-12" alt="" />
+          <!-- Image -->
+          <img
+            src="MEDIA/img_services_seo.svg"
+            class="sr_cardImgOne col-12"
+            alt=""
+          />
+          <!-- Header & Content-->
           <div class="sr_cardInfo col-12 col-lg-8 row">
             <div class="sr_cardHeader col-12">
               <h4>SEO and Analytics</h4>
@@ -731,15 +1015,17 @@
             <div class="sr_cardText col-12">
               <p>
                 Cultivating the right online presence is critical in the modern
-                world. While the Panda Team is designing your website we bake it
-                right into our process - When we become partners we will make
-                continuous SEO improvements and optimize new pages. Our
-                specialized SEO Strategy will drive your business's brand to
+                world. While the Panda Team is designing your website we bake
+                SEO right into our process - Upon becoming partners we will
+                strive to continuously make SEO improvements and optimize pages.
+                Our specialized SEO Strategy will drive your business's brand to
                 maximum awareness.
               </p>
             </div>
+            <!-- Drop Downs -->
             <div class="sr_cardPoints col-12">
               <div class="accordion" id="accordionExample">
+                <!-- SEO Keyword Research -->
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingOne">
                     <button
@@ -760,11 +1046,19 @@
                     data-bs-parent="#accordionExample"
                   >
                     <div class="accordion-body">
-                      <strong>This is the first item's accordion body.</strong>
+                      <p>
+                        &emsp; Keyword Research is the process of indentifying
+                        the words that best describe your business with their
+                        services.<br />
+                        &emsp;<br />
+                        &emsp; It is a multi-faceted aspect that helps with the
+                        SEO ranking for your business.
+                      </p>
                     </div>
                   </div>
                 </div>
-                <div class="accordion-item">
+                <!-- SEO Measurement and Reporting -->
+                <!-- <div class="accordion-item">
                   <h2 class="accordion-header" id="headingTwo">
                     <button
                       class="accordion-button collapsed"
@@ -784,10 +1078,11 @@
                     data-bs-parent="#accordionExample"
                   >
                     <div class="accordion-body">
-                      <strong>This is the second item's accordion body.</strong>
+                      <p>This is the second item's accordion body.</p>
                     </div>
                   </div>
-                </div>
+                </div> -->
+                <!-- Seo Organic Marketing -->
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingThree">
                     <button
@@ -798,7 +1093,7 @@
                       aria-expanded="false"
                       aria-controls="collapseThree"
                     >
-                      Organic marketing
+                      Organic Marketing
                     </button>
                   </h2>
                   <div
@@ -808,10 +1103,22 @@
                     data-bs-parent="#accordionExample"
                   >
                     <div class="accordion-body">
-                      <strong>This is the third item's accordion body.</strong>
+                      <!-- https://www.321webmarketing.com/what-is-organic-seo/#:~:text=The%20term%20“organic%20SEO”%20or,the%20paid%20methods%20of%20SEO. -->
+                      <p>
+                        &emsp; Organic marketing is a fancy way of promoting the
+                        site via natural options instead of trying to throw
+                        money at it to make it to the top of whatever search
+                        engine being used. <br />
+                        &emsp;<br />
+                        &emsp; Instead of using PPC (Pay per click) this method
+                        will help naturally grow your business through
+                        refinement and care. Which will carry over once PPC
+                        methods are no longer being funded.
+                      </p>
                     </div>
                   </div>
                 </div>
+                <!-- SEO Google Standards and Guidelines -->
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingFour">
                     <button
@@ -832,44 +1139,44 @@
                     data-bs-parent="#accordionExample"
                   >
                     <div class="accordion-body">
-                      <strong>This is the third item's accordion body.</strong>
+                      <p>
+                        &emsp; Following Googles standards will seemlessly allow
+                        SEO to flow and grow as your business grows.<br />
+                        &emsp;<br />
+                        &emsp; These methods are partially based on
+                        accessibility amongst other things.
+                      </p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-            <img src="MEDIA/img_services_seo.svg" class="sr_cardImgTwo col-12 col-lg-4" alt="" />
+          <!-- Image -->
+          <img
+            src="MEDIA/img_services_seo.svg"
+            class="sr_cardImgTwo col-12 col-lg-4"
+            alt=""
+          />
         </div>
       </section>
 
-              <div
-              style="visibility: hidden"
-              id="scrollspyHeading1"
-              class="sr_buffer"
-            ></div>
-
-
-    </main>
-
-    <!-- Footer -->
-    <footer
-      class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top container"
-    >
-      <div class="col-4 d-flex align-items-center">
-        <span class="text-muted"
-          >Pink Panda Ltd Liability Co.<br />
-          © 2021 Company</span
-        >
-      </div>
-      <button
-        type="button"
-        class="btn btn-floating btn"
-        id="btn-back-to-top"
-      >
-        <img src="MEDIA/img_icon_upArrow.png" alt="" />
-      </button>
-    </footer>
+      <div
+        style="visibility: hidden"
+        id="scrollspyHeading1"
+        class="sr_buffer"
+      ></div>
+          <button type="button" id="btn-back-to-top">
+            <img src="MEDIA/rocketBtn-01.png" class="img-fluid" alt="">
+          </button>
+          </main>
+          
+          <!-- Footer -->
+          <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top container">
+            <div class="col-lg-4 d-flex align-items-center">
+              <span class="text-muted">Pink Panda Ltd Liability Co.<br> © 2021 Company</span>
+            </div>
+          </footer>
 
     <!-- Java script / Jquery -->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

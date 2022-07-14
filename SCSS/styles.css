@@ -12187,7 +12187,7 @@ p {
       -ms-flex-align: end;
           align-items: flex-end;
   width: 100%;
-  height: 70%;
+  height: 60%;
 }
 
 @media (min-width: 992px) {
@@ -12207,6 +12207,29 @@ p {
   max-height: 50px;
   width: 100%;
   height: 100%;
+}
+
+#btn-back-to-top {
+  display: none;
+  /* Hidden by default */
+  position: -webkit-sticky;
+  position: sticky;
+  float: right;
+  /* Fixed/sticky position */
+  bottom: 20px;
+  /* Place the button at the bottom of the page */
+  right: 5%;
+  /* Place the button 30px from the right */
+  z-index: 9999;
+  /* Make sure it does not overlap */
+  background: none;
+  border: transparent;
+  /* Remove borders */
+  outline: none;
+  padding: 0;
+  /* Text color */
+  cursor: pointer;
+  /* Add a mouse pointer on hover */
 }
 
 .ab_contentHeader {
@@ -12327,6 +12350,38 @@ p {
   height: 100%;
 }
 
+.cu_Mug {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 2vh;
+}
+
+.cu_statements {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 2vh;
+}
+
 .cu_title h2, .cu_title .h2 {
   margin-top: 5vh;
   color: #EC1F94;
@@ -12338,11 +12393,31 @@ p {
   line-height: 2em;
   height: 2em;
   margin-top: 2vh;
-  margin-left: 1.6vw;
+  margin-left: -2%;
 }
 
 .cu_headers {
-  margin: 2vh 0 2vh 1.8vw;
+  margin: 2vh 2vh;
+  text-align: center;
+  padding: 1%;
+}
+
+.cu_infoTitles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .cu_infoTitles h5, .cu_infoTitles .h5 {
@@ -12350,6 +12425,7 @@ p {
   padding-left: 1%;
   display: inline;
   vertical-align: middle;
+  margin-top: 2vh;
   margin-left: 4vw;
 }
 
@@ -12362,25 +12438,50 @@ p {
           justify-content: center;
 }
 
-.cu_phases_List {
+.cu_infoCard {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.cu_infoText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .cu_phases_List_item {
   list-style: none;
   padding: 10px 20px;
-  margin-left: 50px;
 }
 
 .cu_phases_List_item li {
   margin-top: 1vh;
-  margin-left: 2vw;
   font-weight: lighter;
+  text-align: center;
 }
 
 .st_messageBox textarea {
@@ -12435,12 +12536,10 @@ p {
     margin-left: 0;
   }
   .cu_infoImage {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    max-height: 367px;
+    max-width: 404px;
+    height: 100%;
+    width: 100%;
   }
   .cu_phases_List {
     -webkit-box-pack: initial;
@@ -12458,6 +12557,10 @@ p {
     -webkit-box-pack: initial;
         -ms-flex-pack: initial;
             justify-content: initial;
+    max-height: 100%;
+    max-width: 100%;
+    height: 100%;
+    width: 100%;
   }
   .st_messageBox textarea {
     min-height: 120px;
@@ -12480,7 +12583,7 @@ p {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  background-color: rgba(0, 0, 0, 0.356);
+  background-color: rgba(0, 0, 0, 0.404);
   position: relative;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -12626,10 +12729,10 @@ video {
   border-radius: 5px;
   /* 5px rounded corners */
   position: absolute;
-  min-height: 1000px;
+  min-height: 100%;
   min-width: 100%;
   width: 100%;
-  height: 100%;
+  height: 1000px;
 }
 
 .activeC {
@@ -12795,6 +12898,10 @@ video {
           transform: translateY(0.25em) scale(115%);
 }
 
+.hm_carouselIndicators button.active {
+  background-color: #EC1F94;
+}
+
 .hm_showcaseHeader {
   border-left: 4px solid #EC1F94;
   padding-left: 1%;
@@ -12821,7 +12928,7 @@ video {
 }
 
 .hm_showCasebtn {
-  margin-top: 10%;
+  margin: 10% 0;
   border: 1px solid #FF9ED5;
   background-color: transparent;
   color: #FF9ED5;
@@ -12969,10 +13076,10 @@ video {
     height: 1180px;
   }
   .showCard {
-    min-height: 1100px;
+    min-height: 100%;
     min-width: 100%;
     width: 100%;
-    height: 100%;
+    height: 1100px;
   }
   .hm_push {
     margin-top: 10%;
@@ -13005,18 +13112,21 @@ video {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .showCard {
-    max-width: 700px;
+    max-height: 500px;
+  }
+  .hm_services {
+    height: 550px;
   }
   .squareInfoSwap {
     display: -webkit-box;
@@ -13044,6 +13154,9 @@ video {
   .hm_showCasebtn {
     margin-top: 7%;
   }
+  .cardBody {
+    margin-top: 0%;
+  }
 }
 
 @media (min-width: 1400px) {
@@ -13053,6 +13166,20 @@ video {
   .hm_hero {
     width: 100%;
     height: 920px;
+  }
+  .hm_cardStack {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
   .hm_btn {
     margin-top: 0%;
@@ -13066,12 +13193,14 @@ video {
     min-height: 0px;
     max-height: 500px;
   }
-  .cardBody {
-    margin-top: 0%;
-  }
-  .hm_push {
-    margin-top: 0%;
-  }
+}
+
+#sr_links {
+  color: #EC1F94;
+}
+
+.accordion-body p {
+  font-size: 20px;
 }
 
 .sr_hero {
@@ -13506,6 +13635,7 @@ video {
   border-left: 4px solid #EC1F94;
   padding-left: 1%;
   margin: 2%;
+  margin-left: -2%;
 }
 
 .st_showcaseTitle h1, .st_showcaseTitle .h1 {
@@ -13513,7 +13643,7 @@ video {
 }
 
 .st_tabButtons li {
-  margin: .5%;
+  margin: 0.5%;
 }
 
 .st_carouselIndicators button.active {

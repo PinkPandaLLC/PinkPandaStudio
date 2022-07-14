@@ -66,14 +66,15 @@
 .st_showcaseTitle {
   @include leftBorder;
   margin: 2%;
+  margin-left: -2%;
 }
 
 .st_showcaseTitle h1 {
   font-weight: bold;
 }
 // Tab Buttons
-.st_tabButtons li{
-  margin: .5%;
+.st_tabButtons li {
+  margin: 0.5%;
 }
 // Carousel Indicators
 .st_carouselIndicators button.active {
