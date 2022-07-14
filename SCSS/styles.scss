@@ -347,23 +347,16 @@ $colors:(
     {
             display: none;
             /* Hidden by default */
-            position: sticky;
-
+            position: fixed;
             float: right;
-            /* Fixed/sticky position */
             bottom: 20px;
             /* Place the button at the bottom of the page */
             right: 5%;
-            /* Place the button 30px from the right */
             z-index: 9999;
-            /* Make sure it does not overlap */
             background: none;
             border: transparent;
-            
-            /* Remove borders */
             outline: none;
             padding: 0;
-            /* Text color */
             cursor: pointer;
             /* Add a mouse pointer on hover */
         }
