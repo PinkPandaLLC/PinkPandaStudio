@@ -40,12 +40,10 @@ $sectionHeight: 800px;
   margin-top: 15%;
 }
 .sr_heroImgContainer {
-  @include flex-rowc;
-  align-items: center;
-  margin-top: 5%;
+  margin-top: 15%;
 }
 .sr_learnMore {
-  margin-top: 15%;
+  margin-top: 5%;
 }
 .sr_heroBgOne {
   position: sticky;
@@ -70,7 +68,6 @@ $sectionHeight: 800px;
 .sr_learnHeader {
   @include leftBorder;
   color: map-get($colors, color-tertiary);
-  margin-bottom: 5%;
 }
 .sr_clickHeader {
   margin-left: 5%;
@@ -175,9 +172,7 @@ $sectionHeight: 800px;
     display: flex;
   }
   .sr_heroImgContainer {
-    @include flex-rowc;
-    flex-wrap: nowrap;
-    margin-top: 10%;
+    margin-top:2%;
   }
   .sr_cardImgOne {
     display: none;

@@ -14,8 +14,8 @@
 
 .hm_herovideo{
     position: sticky;
-    min-width: 100%;
-    min-height: 100%;
+    max-width: 100%;
+    max-height: 100%;
     width: 100%;
     height: 100%;
     z-index: -1;
@@ -126,31 +126,31 @@ video{
 .hm_blurb{
     margin: 3%;
     text-align: center; 
-    color: map-get($colors, color-primary);
+    // color: map-get($colors, color-primary);
 
 }
 .hm_cardStack{
     @include flex-rowc;
 }
-    //Fill Animation
-    .hm_card {
-        @include flex-rowc;
-        margin: 2%;
-        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-        border-radius: 5px; /* 5px rounded corners */
-        text-align: center; 
-        display: block; 
-        background: linear-gradient(to top, #ec1f9373 50%, white 50%);
-        background-size: 100% 200%;
-        color: black;
-        transition: all 1100ms ease-out;
-        background-position:top left;
-    }
-    .hm_card:hover {
-        color: #ffffff;
-        background-position:bottom left;
-        cursor:pointer;
-    }
+//Fill Animation
+.hm_card {
+    @include flex-rowc;
+    margin: 2%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 5px; /* 5px rounded corners */
+    text-align: center; 
+    display: block; 
+    background: linear-gradient(to top, #ec1f9373 50%, white 50%);
+    background-size: 100% 200%;
+    color: black;
+    transition: all 1100ms ease-out;
+    background-position:top left;
+}
+.hm_card:hover {
+    color: #ffffff;
+    background-position:bottom left;
+    cursor:pointer;
+}
 
   .hm_card img {
     border-radius: 5px 5px 0 0;
@@ -159,16 +159,16 @@ video{
     padding: 5%;
     
   }
-  //Learn More and divider
+//Learn More and divider
   .hm_learnMore{
       @include flex-rowc;
       align-items: center;
       margin-top:10%;
   }
   .learnMoreBtn {
-    border: 1px solid map-get($colors, color-secondary);
+    border: 1px solid map-get($colors, color-primary);
     background-color:transparent;
-    color: map-get($colors, color-secondary);
+    color: map-get($colors, color-primary);
     padding: 18px;
     text-align: center;
     display: inline;
@@ -184,9 +184,16 @@ video{
     border-radius: 15px;
     transform: translateY(.25em) scale(115%);
 }
-  //Showcase
+//Showcase and Carousel
+
   .hm_carouselIndicators button.active {
       background-color: map-get($colors, color-primary);
+  }
+  .carouselImg{
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    padding: 0.5% 9vw;
   }
   .hm_showcaseHeader{
       @include leftBorder;
@@ -201,9 +208,9 @@ video{
 
   .hm_showCasebtn {
     margin: 10% 0;
-    border: 1px solid map-get($colors, color-secondary);
+    border: 1px solid map-get($colors, color-primary);
     background-color:transparent;
-    color: map-get($colors, color-secondary);
+    color: map-get($colors, color-primary);
     padding: 18px 100px;
     text-align: center;
     border-radius: 15px;
@@ -216,12 +223,11 @@ video{
     
     
 }
-
 .hm_rocketDivider{
-    margin-top: 10%;
+    margin: 5% 0 ;
     object-fit: contain;
 }
-  //PinkPanda World
+//PinkPanda World
   .hm_pinkpandaWorld{
     @include leftBorder;
     margin-top: 10%;
@@ -358,7 +364,9 @@ video{
     .cardBody {
         margin-top: 0%;
     }
-
+    .hm_carousel {
+        height: 700px;
+    }
 }
 //EXTRA LARGE SCREEN SIZING 1400px and up
  @include media-breakpoint-up(xxl) { 
@@ -380,7 +388,7 @@ video{
         margin-bottom: 10%;
     } 
     .hm_services{
-        height: 600px;
+        height: 500px;
         width: 100%;
     }
     .showCard{
@@ -388,6 +396,6 @@ video{
         max-height: 500px;
     }
     .hm_carousel {
-        height: 850px;
+        height: 800px;
     }
 }

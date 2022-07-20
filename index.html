@@ -140,7 +140,7 @@
     <!-- Main -->
     <main>
 
-        <!--Hero-->
+   <!--Hero-->
 		<section>
             <div class="hm_hero">
 
@@ -153,7 +153,7 @@
            
                 <div class="hm_content row">   
                     <div class="hm_header col-12">
-                        <h1>Pink Panda Ltd Liability Co</h1>
+                        <h1>Pink Panda</h1>
                         <h2 id="target"></h2>
                     </div>
                     <button type="button" class="hm_btn col-10 col-md-8 col-lg-5 col-xxl-3" id="hm_studiobtn"> <h5>Studio</h5> </button>
@@ -161,7 +161,7 @@
            
         </div>
     </section>
-    <!--Section-->
+    <!--Services Card Section-->
     <section id="cardService">
       <div class="container">
       <div class="hm_cardHeader">
@@ -277,13 +277,16 @@
         </div>
       </div>
     </section>
-      <!-- Section -->
+      <!-- Push Section -->
     <section>
-      <div class="hm_push container">   
+      <div class="hm_push container"> 
+        <div class="hm_rocketDivider col-12">
+          <img src="MEDIA/img_dotDivider-01.png" class="img-fluid" alt="">
+       </div>  
         <!-- Keywords -->
-        <div class="hm_blurb">
+        <!-- <div class="hm_blurb">
             <h6>Full Stack Developers - Project Management - Graphic Design - Brand Development - ECommerce</h6>
-        </div>
+        </div> -->
         <!-- Card Stack -->
         <div class="container">
         <div class="row hm_cardStack">
@@ -320,16 +323,19 @@
                 </div>
             </div>
         </div>
+         <div class="hm_blurb">
+            <h6>Full Stack Developers - Project Management - Graphic Design - Brand Development - ECommerce</h6>
+        </div>
         <div class="hm_learnMore row">           
                 <button type="button" class="learnMoreBtn col-10 col-md-8 col-lg-5 col-xxl-3" id="hm_learnBtn"> <h6>Learn More</h6> </button>        
-        <div class="hm_rocketDivider col-12">
-            <img src="MEDIA/img_home_dividerRocket.svg" class="img-fluid" alt="">
-        </div>
+        <!-- <div class="hm_rocketDivider col-12">
+            <img src="MEDIA/img_dotDivider-01.png" class="img-fluid" alt="">
+        </div> -->
       </div>
     </div>
     </div>
     </section>
-    <!--Section-->
+    <!--Carousel Section-->
     <section class="container">
         <div class="hm_showcaseHeader ">
             <h2><b>Showcase</b></h2>
@@ -349,16 +355,16 @@
                 </div>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="MEDIA/img_carousel_myPinkPanda_wireframe-01.png" class="d-block img-fluid" alt="...">
+                    <img src="MEDIA/img_carousel_myPinkPanda_wireframe-01.png" class="myImages carouselImg" id="myImg" alt="...">
                   </div>
                   <div class="carousel-item">
-                    <img src="MEDIA/img_carousel_neonFlier-01.png" class="d-block img-fluid" alt="...">
+                    <img src="MEDIA/img_carousel_neonFlier-01.png" class="myImages carouselImg" id="myImg" alt="...">
                   </div>
                   <div class="carousel-item">
-                    <img src="MEDIA/img_carousel_unicornPartyFlier-01.png" class="d-block img-fluid" alt="...">
+                    <img src="MEDIA/img_carousel_unicornPartyFlier-01.png" class="myImages carouselImg" id="myImg" alt="...">
                   </div>
                   <div class="carousel-item">
-                    <img src="MEDIA/img_carousel_yogaLogo-01.png" class="d-block img-fluid" alt="...">
+                    <img src="MEDIA/img_carousel_yogaLogo-01.png" class="myImages carouselImg" id="myImg" alt="...">
                   </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -390,8 +396,8 @@
                         <button type="button" class="squareBtn col" id="hm_aboutBtn"> <h6>About</h6> </button>                
                       </div>
 
-                    <div class="fourSquareImg col-12">
-                        <img src="MEDIA/img_home_passionLedUs.svg" alt="">
+                    <div class="fourSquareImg">
+                        <img src="MEDIA/img_aboutUs-01-01.svg" alt="">
                     </div>               
             </div>
             <div class="col-12 col-lg-6 squareDude">
@@ -433,151 +439,18 @@
   
            </div>
     </section>
-       <!-- Modal Contact Form -->
-      <!-- Button that uses BS to create a modal form for contact -->
-      <!-- <section>
-        <div class="contactButton position-fixed top-50 end-0">
-          <button
-            type="button"
-            class="btn btn-primary"
-            data-bs-toggle="modal"
-            data-bs-target="#exampleModal"
-            id="toggleContactButton"
-          >
-            Contact Us!
-          </button>
-        </div>
-      </section> -->
+    <!-- Full Screen Modal -->
+    <div id="myModal" class="modal">
 
-      <!-- Code for contact us modal -->
-      <!-- <section class="container">
-        <!-- Modal -->
-        <!-- <div
-          class="modal fade"
-          id="exampleModal"
-          tabindex="-1"
-          aria-labelledby="exampleModalLabel"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Contact Us!</h5>
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <div class="modal-body">
-                <img src="MEDIA/img_logo.svg" alt="" />
-                <form class="row" id="contactUsForm">
-                   Names First and Last  -->
-                  <!--<div>
-                    <div class="form-floating col-md-4">
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="floatingInputFname"
-                        placeholder="First Name"
-                      />
-                      <label for="floatingInputFname">First Name</label>
-                    </div>
-                    <div class="form-floating col-md-4">
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="floatingInputLname"
-                        placeholder="Last Name"
-                      />
-                      <label for="floatingInputLname">Last Name</label>
-                    </div>
-                  </div> -->
-
-                  <!-- Contact Info -->
-                  <!-- <div>
-                    <div class="form-floating col-md-4">
-                      <input
-                        type="email"
-                        class="form-control"
-                        id="floatingInputEmail"
-                        placeholder="Email"
-                      />
-                      <label for="floatingInputEmail">Email</label>
-                    </div>
-                    <div class="form-floating col-md-4">
-                      <input
-                        type="tel"
-                        class="form-control"
-                        id="floatingInputPhone"
-                        placeholder="Phone"
-                      />
-                      <label for="floatingInputPhone">Phone</label>
-                    </div>
-                  </div> -->
-
-                  <!-- Business Information -->
-                  <!-- <div>
-                    <div class="form-floating col-md-4">
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="floatingInputBusName"
-                        placeholder="Business Name"
-                      />
-                      <label for="floatingInputBusName">Business Name</label>
-                    </div>
-                    <div class="form-floating col-md-4">
-                      <input
-                        type="url"
-                        class="form-control"
-                        id="floatingInputBusURL"
-                        placeholder="Business URL"
-                      />
-                      <label for="floatingInputBusURL">Business URL</label>
-                    </div>
-                  </div> -->
-
-                  <!-- Comments -->
-                  <!-- <div>
-                    <div class="form-floating">
-                      <textarea
-                        class="form-control"
-                        rows="8"
-                        cols="55"
-                        placeholder="."
-                        id="floatingTextarea"
-                      ></textarea>
-                      <label for="floatingTextarea">Message</label>
-                    </div>
-                  </div> -->
-
-                  <!-- Captcha location 1.2
-                  <div> -->
-                  <!-- Captcha code here 1.2 -->
-                  <!-- </div>
-
-                  <div>
-                    <div class="col-12">
-                      <button
-                        type="submit"
-                        class="btn btn-primary md_submitBtn"
-                      >
-                        Submit
-                      </button>
-                    </div>
-                  </div>
-                </form>
-              </div>
-               <div class="modal-footer">
-		                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-		                        <button type="button" class="btn btn-primary">Save changes</button>
-		                    </div>
-            </div>
-          </div>
-        </div>
-      </section> -->
+      <!-- The Close Button -->
+      <span class="close">&times;</span>
+    
+      <!-- Modal Content (The Image) -->
+      <img class="modal-content" id="img01">
+    
+      <!-- Modal Caption (Image Text) -->
+      <div id="caption"></div>
+    </div>
           <button type="button" id="btn-back-to-top">
             <img src="MEDIA/rocketBtn-01.png" class="img-fluid"alt="">
           </button>
