@@ -1,4 +1,4 @@
-$sectionHeight: 800px;
+$sectionHeight: 980px;
 #sr_links {
   color: map-get($colors, color-primary);
 }
@@ -14,9 +14,9 @@ $sectionHeight: 800px;
   height: $sectionHeight;
 }
 .sr_heroContent {
-  position: absolute;
   @include flex-rowc;
   top: 20%;
+  position: absolute;
   z-index: 2;
 }
 .sr_heroTitle {
@@ -39,12 +39,7 @@ $sectionHeight: 800px;
   text-align: center;
   margin-top: 15%;
 }
-.sr_heroImgContainer {
-  margin-top: 15%;
-}
-.sr_learnMore {
-  margin-top: 5%;
-}
+
 .sr_heroBgOne {
   position: sticky;
   object-fit: fill;
@@ -65,25 +60,24 @@ $sectionHeight: 800px;
   z-index: -1;
 }
 
-.sr_learnHeader {
-  @include leftBorder;
-  color: map-get($colors, color-tertiary);
-}
 .sr_clickHeader {
-  margin-left: 5%;
+  height: 300px;
+  width: 300px;
   margin-top: 10%;
+  margin-left: 10%;
   color: map-get($colors, color-white);
 }
 .clickService {
   border-left: 4px solid map-get($colors, color-grey);
-  padding-left: 1%;
+  padding-left: 2%;
+  height: 25px;
 }
 .clickService:hover {
   border-left: 4px solid map-get($colors, color-primary);
-  padding-left: 1%;
   cursor: pointer;
   color: map-get($colors, color-secondary);
 }
+
 //Cards
 .sr_cardInfo {
   @include flex-rowc;
@@ -126,7 +120,7 @@ $sectionHeight: 800px;
 
 @include media-breakpoint-up(md) {
   .sr_hero {
-    height: 1000px;
+    height: 980px;
   }
   .sr_heroTitle {
     margin-top: 5%;
@@ -140,9 +134,7 @@ $sectionHeight: 800px;
   .sr_cardHeader {
     margin-left: 0%;
   }
-  .sr_learnHeader {
-    margin-bottom: 0%;
-  }
+
   .sr_cardImgOne {
     max-width: 100%;
     max-height: 500px;
@@ -150,18 +142,10 @@ $sectionHeight: 800px;
     height: 100%;
   }
   .sr_clickHeader {
-    margin-left: 0%;
-    height: 100%;
+    width: 400px;
+    margin-left: 25%;
   }
-  .sr_learnMore {
-    margin-top: 0;
-    margin-left: 5%;
-  }
-  .sr_heroImgContainer {
-    @include flex-roweven;
-    flex-wrap: nowrap;
-    margin-top: 15%;
-  }
+
 }
 
 @include media-breakpoint-up(lg) {
@@ -200,13 +184,34 @@ $sectionHeight: 800px;
   .sr_buffer {
     height: 60px;
   }
+  .sr_clickHeader {
+    display: block;
+    margin-top: 5%;
+    width: 100%;
+  }
+  .clickService{
+    padding-right: 1%;
+    padding-left: 1%;
+  }
 }
 
 @include media-breakpoint-up(xl) {
   .sr_heroCaption {
     margin-top: 5%;
   }
+  .sr_clickHeader {
+    margin-left: 35%;
+    top: 50;
+    left: 50;
+  }
+
 }
 
 @include media-breakpoint-up(xxl) {
+  .sr_clickHeader {
+    transform: translateX(18%);
+    margin-top: 5%;
+    margin-left: 7%;
+    width: 100%;
+  }
 }
