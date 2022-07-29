@@ -40,7 +40,6 @@
 // Studio Hero Container
 .st_heroContent {
   @include flex-rowc;
-  margin-top: 10%;
   align-self: center;
   position: absolute;
   z-index: 2;
@@ -48,14 +47,15 @@
 
 // Studio Header Text
 .st_heroText {
-  @include leftBorder;
+  // @include leftBorder;
+  text-align: center;
   color: map-get($colors, color-primary);
 }
 
 .st_headerBlurb {
   @include flex-rowc;
   align-content: center;
-  margin-top: 10%;
+  margin-top: 5%;
   text-align: center;
   color: map-get($colors, color-white);
 }
