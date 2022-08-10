@@ -8,12 +8,11 @@
     @include flex-rowc;
     background-color: rgba(0, 0, 0, 0.404);
     position: relative;
-    width: fit-content;
+    width: 100%;
     height: 820px;
 }
 
 .hm_herovideo{
-    position: sticky;
     max-width: 100%;
     max-height: 100%;
     width: 100%;
@@ -25,7 +24,9 @@ video{
     width: 100%;
     height: 820px;
 }
-
+.vidPC{
+    display: none;
+}
 //Hero
 .hm_content{
     position: absolute;
@@ -74,7 +75,8 @@ video{
 .hm_services{
     @include flex-rowc;
     position: relative;
-    height: 1000px;
+    margin-top: 5%;
+    height: 900px;
     width: 100%;
 }
 .hm_readCard{
@@ -89,15 +91,13 @@ video{
 .showCard{
     @include flex-rowc;
     align-items: center;
-    margin: 5%;
+    margin: 3%;
     background-color: map-get($colors, color-white);
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     border-radius: 5px; /* 5px rounded corners */
     position: absolute;
-    min-height: 100%;
-    min-width: 100%;
-    width: 100%;
-    height: 1000px;
+    width: 370px;
+    height: 900px;
     }
 .activeC{   
     z-index: 4 !important;
@@ -107,15 +107,19 @@ video{
     0%{transform:translateX(400px)}
     100%{}
     }
-.showImg{
-    object-fit: contain;
-}
+
 
 .showCardinner{
     @include flex-rowc;
     align-items: center;
-    width: fit-content;
+    width: 100%;
     margin: 2%;
+}
+.showImg{
+    width: 250px;
+    height: 250px;
+    border-radius: 30px;
+    padding: 15px;
 }
 .showTitle{
     margin-bottom: 5%;
@@ -135,11 +139,12 @@ video{
 //Fill Animation
 .hm_card {
     @include flex-rowc;
-    margin: 2%;
+    align-content: center;
+    margin:2%;
+    height: 350px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     border-radius: 5px; /* 5px rounded corners */
     text-align: center; 
-    display: block; 
     background: linear-gradient(to top, #ec1f9373 50%, white 50%);
     background-size: 100% 200%;
     color: black;
@@ -153,10 +158,10 @@ video{
 }
 
   .hm_card img {
-    border-radius: 5px 5px 0 0;
+    border-radius: 30px;
     width: 250px;
     height: 250px;
-    padding: 5%;
+    padding: 15px;
     
   }
 //Learn More and divider
@@ -178,10 +183,6 @@ video{
     border: 1px solid map-get($colors, color-secondary);
     background-color:map-get($colors, color-secondary);
     color: map-get($colors, color-white);
-    padding: 18px 100px;
-    text-align: center;
-    display: inline;
-    border-radius: 15px;
     transform: translateY(.25em) scale(115%);
 }
 //Showcase and Carousel
@@ -197,7 +198,7 @@ video{
   }
   .hm_showcaseHeader{
       @include leftBorder;
-      margin-top: 5%;
+      margin-top: 10%;
   }
   .hm_carousel{
     @include flex-rowc;
@@ -211,17 +212,15 @@ video{
     border: 1px solid map-get($colors, color-primary);
     background-color:transparent;
     color: map-get($colors, color-primary);
-    padding: 18px 100px;
+    padding: 18px;
     text-align: center;
     border-radius: 15px;
   }
   .hm_showCasebtn:hover {
     border: 1px solid map-get($colors, color-secondary);
     background-color:map-get($colors, color-secondary);
-    color: map-get($colors, color-white);
-
-    
-    
+    color: map-get($colors, color-white); 
+    transform: translateY(.25em) scale(115%);
 }
 .hm_rocketDivider{
     margin: 5% 0 ;
@@ -235,19 +234,22 @@ video{
   .fourSquare{
       @include flex-rowc;
       margin-top: 5%;
-
     }
     .squareInfoOne{
         @include flex-rowc;
         align-items: center;
         position: relative;
         background-color: rgba(0, 0, 0, 0.356);
+        border-radius: 30px;
+
     }
     .squareInfoTwo{
         @include flex-rowc;
         align-items: center;
         position: relative;
         background-color: rgba(0, 0, 0, 0.356);
+        border-radius: 30px;
+     
     }
     .squareInfoSwap{
         display: none;
@@ -269,11 +271,11 @@ video{
   }
 
   .squareBtn{
-      margin: 10% 5%;
+      margin: 10% 0%;
       border: 1px solid map-get($colors, color-primary);
       background-color: map-get($colors, color-tertiary);
       color: map-get($colors, color-primary);
-      padding: 18px 100px;
+      padding: 18px;
       text-align: center;
       border-radius: 15px;
   }
@@ -291,7 +293,19 @@ video{
 
 //SM BREAK 576px,
 @include media-breakpoint-up(sm){
- 
+    .hm_herovideo{
+        position: sticky;
+        max-width: 100%;
+        max-height: 100%;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+    video{
+        object-fit: cover;
+        width: 100%;
+        height: 820px;
+    }
 }
 //MED BREAK 768px,
 @include media-breakpoint-up(md) { 
@@ -299,32 +313,28 @@ video{
         margin-top: 50%;
     }
     .hm_services{
-        height: 1180px;
+        height: 800px;
+    }
+    .hm_cardStack{
+        @include flex-rowc;
     }
     .showCard{
         min-height: 100%;
         min-width: 100%;
         width: 100%;
-        height: 1100px;
+        height: 800px;
     }
     .hm_push{
         margin-top: 10%;
         height: 100%;                  
     }
     .hm_carousel{
-        height: 650px;
+        height: 700px;
       }
-      .squareBtn{
-        margin: 10% 20%;
-    }
-
     
    }
 //LARGE BREAK 992px,
 @include media-breakpoint-up(lg) {
-    // .hm_btn{
-    //     margin: 25%;
-    // } 
     video {
         height: 720px;
     }
@@ -332,21 +342,20 @@ video{
         width: 100%;
         height: 720px;
     }
-    .showImg{
-        max-height: 650px;
-        max-width: 650px;
+    .vidMobile{
+        display: none;
+    }
+    .vidPC{
+        display: flex;
     }
     .hm_content{
         margin-top: 5%;
     }
-    .hm_cardStack{
-        @include flex-rowc;
-    }
     .showCard{
-        max-height: 500px;
+        max-height: 450px;
     }
     .hm_services {
-        height: 550px;
+        height: 500px;
     }
     .squareInfoSwap{
         display: flex;
@@ -354,6 +363,7 @@ video{
         align-items: center;
         position: relative;
         background-color: rgba(0, 0, 0, 0.356);
+        border-radius: 30px;
     }
     .squareInfoTwo{
         display: none;
@@ -365,7 +375,7 @@ video{
         margin-top: 0%;
     }
     .hm_carousel {
-        height: 700px;
+        height: 850px;
     }
 }
 //EXTRA LARGE SCREEN SIZING 1400px and up
@@ -388,7 +398,7 @@ video{
         margin-bottom: 10%;
     } 
     .hm_services{
-        height: 500px;
+        height: 480px;
         width: 100%;
     }
     .showCard{

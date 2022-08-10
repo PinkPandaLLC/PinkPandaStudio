@@ -42,13 +42,13 @@
 		<nav class="navbar navbar-light bg-transparent fixed-top">
 
 			<div class="container">
-			  <a class="navbar-brand" href="index.html"><img src="MEDIA/img_logo.svg" alt=""></a>
+			  <a class="navbar-brand" href="index.html"><img src="MEDIA/spacedudeOnly-01.png" class="img-fluid" alt=""></a>
 			      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
 					<span class="navbar-toggler-icon"></span>
 			      </button>
 			  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
 				<div class="offcanvas-header">
-				  	<div class="offcanvas-title navbar-brand" id="offcanvasNavbarLabel">
+				  	<div class="offcanvas-title navbar-brandTwo" id="offcanvasNavbarLabel">
 						<a href="index.html"><img src="MEDIA/img_logo.svg" alt=""></a>
 					</div>
 				  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -146,9 +146,14 @@
 
             <div class="hm_herovideo">
                 <video autoplay loop muted playsinline disablepictureinpicture 
-                  id="herovideo" >
-                    <source src="MEDIA/vid_home_fists.mp4" type="video/mp4">
+                  id="herovideo" class="vidPC">
+                    <source src="MEDIA/index_vid.mp4" type="video/mp4" >
                 </video>
+                <video autoplay loop muted playsinline disablepictureinpicture 
+                  id="herovideo" class="vidMobile">
+                    <source src="MEDIA/phoneWebDev_mobile.mp4" type="video/mp4" >
+                </video>
+
             </div>	
            
                 <div class="hm_content row">   
@@ -156,7 +161,7 @@
                         <h1>Pink Panda</h1>
                         <h2 id="target"></h2>
                     </div>
-                    <button type="button" class="hm_btn col-10 col-md-8 col-lg-5 col-xxl-3" id="hm_studiobtn"> <h5>Studio</h5> </button>
+                    <button type="button" class="hm_btn col-10 col-md-8 col-lg-3" id="hm_studiobtn"> <h5>Studio</h5> </button>
                 </div>
            
         </div>
@@ -177,9 +182,9 @@
             <div class="showCard row activeC" id="card1">
                 <div class="col-4 row showCardinner">
                     <!-- <div class="col-12 col-xxl-4 showImg"> -->
-                        <img src="MEDIA/img_home_doMore.svg" class="img-fluid col-12 col-lg-3 col-xxl-4 showImg" alt="...">
+                        <img src="MEDIA/index_cardOne-01-01.png" class="col-12 col-lg-4 showImg" alt="...">
                     <!-- </div> -->
-                    <div class="col-12 col-lg-9 col-xxl-8">
+                    <div class="col-12 col-lg-8">
                         <div class="cardBody">
                                 <div class="showTitle ">
                                     <h5>Responsive Web Development</h5>
@@ -201,10 +206,10 @@
             <div class="hm_readCard ">
             <div class="showCard row" id="card2">
               <div class="col-4 row showCardinner">
-                <div class="col-12 col-lg-3 col-xxl-4 showImg">
-                    <img src="MEDIA/img_home_heartBinary.svg" class="img-fluid" alt="...">
-                </div>
-                        <div class="col-12 col-lg-9 col-xxl-8">
+               
+                    <img src="MEDIA/index_cardTwo.png" class="showImg col-12 col-lg-4 " alt="...">
+                
+                        <div class="col-12 col-lg-8 ">
                             <div class="cardBody">
                                 <div class="showTitle">
                                     <h5>Server Management</h5>
@@ -227,10 +232,10 @@
             <div class="hm_readCard ">
             <div class="showCard row" id="card3">
               <div class="col-4 row showCardinner">
-                <div class="col-12 col-lg-3 col-xxl-4 showImg">
-                    <img src="MEDIA/img_home_branding.svg" class="img-fluid" alt="...">
-                </div>
-                        <div class="col-12 col-lg-9 col-xxl-8">
+             
+                    <img src="MEDIA/index_cardThree-01.png" class=" showImg col-12 col-lg-4 " alt="...">
+           
+                        <div class="col-12 col-lg-8">
                             <div class="cardBody">
                                 <div class="showTitle">
                                     <h5>Custom Branding</h5>
@@ -253,9 +258,9 @@
             <div class="showCard row" id="card4">
               <div class="col-4 row showCardinner">
                 <!-- <div class="col-12 col-xxl-4 showImg"> -->
-                    <img src="MEDIA/img_home_seo.svg" class="img-fluid col-12 col-lg-3 col-xxl-4 showImg" alt="...">
+                    <img src="MEDIA/index_cardFour-01.png" class="col-12 col-lg-4 showImg" alt="...">
                 <!-- </div> -->
-                        <div class="col-12 col-lg-9 col-xxl-8">
+                        <div class="col-12 col-lg-8">
                             <div class="cardBody">
                                 <div class="showTitle">
                                     <h5>SEO and Analytics</h5>
@@ -288,37 +293,39 @@
             <h6>Full Stack Developers - Project Management - Graphic Design - Brand Development - ECommerce</h6>
         </div> -->
         <!-- Card Stack -->
-        <div class="container">
-        <div class="row hm_cardStack">
-            <div class="col-12 col-md-8 col-lg-5 col-xxl-3 hm_card row">
+    
+        <div class="hm_cardStack">
+            <div class="col-12 col-md-8 col-lg-5 col-xxl-3 hm_card">
+              <div class="row">
                 <div class="col-12">
-                  <a href="#card1" class="clickCard"><img src="MEDIA/img_home_doMore.svg" alt=""></a>
+                  <a href="#card1" class="clickCard"><img src="MEDIA/index_cardOne-01-01.png" alt=""></a>
                 </div>
-                <div class="container">
+                <div class="col-12">
                     <h6>Web Development</h6>
                 </div>
+              </div>
             </div>
             <div class="col-12 col-md-8 col-lg-5 col-xxl-3 hm_card">
                 <div class="col-12" >
-                  <a href="#card2" class="clickCard"><img src="MEDIA/img_home_heartBinary.svg"  alt=""></a>
+                  <a href="#card2" class="clickCard"><img src="MEDIA/index_cardTwo.png" alt=""></a>
                 </div>
-                <div class="container ">
+                <div class="col-12 ">
                     <h6>Server Management</h6>
                 </div>
             </div>
             <div class="col-12 col-md-8 col-lg-5 col-xxl-3 hm_card">
                 <div class="col-12" >
-                  <a href="#card3" class="clickCard"><img src="MEDIA/img_home_branding.svg"  alt=""></a>
+                  <a href="#card3" class="clickCard"><img src="MEDIA/index_cardThree-01.png" alt=""></a>
                 </div>
-                <div class="container">
+                <div class="col-12">
                     <h6>Custom Branding</h6>
                 </div>
             </div>
             <div class="col-12 col-md-8 col-lg-5 col-xxl-3 hm_card">
                 <div class="col-12" >
-                  <a href="#card4" class="clickCard"><img src="MEDIA/img_home_seo.svg" alt=""></a>
+                  <a href="#card4" class="clickCard"><img src="MEDIA/index_cardFour-01.png" alt=""></a>
                 </div>
-                <div class="container">
+                <div class="col-12">
                     <h6>SEO and Analytics</h6>
                 </div>
             </div>
@@ -327,12 +334,9 @@
             <h6>Full Stack Developers - Project Management - Graphic Design - Brand Development - ECommerce</h6>
         </div>
         <div class="hm_learnMore row">           
-                <button type="button" class="learnMoreBtn col-10 col-md-8 col-lg-5 col-xxl-3" id="hm_learnBtn"> <h6>Learn More</h6> </button>        
-        <!-- <div class="hm_rocketDivider col-12">
-            <img src="MEDIA/img_dotDivider-01.png" class="img-fluid" alt="">
-        </div> -->
+                <button type="button" class="learnMoreBtn col-10 col-md-8 col-lg-3 col-xxl-3" id="hm_learnBtn"> <h6>Learn More</h6> </button>        
       </div>
-    </div>
+    
     </div>
     </section>
     <!--Carousel Section-->
@@ -384,7 +388,7 @@
                 </button>
               </div>
         </div>
-          <button type="button" class="hm_showCasebtn col-10 col-md-8 col-lg-5 col-xxl-3" id="hm_showCasebtn"> <h5>Studio</h5> </button>
+          <button type="button" class="hm_showCasebtn col-10 col-md-8 col-lg-3 col-xxl-3" id="hm_showCasebtn"> <h5>Studio</h5> </button>
      </div>
     </section>
     <!-- Section -->
@@ -398,16 +402,16 @@
             <div class="col-12 col-lg-6 squareInfoOne">
                     <div class="fourSquareHeader col-12 row">
                         <div class="col-12"><h4>About Us</h4></div>
-                        <button type="button" class="squareBtn col" id="hm_aboutBtn"> <h6>About</h6> </button>                
+                        <button type="button" class="squareBtn col-10 col-md-8 col-lg-6 " id="hm_aboutBtn"> <h6>About</h6> </button>                
                       </div>
 
                     <div class="fourSquareImg">
-                        <img src="MEDIA/img_aboutUs-01-01.svg" alt="">
+                        <img src="MEDIA/img_aboutUs-01-01.svg" class="roundImgLarge" alt="">
                     </div>               
             </div>
             <div class="col-12 col-lg-6 squareDude">
                 <div class="fourSquareImg">
-                    <img src="MEDIA/img_home_spaceMoon.svg" alt="">
+                    <img src="MEDIA/img_home_spaceMoon.svg" class="roundImgLarge" alt="">
                 </div>
             </div>
 
@@ -415,16 +419,16 @@
                             
               <div class="fourSquareHeader col-12 row">
                   <div class="col-12"><h4>Pink Panda World</h4></div>     
-                  <button type="button" class="squareBtn col" id="hm_ppwBtn"> <h6>PPW</h6> </button>                
+                  <button type="button" class="squareBtn col-10 col-md-8" id="hm_ppwBtn"> <h6>PPW</h6> </button>                
               </div>
               
                 <div class="fourSquareImg">
-                    <img src="MEDIA/img_home_ppw.svg" alt="">
+                    <img src="MEDIA/img_home_ppw.svg" class="roundImgLarge" alt="">
                 </div>
           </div> 
             <div class="col-12 col-lg-6 squareDude">
                 <div class="fourSquareImg">
-                    <img src="MEDIA/img_home_spaceLaptop.svg" alt="">
+                    <img src="MEDIA/img_home_spaceLaptop.svg" class="roundImgLarge" alt="">
                 </div>
             </div>
 
@@ -432,12 +436,12 @@
                     <div class="fourSquareHeader row">
                         <div class="col-12"><h4>Pink Panda World</h4></div>
 
-                        <button type="button" class="squareBtn col" id="hm_ppwBtn"> <h6>PPW</h6> </button> 
+                        <button type="button" class="squareBtn col-10 col-md-8" id="hm_ppwBtn"> <h6>Let's Go!</h6> </button> 
 
                     </div>
                     
                     <div class="fourSquareImg">
-                        <img src="MEDIA/img_home_ppw.svg" alt="">
+                        <img src="MEDIA/img_home_ppw.svg" class="roundImgLarge" alt="">
                     </div>
               </div>   
  
