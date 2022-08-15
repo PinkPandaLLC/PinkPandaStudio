@@ -1,4 +1,4 @@
-$sectionHeight: 980px;
+$sectionHeight: 900px;
 #sr_links {
   color: map-get($colors, color-primary);
 }
@@ -7,39 +7,32 @@ $sectionHeight: 980px;
 }
 .sr_hero {
   @include flex-rowc;
-  object-fit: cover;
-  background-color: rgba(0, 0, 0, 0.442);
+  background-color: rgba(0, 0, 0, 0.304);
   position: relative;
-  width: 100%;
-  height: $sectionHeight;
+
 }
 .sr_heroContent {
   @include flex-rowc;
-  top: 20%;
+  top: 8%;
   position: absolute;
   z-index: 2;
 }
 .sr_heroTitle {
   @include leftBorder;
   color: map-get($colors, color-primary);
-  margin-top: 10%;
+  margin-top: 7%;
   margin-left: 5%;
   position: absolute;
   z-index: 2;
 }
-.heroImgOverlay {
-  display: none;
-  max-width: 250px;
-  max-height: 400px;
-  width: 100%;
-  height: 100%;
-}
 .sr_heroCaption {
   color: map-get($colors, color-white);
   text-align: center;
-  margin-top: 15%;
+  margin-top: 20%;
 }
-
+.sr_cardContainer{
+  @include flex-rowc;
+}
 .sr_heroBgOne {
   position: sticky;
   object-fit: fill;
@@ -51,29 +44,30 @@ $sectionHeight: 980px;
 }
 .sr_heroBgTwo {
   display: none;
-  position: sticky;
-  object-fit: fill;
-  min-width: 100%;
-  min-height: $sectionHeight;
   width: 100%;
-  height: 100%;
+  height: $sectionHeight;
   z-index: -1;
 }
-
+.sr_heroBgThree{
+  display: none;
+  z-index: -1;
+}
 .sr_clickHeader {
   height: 300px;
-  width: 300px;
-  margin-top: 10%;
-  margin-left: 10%;
+  width:  340px;
+  font-size: 20px;
+  margin-top: 8%;
   color: map-get($colors, color-white);
 }
 .clickService {
-  border-left: 4px solid map-get($colors, color-grey);
-  padding-left: 2%;
-  height: 25px;
+  border: 4px solid map-get($colors, color-grey);
+  padding: 2% 2%;
+  height: 50px;
+  text-align: center;
+  border-radius: 15px;
 }
 .clickService:hover {
-  border-left: 4px solid map-get($colors, color-primary);
+  border: 4px solid map-get($colors, color-primary);
   cursor: pointer;
   color: map-get($colors, color-secondary);
 }
@@ -85,7 +79,10 @@ $sectionHeight: 980px;
   margin-top: 5%;
 }
 .sr_cardImgOne {
-  max-width: 100%;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  padding: 5%;
 }
 .sr_cardImgTwo {
   display: none;
@@ -120,41 +117,48 @@ $sectionHeight: 980px;
 
 @include media-breakpoint-up(md) {
   .sr_hero {
-    height: 980px;
+    height: 1050px;
   }
   .sr_heroTitle {
-    margin-top: 5%;
-  }
-  .heroImgOverlay {
-    display: flex;
+    margin-top: 3%;
   }
   .sr_heroCaption {
-    margin-top: 0;
+    margin-top: 7%;
   }
   .sr_cardHeader {
     margin-left: 0%;
   }
-
-  .sr_cardImgOne {
-    max-width: 100%;
-    max-height: 500px;
-    width: 100%;
-    height: 100%;
-  }
-  .sr_clickHeader {
-    width: 400px;
-    margin-left: 25%;
-  }
-
-}
-
-@include media-breakpoint-up(lg) {
   .sr_heroBgOne {
     display: none;
   }
   .sr_heroBgTwo {
     display: flex;
+    height: 1050px;
+    object-fit: cover;
   }
+  .sr_cardImgOne {
+    max-width: 100%;
+    max-height: 100%;
+    width: 500px;
+    height: 100%;
+    padding: 2%;
+  }
+  //adjusting scroll spy click header
+  .sr_clickHeader {
+    @include flex-roweven;
+    font-size: 17px;
+    margin-top: 7%;
+    width: 100%;
+
+  }
+  .clickService {
+    height: 60px;
+  }
+
+}
+
+@include media-breakpoint-up(lg) {
+
   .sr_heroImgContainer {
     margin-top:2%;
   }
@@ -174,6 +178,11 @@ $sectionHeight: 980px;
   .sr_cardPoints {
     margin-left: 0%;
   }
+  .sr_cardImgTwo{
+    object-fit: cover;
+    height: 500px;
+    width: 360px;
+  }
   .sr_cardContainer {
     @include flex-rowc;
     align-items: center;
@@ -185,33 +194,62 @@ $sectionHeight: 980px;
     height: 60px;
   }
   .sr_clickHeader {
-    display: block;
     margin-top: 5%;
     width: 100%;
+    font-size: 20px;
   }
   .clickService{
-    padding-right: 1%;
-    padding-left: 1%;
+    padding: 2% 2% 4% 2%;
+    height: 40px;
   }
 }
 
 @include media-breakpoint-up(xl) {
+  .sr_hero {
+    height: 700px;
+  }
+  .sr_heroBgTwo {
+    display: none;
+  }
+  .sr_heroBgThree {
+    display: flex;
+    width: 100%;
+    height: 700px;
+  }
+  .sr_cardImgTwo{
+    object-fit: cover;
+    height: 500px;
+    width: 360px;
+  }
   .sr_heroCaption {
-    margin-top: 5%;
+    margin-top: 10%;
   }
   .sr_clickHeader {
-    margin-left: 35%;
-    top: 50;
-    left: 50;
+    margin-top: 3%;
+    width: 95%;
   }
-
+  .clickService {
+    font-size: 15px;
+    height: 35px;
+    padding: 1% 0 3% 0;
+  }
 }
 
 @include media-breakpoint-up(xxl) {
+  .sr_hero {
+    height:1000px;
+  }
+  .sr_heroCaption {
+    margin-top: 8%;
+  }
+  .sr_heroBgThree {
+    height: 1000px;
+  }
   .sr_clickHeader {
-    transform: translateX(18%);
-    margin-top: 5%;
-    margin-left: 7%;
-    width: 100%;
+    margin-top: 7%;
+  }
+  .clickService {
+    font-size: 17px;
+    height: 40px;
   }
 }

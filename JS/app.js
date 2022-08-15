@@ -93,6 +93,7 @@ $("button").click(function(){
 //****************
 //Typewriter Animation
 //****************
+$(document).ready 
  (function ($) {
    function typeString($target, str, cursor, delay, cb) {
      $target.html(function (_, html) {
@@ -148,7 +149,7 @@ $("button").click(function(){
    pause: 500}
    );
 
-
+ 
 //****************
 //Home Page Card Swap
 //****************

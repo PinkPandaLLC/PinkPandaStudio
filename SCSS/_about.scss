@@ -1,26 +1,59 @@
 .ab_contentHeader {
+  position: absolute;
   @include leftBorder;
   color: map-get($colors, color-primary);
   margin-top: 5%;
+  margin-left: 3%;
+  z-index: 2;
+}
+
+.au_hero{
+  @include flex-rowc;
+  background-color: rgba(0, 0, 0, 0.595);
+  position: relative;
+  width: 100%;
+  height: 820px;
+  color: map-get($colors, color-white);
+}
+.au_video{
+  position:absolute;
+  max-width: 100%;
+  max-height: 100%;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+video{
+  object-fit: cover;
+  width: 100%;
+  height: 820px;
 }
 .ab_cardTitle {
+  position: absolute;
   text-align: center;
-  margin-top: 5%
+  top: 17%;
+  z-index: 3;
 }
 .ab_cardContents {
+  position: absolute;
   @include flex-rowc;
   text-align: center;
+  top: 35%;
+  width: 95%;
+  z-index: 3;
 }
 .ab_cardContents p {
-  margin:5%;
+  margin: 5%;
+}
+.ab_cardContents h6 {
+  margin-top: 15%;
+  color: map-get($colors, color-black);
 }
 .ab_info {
   @include flex-rowc;
-  padding: 2%;
-  margin: auto;
-}
-.ab_infoContent{
-  margin: 5%;
+  align-items: center;
+  margin-top: 40%;
+
 }
 .ab_infoText b {
   color:map-get($colors, color-primary);
@@ -32,6 +65,10 @@
 }
 .ab_img {
   object-fit: contain;
+  max-height: 100%;
+  max-width: 100%;
+  height: 350px;
+  width: 350px;
 }
 
 @include media-breakpoint-up(md){
@@ -39,17 +76,44 @@
     height: 500px;
     width: 500px;
     }
+  .ab_cardContents h6 {
+    margin-top:10%;
+    color: map-get($colors, color-white);
+  }
+  .ab_info {
+    margin-top: 10%;
+  }
+  .ab_cardTitle {
+    top: 25%;
+  }
+  .ab_cardContents {
+    top: 40%;
+  }
 }
 
 @include media-breakpoint-up(lg){
-  .ab_info {
-      flex-wrap: nowrap;
-      margin-top: 5%;
-    }
-  .ab_infoContent{
-    @include flex-rowc;
-    align-items: center;
-    margin-top: 0%;
-    margin-bottom: 10%;
+  .au_hero{
+    height: 720px;
+  }
+  .ab_cardContents h6 {
+    margin-top:5%;
+  }
+}
+
+@include media-breakpoint-up(xl){
+  .ab_info{
+    flex-wrap: nowrap;
+    margin:10%;
+    
+  }
+  .ab_img{
+    height: 350px;
+    width: 350px;
+  }
+}
+
+@include media-breakpoint-up(xxl){
+  .au_hero{
+    height: 920px;
   }
 }
