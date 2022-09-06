@@ -140,7 +140,6 @@ p{
 }
 @mixin leftBorder-grey {
     border-left: 4px solid map-get($colors, color-grey);
-  
     padding-left: 1%;
   }
 
@@ -207,6 +206,7 @@ $colors:(
     .navbar{
         height: 85px;
         z-index: 499;
+        background-color: #a8a8a8;
     }
     .navbar-brand {
         width: 45px;
@@ -232,12 +232,11 @@ $colors:(
     // Header Wave
 
     .header {
-    position:fixed;
+    position:absolute;
     top: 0;
     width: 100%;
-    background: linear-gradient(60deg, map-get($colors, color-secondary) 0%, map-get($colors, color-tertiary) 100%);
-    color: map-get($colors, color-primary);
-    z-index: 498;
+    color: map-get($colors, color-black);
+    z-index: -1;
 
     }
     .waves {
@@ -249,13 +248,7 @@ $colors:(
     max-height:90px;
     }
 
-    .content {
-    position:relative;
-    height:60vh;
-    text-align:center;
-    background-color: map-get($colors, color-white);
-    
-    }
+   
 
     //Animation of wave
 

@@ -42,7 +42,26 @@
     <!-- Header -->
     <header >	
 		<!-- Navbar -->
-		<nav class="navbar navbar-light bg-transparent fixed-top">
+		<nav class="navbar navbar-light  fixed-top">
+             
+      
+      <!--Waves Container-->
+      
+		  <div class="header">
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+          <defs>
+            <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+          </defs>
+          <g class="parallax">
+            <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+            <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+            <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+            <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+          </g>
+        </svg>
+      </div>
+      <!--Waves end-->
 
 			<div class="container">
 			  <a class="navbar-brand" href="index.html"><img src="MEDIA/spacedudeOnly-01.png" class="img-fluid" alt=""></a>
@@ -121,23 +140,7 @@
 			</div>
 		  </nav>
 
-      <!--Waves Container-->
-      
-		  <div class="header">
-					<svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-						viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-						<defs>
-							<path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-						</defs>
-						<g class="parallax">
-							<use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
-							<use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
-							<use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
-							<use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
-						</g>
-					</svg>
-				</div>
-				<!--Waves end-->
+
 			
 	</header>
     <!-- Main -->
@@ -288,6 +291,7 @@
       <!-- Push Section -->
     <section>
       <div class="hm_push container"> 
+
         <div class="hm_rocketDivider col-12">
           <img src="MEDIA/img_dotDivider-01.png" class="img-fluid" alt="">
        </div>  
@@ -335,10 +339,9 @@
         </div>
          <div class="hm_blurb">
             <h6>Full Stack Developers - Project Management - Graphic Design - Brand Development - ECommerce</h6>
+            <button type="button" class="learnMoreBtn col-10 col-md-8 col-lg-3 col-xxl-3" id="hm_learnBtn" class="hm_learnMore"> <h6>Learn More</h6> </button>        
+          
         </div>
-        <div class="hm_learnMore row">           
-                <button type="button" class="learnMoreBtn col-10 col-md-8 col-lg-3 col-xxl-3" id="hm_learnBtn"> <h6>Learn More</h6> </button>        
-      </div>
     
     </div>
     </section>

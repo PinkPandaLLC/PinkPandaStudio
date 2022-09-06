@@ -49,9 +49,14 @@
 .st_heroText {
   // @include leftBorder;
   text-align: center;
-  color: map-get($colors, color-primary);
+  color: map-get($colors, color-white);
 }
-
+.headerMobile{
+  font-size: 50px;
+}
+.headerMobileh3{
+  font-size: 40px;
+}
 .st_headerBlurb {
   @include flex-rowc;
   align-content: center;
@@ -69,8 +74,9 @@
   margin-left: -2%;
 }
 
-.st_showcaseTitle h1 {
+.st_showcaseTitle h2 {
   font-weight: bold;
+  margin: 5% 0;
 }
 // Tab Buttons
 .st_tabButtons li {

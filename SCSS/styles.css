@@ -10330,6 +10330,7 @@ p {
 .navbar {
   height: 85px;
   z-index: 499;
+  background-color: #a8a8a8;
 }
 
 .navbar-brand {
@@ -10357,12 +10358,11 @@ p {
 }
 
 .header {
-  position: fixed;
+  position: absolute;
   top: 0;
   width: 100%;
-  background: linear-gradient(60deg, #FF9ED5 0%, #FFE9F5 100%);
-  color: #EC1F94;
-  z-index: 498;
+  color: #000000;
+  z-index: -1;
 }
 
 .waves {
@@ -10372,13 +10372,6 @@ p {
   margin-bottom: -7px; /*Fix for safari gap*/
   min-height: 70px;
   max-height: 90px;
-}
-
-.content {
-  position: relative;
-  height: 60vh;
-  text-align: center;
-  background-color: #FFFFFF;
 }
 
 .parallax > use {
@@ -10965,7 +10958,7 @@ video {
 }
 
 .hm_header h1, .hm_header .h1 {
-  color: #FFE9F5;
+  color: #FF9ED5;
 }
 
 .hm_btn {
@@ -10973,7 +10966,7 @@ video {
   align-self: flex-end;
   margin-bottom: 20%;
   border: 1px solid #EC1F94;
-  background-color: #FFE9F5;
+  background-color: #FFFFFF;
   color: #EC1F94;
   padding: 18px;
   text-align: center;
@@ -11030,7 +11023,7 @@ video {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 5px; /* 5px rounded corners */
   position: absolute;
-  width: 370px;
+  width: 350px;
   height: 900px;
 }
 
@@ -11078,6 +11071,7 @@ video {
 
 .hm_blurb {
   margin: 3%;
+  margin-top: 10%;
   text-align: center;
 }
 
@@ -11136,6 +11130,7 @@ video {
   text-align: center;
   display: inline;
   border-radius: 15px;
+  margin-top: 10%;
 }
 
 .learnMoreBtn:hover {
@@ -11342,7 +11337,7 @@ video {
     max-height: 450px;
   }
   .hm_services {
-    height: 500px;
+    height: 480px;
   }
   .squareInfoSwap {
     display: flex;
@@ -11367,6 +11362,12 @@ video {
   .hm_carousel {
     height: 850px;
   }
+  .learnMoreBtn {
+    margin-top: 6%;
+  }
+  .hm_blurb {
+    margin-top: 4%;
+  }
 }
 @media (min-width: 1400px) {
   video {
@@ -11388,7 +11389,7 @@ video {
   }
   .hm_services {
     height: 480px;
-    width: 100%;
+    width: 1000px;
   }
   .showCard {
     min-height: 0px;
@@ -11396,6 +11397,12 @@ video {
   }
   .hm_carousel {
     height: 800px;
+  }
+  .hm_blurb {
+    margin-top: 3%;
+  }
+  .learnMoreBtn {
+    margin-top: 3%;
   }
 }
 #sr_links {
@@ -11740,7 +11747,15 @@ video {
 
 .st_heroText {
   text-align: center;
-  color: #EC1F94;
+  color: #FFFFFF;
+}
+
+.headerMobile {
+  font-size: 50px;
+}
+
+.headerMobileh3 {
+  font-size: 40px;
 }
 
 .st_headerBlurb {
@@ -11761,8 +11776,9 @@ video {
   margin-left: -2%;
 }
 
-.st_showcaseTitle h1, .st_showcaseTitle .h1 {
+.st_showcaseTitle h2, .st_showcaseTitle .h2 {
   font-weight: bold;
+  margin: 5% 0;
 }
 
 .st_tabButtons li {

@@ -41,7 +41,7 @@ video{
     height: 100%;
 }
 .hm_header h1 {
-    color: map-get($colors, color-tertiary);
+    color: map-get($colors, color-secondary);
 }
 
 .hm_btn {
@@ -49,7 +49,7 @@ video{
     align-self: flex-end;
     margin-bottom: 20%;
     border: 1px solid map-get($colors, color-primary);
-    background-color: map-get($colors, color-tertiary);
+    background-color: map-get($colors, color-white);
     color: map-get($colors, color-primary);
     padding: 18px;
     text-align: center;
@@ -96,7 +96,7 @@ video{
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     border-radius: 5px; /* 5px rounded corners */
     position: absolute;
-    width: 370px;
+    width: 350px;
     height: 900px;
     }
 .activeC{   
@@ -129,6 +129,7 @@ video{
 }
 .hm_blurb{
     margin: 3%;
+    margin-top: 10%;
     text-align: center; 
     // color: map-get($colors, color-primary);
 
@@ -178,6 +179,7 @@ video{
     text-align: center;
     display: inline;
     border-radius: 15px;
+    margin-top: 10%;
 }
   .learnMoreBtn:hover {
     border: 1px solid map-get($colors, color-secondary);
@@ -355,7 +357,7 @@ video{
         max-height: 450px;
     }
     .hm_services {
-        height: 500px;
+        height: 480px;
     }
     .squareInfoSwap{
         display: flex;
@@ -376,6 +378,12 @@ video{
     }
     .hm_carousel {
         height: 850px;
+    }
+    .learnMoreBtn{
+        margin-top: 6%;
+    }
+    .hm_blurb{
+        margin-top: 4%;
     }
 }
 //EXTRA LARGE SCREEN SIZING 1400px and up
@@ -399,7 +407,7 @@ video{
     } 
     .hm_services{
         height: 480px;
-        width: 100%;
+        width: 1000px;
     }
     .showCard{
         min-height: 0px;
@@ -407,5 +415,11 @@ video{
     }
     .hm_carousel {
         height: 800px;
+    }
+    .hm_blurb{
+        margin-top: 3%;
+    }
+    .learnMoreBtn{
+        margin-top: 3%;
     }
 }
