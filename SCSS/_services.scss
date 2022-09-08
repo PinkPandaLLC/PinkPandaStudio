@@ -1,22 +1,48 @@
 $sectionHeight: 900px;
+
 #sr_links {
   color: map-get($colors, color-primary);
 }
+
 .accordion-body p {
   font-size: 20px;
 }
+
 .sr_hero {
   @include flex-rowc;
   background-color: rgba(0, 0, 0, 0.304);
   position: relative;
 
 }
+
+// sr_ddi = services drop down item
+.sr_ddi {
+  list-style: '- ';
+}
+
+.sr_ddi li {
+  font-size: larger;
+  margin-top: 2%;
+}
+
+.sr_subtitle {
+  margin: 3% auto;
+  text-align: center;
+  color: map-get($colors, color-primary);
+}
+
+// Data Backups Bolding
+.surprise {
+  color: red;
+}
+
 .sr_heroContent {
   @include flex-rowc;
   top: 8%;
   position: absolute;
   z-index: 2;
 }
+
 .sr_heroTitle {
   @include leftBorder;
   color: map-get($colors, color-primary);
@@ -25,14 +51,17 @@ $sectionHeight: 900px;
   position: absolute;
   z-index: 2;
 }
+
 .sr_heroCaption {
   color: map-get($colors, color-white);
   text-align: center;
   margin-top: 20%;
 }
-.sr_cardContainer{
+
+.sr_cardContainer {
   @include flex-rowc;
 }
+
 .sr_heroBgOne {
   position: sticky;
   object-fit: fill;
@@ -42,23 +71,27 @@ $sectionHeight: 900px;
   height: 100%;
   z-index: -1;
 }
+
 .sr_heroBgTwo {
   display: none;
   width: 100%;
   height: $sectionHeight;
   z-index: -1;
 }
-.sr_heroBgThree{
+
+.sr_heroBgThree {
   display: none;
   z-index: -1;
 }
+
 .sr_clickHeader {
   height: 300px;
-  width:  340px;
+  width: 340px;
   font-size: 20px;
   margin-top: 8%;
   color: map-get($colors, color-white);
 }
+
 .clickService {
   border: 4px solid map-get($colors, color-grey);
   padding: 2% 2%;
@@ -66,6 +99,7 @@ $sectionHeight: 900px;
   text-align: center;
   border-radius: 15px;
 }
+
 .clickService:hover {
   border: 4px solid map-get($colors, color-primary);
   cursor: pointer;
@@ -78,12 +112,14 @@ $sectionHeight: 900px;
   align-items: center;
   margin-top: 5%;
 }
+
 .sr_cardImgOne {
   width: 300px;
   height: 300px;
   object-fit: cover;
   padding: 5%;
 }
+
 .sr_cardImgTwo {
   display: none;
   max-width: 100%;
@@ -98,44 +134,53 @@ $sectionHeight: 900px;
   @include leftBorder;
   margin-left: 2%;
 }
+
 .sr_cardText {
   margin-left: 5%;
   margin-top: 3%;
 }
+
 .sr_cardPoints {
   margin-top: 3%;
   margin-left: 10%;
   font-family: $secondary-font;
 }
+
 .sr_buffer {
   height: 20px;
 }
+
 //Responsive web design
 
-@include media-breakpoint-up(sm) {
-}
+@include media-breakpoint-up(sm) {}
 
 @include media-breakpoint-up(md) {
   .sr_hero {
     height: 1050px;
   }
+
   .sr_heroTitle {
     margin-top: 3%;
   }
+
   .sr_heroCaption {
     margin-top: 7%;
   }
+
   .sr_cardHeader {
     margin-left: 0%;
   }
+
   .sr_heroBgOne {
     display: none;
   }
+
   .sr_heroBgTwo {
     display: flex;
     height: 1050px;
     object-fit: cover;
   }
+
   .sr_cardImgOne {
     max-width: 100%;
     max-height: 100%;
@@ -143,6 +188,7 @@ $sectionHeight: 900px;
     height: 100%;
     padding: 2%;
   }
+
   //adjusting scroll spy click header
   .sr_clickHeader {
     @include flex-roweven;
@@ -151,6 +197,11 @@ $sectionHeight: 900px;
     width: 100%;
 
   }
+
+  .sr_clickHeader a {
+    color: map-get($colors, color-white);
+  }
+
   .clickService {
     height: 60px;
   }
@@ -160,45 +211,56 @@ $sectionHeight: 900px;
 @include media-breakpoint-up(lg) {
 
   .sr_heroImgContainer {
-    margin-top:2%;
+    margin-top: 2%;
   }
+
   .sr_cardImgOne {
     display: none;
   }
+
   .sr_cardImgTwo {
     display: flex;
   }
+
   .sr_cardContainer {
     @include flex-rowc;
     flex-wrap: nowrap;
   }
+
   .sr_cardText {
     margin-left: 0%;
   }
+
   .sr_cardPoints {
     margin-left: 0%;
   }
-  .sr_cardImgTwo{
+
+  .sr_cardImgTwo {
     object-fit: cover;
     height: 500px;
     width: 360px;
   }
+
   .sr_cardContainer {
     @include flex-rowc;
     align-items: center;
   }
+
   .sr_cardInfo {
     margin-top: 0%;
   }
+
   .sr_buffer {
     height: 60px;
   }
+
   .sr_clickHeader {
     margin-top: 5%;
     width: 100%;
     font-size: 20px;
   }
-  .clickService{
+
+  .clickService {
     padding: 2% 2% 4% 2%;
     height: 40px;
   }
@@ -208,26 +270,32 @@ $sectionHeight: 900px;
   .sr_hero {
     height: 700px;
   }
+
   .sr_heroBgTwo {
     display: none;
   }
+
   .sr_heroBgThree {
     display: flex;
     width: 100%;
     height: 700px;
   }
-  .sr_cardImgTwo{
+
+  .sr_cardImgTwo {
     object-fit: cover;
     height: 500px;
     width: 360px;
   }
+
   .sr_heroCaption {
     margin-top: 10%;
   }
+
   .sr_clickHeader {
     margin-top: 3%;
     width: 95%;
   }
+
   .clickService {
     font-size: 15px;
     height: 35px;
@@ -237,17 +305,21 @@ $sectionHeight: 900px;
 
 @include media-breakpoint-up(xxl) {
   .sr_hero {
-    height:1000px;
+    height: 1000px;
   }
+
   .sr_heroCaption {
     margin-top: 8%;
   }
+
   .sr_heroBgThree {
     height: 1000px;
   }
+
   .sr_clickHeader {
     margin-top: 7%;
   }
+
   .clickService {
     font-size: 17px;
     height: 40px;

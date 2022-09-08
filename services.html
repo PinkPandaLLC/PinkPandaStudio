@@ -40,7 +40,25 @@
   <!-- Header -->
   <header>
     <!-- Navbar -->
-    <nav class="navbar navbar-light bg-transparent fixed-top">
+    <nav class="navbar navbar-light fixed-top">
+
+      <div class="header">
+        <!--Waves Container-->
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+          <defs>
+            <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+          </defs>
+          <g class="parallax">
+            <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+            <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+            <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+            <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+          </g>
+        </svg>
+        <!--Waves end-->
+      </div>
+
       <div class="container">
         <a class="navbar-brand" href="index.html"><img src="MEDIA/spacedudeOnly-01.png" class="img-fluid" alt="" /></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
@@ -122,24 +140,7 @@
       </div>
     </nav>
 
-    <div class="header">
-      <!--Waves Container-->
-      <div>
-        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-          viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-          <defs>
-            <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-          </defs>
-          <g class="parallax">
-            <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
-            <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
-            <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
-            <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
-          </g>
-        </svg>
-      </div>
-      <!--Waves end-->
-    </div>
+
   </header>
 
   <main>
@@ -158,8 +159,8 @@
 
           <h5 class="col-12 col-md-9 sr_heroCaption">
             At Pink Panda we offer an all encompassing unique digital
-            experience from <br />
-            the simplest requests to the most outrageous ideas!
+            experience crafted from our services listed below. <br />
+
           </h5>
 
           <div class=" col-12 sr_clickHeader row column">
@@ -178,6 +179,9 @@
     <!-- https://www.geeksforgeeks.org/how-to-insert-spaces-tabs-in-text-using-html-css/#:~:text=spaces%20gap%3A%20%26-,emsp,-%3B -->
     <section class="container sr_serviceContainer" data-bs-spy="scroll" data-bs-target="sr_clickHeader"
       data-bs-offset="80px" class="scrollspy-example" tabindex="0">
+      <div class="sr_subtitle">
+        <h4>We handle the simplest requests to the most outrageous ideas!</h4>
+      </div>
       <!-- scrollspyHeading1 -->
       <div style="visibility: hidden" id="scrollspyHeading1" class="sr_buffer"></div>
 
@@ -192,15 +196,12 @@
           </div>
           <div class="sr_cardText col-12">
             <p>
-              Over 50% of users that are on the web are using it from their
-              phones. Lacking responsive design can result in your website
-              looking like a jumbled mess, being unresponsive and overall
-              leaving a poor experience. We've all seen the "Pinching and
-              Zooming" websites that can lead to missed sales and
-              opportunities. That's why we focus on page layout to create a
-              experience for the visitors. With our responsive web design
-              services customers and clients will be pleased and have a
-              positive experience.
+              &emsp; With over 50% of users coming from mobile devices. Responsive design is more important now than
+              ever.
+              We have all used sites that are "Pinching and Zooming" that overall just leave a poor user
+              experience that will lead to missed conversions.
+              Focusing on page layout from the beginning with great
+              user experience in mind.
             </p>
           </div>
           <!-- Drop Downs -->
@@ -217,17 +218,20 @@
                 <div id="collapseOneOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
                   data-bs-parent="#accordionExample">
                   <div class="accordion-body">
-                    <p>
+                    <ul class="sr_ddi">
                       <!-- <br /> -->
-                      &emsp; Often an heavily under utilzed tool in project
-                      planning.<br />
-                      &emsp;<br />
-                      We here at Pink Panda strive to emphasize this step
-                      ensuring smooth transitions during phases.<br />
-                      &emsp;<br />
-                      &emsp; Creating detailed mock ups that can be previewed
-                      and reviewed before programmed to ensure satisfaction.
-                    </p>
+                      <li>
+                        Our mock ups outline the inital framework for your website to create a custom user experience.
+                      </li>
+                      <li>
+                        Using specialized software we take the time to currate the perfect design to paint the best
+                        picture of your business.
+                      </li>
+                      <li>
+                        Often an heavily under utilzed tool in project planning. We here at Pink Panda strive to
+                        emphasize this step ensuring the foundation for success from conception!
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -236,19 +240,22 @@
                 <h2 class="accordion-header" id="headingTwo">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#collapseOneTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    Landing Pages, Blogs, Portfolios
+                    Websites, Landing Pages, Blogs, Portfolios
                   </button>
                 </h2>
                 <div id="collapseOneTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                   data-bs-parent="#accordionExample">
                   <div class="accordion-body">
-                    <p>
-                      &emsp; We take the idea of standard landing pages and
-                      throw it out the window.<br />
-                      &emsp;<br />
-                      &emsp; Instead we offer an customized flow to fit the
-                      site of your dreams!
-                    </p>
+                    <ul class="sr_ddi">
+                      <li>
+                        Our Pink Panda experts have intricate understanding of the end goal by taking time to listen to
+                        our clients request and directives.
+                      </li>
+                      <li>
+                        Stomping on all the bugs early! We elimate the headaches of the dead links, and nonfunctioning
+                        buttons. Sending all of our projects through our intensive QA process.
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -263,14 +270,21 @@
                 <div id="collapseOneThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                   data-bs-parent="#accordionExample">
                   <div class="accordion-body">
-                    <p>
-                      &emsp; A knack for attention to detail allows PinkPanda
-                      to help mitigate the hiccups everyday users get annoyed
-                      with.<br />
-                      &emsp;<br />
-                      &emsp; No more getting hung up on something small and
-                      silly. You know the one you just thought about.<br />
-                    </p>
+                    <ul class="sr_ddi">
+                      <li>
+                        Modern sites require modern designs, our designers will ensure a smooth seemless and user
+                        intutive site.
+                      </li>
+                      <li>
+                        Experiencing the clunky websites from things that just wont work to QR codes that require you to
+                        download something just to view something once, learning from these experiences we carefully
+                        crafted our process to eradicate these problems.
+                      </li>
+                      <li>
+                        Focusing on the users experience we craft the end product from the
+                        first line of code, to the last pixel!
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -285,20 +299,29 @@
                 <div id="collapseOneFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
                   data-bs-parent="#accordionExample">
                   <div class="accordion-body">
-                    <!-- https://www.forbes.com/sites/jasongoldberg/2022/02/18/e-commerce-sales-grew-50-to-870-billion-during-the-pandemic/?sh=437ac6d34e83 -->
-                    <p>
-                      &emsp; E-Commerce sales came to a total around $870
-                      Billion USD in 2021 according to
-                      <a id="sr_links"
-                        href="https://www.forbes.com/sites/jasongoldberg/2022/02/18/e-commerce-sales-grew-50-to-870-billion-during-the-pandemic/?sh=437ac6d34e83">Forbes</a>.<br />
-                      &emsp;<br />
-                      &emsp; The US is under utilizing this largly untapped
-                      market with only 13% of retail sales coming from
-                      E-Commerce in 2021.<br />
-                    </p>
+                    <ul class="sr_ddi">
+                      <!-- https://www.forbes.com/sites/jasongoldberg/2022/02/18/e-commerce-sales-grew-50-to-870-billion-during-the-pandemic/?sh=437ac6d34e83 -->
+                      <li>
+                        According to
+                        <a id="sr_links"
+                          href="https://www.forbes.com/sites/jasongoldberg/2022/02/18/e-commerce-sales-grew-50-to-870-billion-during-the-pandemic/?sh=437ac6d34e83">Forbes</a>.
+                        Sales from e-commerce came to around $870 billion USD; with the us market tapped into only 13%
+                        from retail sales in 2021.
+                      </li>
+                      <li>
+                        Utilizing our mobile first programming approach, we ensure your e-commerce store will be
+                        accessible across all platforms.
+                      </li>
+                      <li>
+                        Working with common platforms, such as Shopify, Squarespace, Woo Commerce etc we can help
+                        deliver the store you always imagined.
+                      </li>
+                    </ul>
+
                   </div>
                 </div>
               </div>
+
             </div>
           </div>
         </div>
@@ -321,11 +344,12 @@
           </div>
           <div class="sr_cardText col-12">
             <p>
-              Custom Graphics are the backbone for distinguishing the brand
-              being developed from the competition. We provide custom graphic
-              work that delivers quality experiences combined with enhanced
-              Brand Recognition. Creating a memorable experience with customer
-              satisfaction in mind. We strive to bring your brand to life.
+              &emsp;At Pink Panda, we strive to produce a unforgettable experience with customer
+              satisfaction in
+              mind; creating individualistic graphics that breathe life into your brand.
+              By creating distinctive images we help build the basis for a business indentity that will translate
+              into
+              branding elements.
             </p>
           </div>
           <!-- Drop Downs -->
@@ -342,15 +366,31 @@
                 <div id="collapseTwoOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
                   data-bs-parent="#accordionExample">
                   <div class="accordion-body">
+                    <ul class="sr_ddi">
+                      <li>
+                        Logos are the heartbeat of brand identification and are instrumental in projecting your online
+                        presence to power your marketing strategy.
+                      </li>
+                      <li>
+                        Did you know that according to <a id="sr_links"
+                          href="https://financesonline.com/logo-statistics/#:~:text=General%20Logo%20Features-,78%25%20of%20consumers%20believe%20that%20logos%20are%20works%20of%20art%20(Study%20Finds%2C%202020).,-The%20human%20brain">Financesonline.com</a>
+                        78% of consumers see logos as works of art?
+                      </li>
+                      <li>
+                        Our artists are standing by to create the next great work of art that is your business.
+                      </li>
+                    </ul>
+
+
                     <!-- https://dailyblogging.org/technology/logo-statistics/ -->
                     <!-- https://financesonline.com/logo-statistics/ -->
-                    <p>
+                    <!-- <p>
                       &emsp; 78% of consumers see logos as works of art. Let
                       our artists help paint your busines in a new light.
                       &emsp;<br />
                       &emsp;<a id="sr_links"
                         href="https://financesonline.com/logo-statistics/#:~:text=General%20Logo%20Features-,78%25%20of%20consumers%20believe%20that%20logos%20are%20works%20of%20art%20(Study%20Finds%2C%202020).,-The%20human%20brain">Financesonline.com</a>
-                    </p>
+                    </p> -->
                   </div>
                 </div>
               </div>
@@ -365,40 +405,45 @@
                 <div id="collapseTwoTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                   data-bs-parent="#accordionExample">
                   <div class="accordion-body">
-                    <p>
-                      &emsp; With more and more business starting to use the
-                      Web to promote their businsses.<br />
-                      &emsp;<br />
-                      &emsp; Standing out with custom infographics is rapidly
-                      becoming the way to distinguish the brand being built vs
-                      the competitors.<br />
-                      &emsp;<br />
-                      &emsp; Infographics coupled with accompanying articles
-                      help boost your SEO (search engine optimization).
-                    </p>
+                    <ul class="sr_ddi">
+                      <li>
+                        Rising internet traffic means standing out in the sea that is the internet is key to
+                        business growth.
+                      </li>
+                      <li>
+                        Custom infographics are rapidly becoming the best way to distingush your brand vs competitors in
+                        showcasing the information in a beautiful yet compact way.
+                      </li>
+                      <li>
+                        Infographics when utilized by our team paired with articles will assist and grow SEO scores.
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
-              <!-- Graphic Design Branding Materials -->
+              <!-- Graphic Design Labeling -->
               <div class="accordion-item">
                 <h2 class="accordion-header" id="headingThree">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#collapseTwoThree" aria-expanded="false" aria-controls="collapseThree">
-                    Labeling
+                    Brand Labeling
                   </button>
                 </h2>
                 <div id="collapseTwoThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                   data-bs-parent="#accordionExample">
                   <div class="accordion-body">
-                    <p>
-                      &emsp; Properly lableing your business can often be
-                      overlooked due to a false sense of simplicity. <br />
-                      &emsp;<br />
-                      &emsp; With custom graphic design pieces for your logo
-                      to fliers, menus etc these small things are what
-                      combined help cultivate a radically different experience
-                      for the clients.
-                    </p>
+                    <ul class="sr_ddi">
+                      <li>
+                        Properly lableing your business can often be
+                        overlooked due to a false sense of simplicity.
+                      </li>
+                      <li>
+                        With custom graphic design pieces from logos,
+                        fliers, menus, product labels, social media content and more. These small things combined help
+                        cultivate a radically different experience
+                        for our clients.
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -413,13 +458,21 @@
                 <div id="collapseTwoFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
                   data-bs-parent="#accordionExample">
                   <div class="accordion-body">
-                    <p>
-                      &emsp; Custom Illustrations when properly utilzed can
-                      help create traction for your business.<br />
-                      &emsp;<br />
-                      &emsp; These illustrations can help with brand
-                      identification leading to repeat customers.
-                    </p>
+                    <ul class="sr_ddi">
+                      <li>
+                        Custom Illustrations when properly utilized will
+                        help create interest for your business by creating a unique brand and indenity
+                      </li>
+                      <li>
+                        Sculpting the ideal image, our team works diligently from kickoff to project close to ensure the
+                        product is something you are proud to stand behind.
+                      </li>
+                      <li>
+                        Generic illustrations and icons can lead to poor Google SEO scores; in turn leading to a
+                        templated website feel and diminsh your brand's personality.
+                      </li>
+                    </ul>
+
                   </div>
                 </div>
               </div>
@@ -465,14 +518,28 @@
                 <div id="collapseThreeOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
                   data-bs-parent="#accordionExample">
                   <div class="accordion-body">
-                    <p>
-                      &emsp; Setting up and managing databases can be
-                      difficult especially in the E-Commerece world where
-                      items being sold can change quickly.<br />
-                      &emsp;<br />
-                      &emsp; Let us help to allow you to focus on the things
-                      that drive you instead of techinical details.
-                    </p>
+                    <ul class="sr_ddi">
+                      <li>
+                        Proper Database management can seem tedious at first, but to our database wizards it is just
+                        another art form that we specialize in. We use automation and abide by Google Standards to
+                        streamline
+                        this potentialy disastrous affair into something that can be easy.
+                      </li>
+                      <li>
+                        Managing your products in a database is like a house, without a good foundation, the product is
+                        doomed for failure.
+                      </li>
+                      <li>
+                        We take
+                        the time to organize and fully understand your product in order to establish the framework and
+                        mitigate
+                        database frustrations.
+                      </li>
+                      <li>
+                        Let us help to allow you to focus on the things
+                        that drive you instead of techinical details.
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -487,15 +554,21 @@
                 <div id="collapseThreeTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                   data-bs-parent="#accordionExample">
                   <div class="accordion-body">
-                    <p>
-                      &emsp; Cybercriminals exploiting weak domain security to
-                      degrade brand reputation isn't the first thing when
-                      thinking of domain management.<br />
-                      &emsp;<br />
-                      &emsp; We can explain why its important to think outside
-                      the box when it comes to something intially simple like
-                      domain management.
-                    </p>
+                    <ul class="sr_ddi">
+                      <li>
+                        A strong brand protection strategy includes domain name management and protection from cyber
+                        criminals by successfully installing certificates and managing firewalls.
+                      </li>
+                      <!-- <li>
+                        Todays modern world is always on the go. With the limited time we spend on the sites we visit;
+                        making every second of screen time count is what we here at pink panda do best by helping you
+                        stake out your prime real estate in the world wild web to become prelavent
+                      </li> -->
+                      <li>
+                        Domain management can be interpreted many different ways, ask us how to focus it to benefit
+                        your businesses needs.
+                      </li>
+                    </ul>
                     <!-- https://www.redpoints.com/blog/what-is-domain-management/ -->
                   </div>
                 </div>
@@ -511,15 +584,18 @@
                 <div id="collapseThreeThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                   data-bs-parent="#accordionExample">
                   <div class="accordion-body">
-                    <p>
-                      &emsp; Data Backups are on of those things that go
-                      unresolved untill something happens and you need a
-                      backup.<br />
-                      &emsp;<br />
-                      &emsp; Here at Pink Panda we can take that stress off
-                      your plate and help mitigate a potentially unfortunate
-                      situation.
-                    </p>
+                    <ul class="sr_ddi">
+                      <li>
+                        <span class="surprise">SURPRISE!!!</span> Data Backups are one of those things that go
+                        unresolved and unnoticed until something happens and you need a
+                        backup.
+                      </li>
+                      <li>
+                        Here at Pink Panda we can take that stress off
+                        your plate and help mitigate a potentially unfortunate
+                        situation by ensuring nightly backups and storing locally.
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -595,12 +671,22 @@
                   data-bs-parent="#accordionExample">
                   <div class="accordion-body">
                     <!-- https://mixpanel.com/blog/what-is-user-engagement/ -->
-                    <p>
-                      &emsp; User Engagement is alligned with profitability.
-                      The more engaged a user the more likely it is for the
-                      user to return, utilize the services and even pass on
-                      recomendations.
-                    </p>
+                    <ul class="sr_ddi">
+                      <li>
+                        User Engagement is aligned with profitability.
+                        The more engaged a user is, the more likely it is for the
+                        user to return; and to utilize the services and even pass on
+                        recomendations to friends and family.
+                      </li>
+                      <li>
+                        Using Google Analytics we can indenitfy the Who, What, When, Where, Why and How
+                        the customers are engaging with your site.
+                      </li>
+                      <li>
+                        By tracking the 5 W's we can refine and update according to user engagement to provide the
+                        optimal experience to the users.
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -615,13 +701,16 @@
                 <div id="collapseFourTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                   data-bs-parent="#accordionExample">
                   <div class="accordion-body">
-                    <p>
-                      &emsp; Using a 10,000 foot approach to indentify what it
-                      is that makes you unique.<br />
-                      &emsp;<br />
-                      &emsp; We use the big picture of your company as a whole
-                      to isolate and strengthen the businesses brand.
-                    </p>
+                    <ul class="sr_ddi">
+                      <li>
+                        Using a 25,000 foot approach we plan a road map to greatness, distinguishing key milestones and
+                        continuing to support the journey as your business grows.
+                      </li>
+                      <li>
+                        With this detailed roadmap we help pinpoint the strengths, alleviating any weakness in growing
+                        the brand to reach each milestone with confidence.
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -636,14 +725,18 @@
                 <div id="collapseFourThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                   data-bs-parent="#accordionExample">
                   <div class="accordion-body">
-                    <p>
-                      &emsp; After using the big picture approach we shift
-                      focus to Content Strategy.<br />
-                      &emsp;<br />
-                      &emsp; Creating a rare set of similar styles of content
-                      will help to create the image for the brand that fits
-                      all the needs.
-                    </p>
+                    <ul class="sr_ddi">
+                      <li>
+                        The next destination on the road map is developing a content strategy based on the information
+                        gathered by user engagement and Pink Panda Experts.
+                      </li>
+                      <li>
+                        Creating a recognizable library of content,
+                        we stay on top of the ever changing trends of your target market to ensure fresh content for
+                        your visitors.
+                      </li>
+
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -658,15 +751,17 @@
                 <div id="collapseFourFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
                   data-bs-parent="#accordionExample">
                   <div class="accordion-body">
-                    <p>
-                      &emsp; Project management is key for Web Dev. Working
-                      with you to create a realalistic timeline with
-                      established milestones at each phase as a
-                      deliverable.<br />
-                      &emsp;<br />
-                      &emsp; The team will ensure that nothing slips through
-                      the cracks of the project.
-                    </p>
+                    <ul class="sr_ddi">
+                      <li>
+                        Our project managers help work to create a custom strategy from logo conception all the way to
+                        launch day, handing over the baton to our branding specialists who work industriously
+                        to manufacture a intuitive user experience.
+                      </li>
+                      <li>
+                        Employing proprietary software to track each project we ensure all deliverables are met, our
+                        project managers will always be in the know and demolish or address all roadblocks.
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -689,7 +784,7 @@
           </div>
           <div class="sr_cardText col-12">
             <p>
-              Cultivating the right online presence is critical in the modern
+              Achieving the right online presence is critical in the modern
               world. While the Panda Team is designing your website we bake
               SEO right into our process - Upon becoming partners we will
               strive to continuously make SEO improvements and optimize pages.
@@ -711,14 +806,17 @@
                 <div id="collapseFiveOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
                   data-bs-parent="#accordionExample">
                   <div class="accordion-body">
-                    <p>
-                      &emsp; Keyword Research is the process of indentifying
-                      the words that best describe your business with their
-                      services.<br />
-                      &emsp;<br />
-                      &emsp; It is a multi-faceted aspect that helps with the
-                      SEO ranking for your business.
-                    </p>
+                    <ul class="sr_ddi">
+                      <li>
+                        Keyword Research is the process of indentifying
+                        the words that best describe your business with their
+                        services.
+                      </li>
+                      <li>
+                        By fully understanding your business, it allows us to create all unique keywords needed
+                        for an optimal SEO score.
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -759,17 +857,19 @@
                   data-bs-parent="#accordionExample">
                   <div class="accordion-body">
                     <!-- https://www.321webmarketing.com/what-is-organic-seo/#:~:text=The%20term%20“organic%20SEO”%20or,the%20paid%20methods%20of%20SEO. -->
-                    <p>
-                      &emsp; Organic marketing is a fancy way of promoting the
-                      site via natural options instead of trying to throw
-                      money at it to make it to the top of whatever search
-                      engine being used. <br />
-                      &emsp;<br />
-                      &emsp; Instead of using PPC (Pay per click) this method
-                      will help naturally grow your business through
-                      refinement and care. Which will carry over once PPC
-                      methods are no longer being funded.
-                    </p>
+                    <ul class="sr_ddi">
+                      <li>
+                        Organic marketing is the natural way of generating traffic to the
+                        site via select keywords instead of putting
+                        money in paid advertising.
+                      </li>
+                      <li>
+                        Unlike using PPC (Pay per click) this method
+                        will help naturally grow your business through
+                        refinement and care. Which will carry over once PPC
+                        methods are no longer being supported.
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -778,19 +878,21 @@
                 <h2 class="accordion-header" id="headingFour">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#collapseFiveFour" aria-expanded="false" aria-controls="collapseFourheadingFour">
-                    Google Standards and Guidelines
+                    Google Anaylytics and Tag Manager
                   </button>
                 </h2>
                 <div id="collapseFiveFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
                   data-bs-parent="#accordionExample">
                   <div class="accordion-body">
-                    <p>
-                      &emsp; Following Googles standards will seemlessly allow
-                      SEO to flow and grow as your business grows.<br />
-                      &emsp;<br />
-                      &emsp; These methods are partially based on
-                      accessibility amongst other things.
-                    </p>
+                    <ul class="sr_ddi">
+                      <li>
+                        Writing custom source code gives freedom to provide desired tracking metrics. Powered by
+                        GA and GTM, allowing access to real time data from anywhere.
+                      </li>
+                      <li>
+                        Deploying sites via Google Firebase allows seemless intergration with GA and GTM.
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
