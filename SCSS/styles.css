@@ -11021,7 +11021,8 @@ video {
   margin: 3%;
   background-color: #FFFFFF;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 5px; /* 5px rounded corners */
+  border-radius: 5px;
+  /* 5px rounded corners */
   position: absolute;
   width: 350px;
   height: 900px;
@@ -11091,7 +11092,8 @@ video {
   margin: 2%;
   height: 350px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 5px; /* 5px rounded corners */
+  border-radius: 5px;
+  /* 5px rounded corners */
   text-align: center;
   background: linear-gradient(to top, rgba(236, 31, 147, 0.4509803922) 50%, white 50%);
   background-size: 100% 200%;
@@ -11257,7 +11259,7 @@ video {
 .squareBtn {
   margin: 10% 0%;
   border: 1px solid #EC1F94;
-  background-color: #FFE9F5;
+  background-color: #FFFFFF;
   color: #EC1F94;
   padding: 18px;
   text-align: center;
